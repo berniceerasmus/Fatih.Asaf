@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homework 1 – Introductions & Verb To Be</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared-lesson.css" />
+</head>
+<body>
+<div class="container">
+
+  <header class="page-header">
+    <div class="lesson-badge-pill">Homework · Lesson 1</div>
+    <h1>Homework 1: Verb To Be 📝</h1>
+    <p class="subtitle">Complete all exercises after the lesson.</p>
+  </header>
+
+  <div class="prog">
+    <span class="prog-lbl">Progress</span>
+    <div class="steps" id="lessonSteps"><div class="step"></div><div class="step"></div><div class="step"></div></div>
+    <span class="pct" id="lessonPct">0%</span>
+  </div>
+  <div class="score-bar">
+    <span class="score-lbl">Score</span>
+    <span class="score-num" id="scoreNum">0</span>
+    <span class="score-denom" id="scoreDen">/0</span>
+    <span class="score-stars" id="scoreStars"></span>
+  </div>
+
+  <section class="lesson-section">
+    <h2>Homework Practice</h2>
+
+    <div class="sec">
+      <button class="accordion">1. Choose am / is / are</button>
+      <div class="panel">
+        <div class="card" id="hw1-fill">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Fill in the gap with the correct form of <em>to be</em>.</p>
+          <div class="exercise"><label>1. My cat <input type="text" id="hw1f1" data-answer="is" placeholder="?"> black and white.</label></div>
+          <div class="exercise"><label>2. We <input type="text" id="hw1f2" data-answer="are" placeholder="?"> in the same class.</label></div>
+          <div class="exercise"><label>3. I <input type="text" id="hw1f3" data-answer="am" placeholder="?"> good at football.</label></div>
+          <div class="exercise"><label>4. The animals <input type="text" id="hw1f4" data-answer="are" placeholder="?"> in the forest.</label></div>
+          <div class="exercise"><label>5. Minecraft <input type="text" id="hw1f5" data-answer="is" placeholder="?"> my favourite game.</label></div>
+          <div class="exercise"><label>6. He <input type="text" id="hw1f6" data-answer="isn't" placeholder="?"> from Spain.</label></div>
+          <button class="check-all-btn" onclick="checkAll('hw1-fill')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">2. Word Order</button>
+      <div class="panel">
+        <div class="card">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Put the words in the correct order.</p>
+          <div class="order-sentence">
+            <p>1. old / I / am / twelve / years</p>
+            <input type="text" id="hw1o1" data-answer="i am twelve years old" placeholder="Write the full sentence">
+            <button class="check-btn" onclick="checkById('hw1o1')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>2. isn't / she / my / sister</p>
+            <input type="text" id="hw1o2" data-answer="she isn't my sister" placeholder="Write the full sentence">
+            <button class="check-btn" onclick="checkById('hw1o2')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>3. are / lions / animals / big</p>
+            <input type="text" id="hw1o3" data-answer="lions are big animals" placeholder="Write the full sentence">
+            <button class="check-btn" onclick="checkById('hw1o3')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>4. player / Ronaldo / best / is / the</p>
+            <input type="text" id="hw1o4" data-answer="ronaldo is the best player" placeholder="Write the full sentence">
+            <button class="check-btn" onclick="checkById('hw1o4')">✓</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">3. Write About Yourself</button>
+      <div class="panel">
+        <div class="card">
+          <div class="writing-prompt">
+            <h4>✍️ My Introduction</h4>
+            <p>Write a short paragraph (<strong>5–7 sentences</strong>) introducing yourself. Use <em>am</em>, <em>is</em>, <em>are</em> in different sentences.</p>
+            <textarea rows="9" placeholder="My name is...&#10;I am ... years old.&#10;I am from...&#10;My favourite sport is...&#10;I am not...&#10;My friends are..."></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <nav class="page-nav">
+    <a href="L1_Introductions_Verb_To_Be.html">← Back to Lesson</a>
+    <a href="L2_Subject_Pronouns_Have.html">Next Lesson →</a>
+  </nav>
+
+</div>
+<script src="shared-lesson.js"></script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 1 – Introductions & Verb To Be</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared-lesson.css" />
+</head>
+<body>
+<div class="container">
+
+  <header class="page-header">
+    <div class="lesson-badge-pill">Phase 1 · Lesson 1</div>
+    <h1>Introductions & Verb To Be 👋</h1>
+    <p class="subtitle">Meet people and say who you are in English.</p>
+  </header>
+
+  <div class="prog">
+    <span class="prog-lbl">Progress</span>
+    <div class="steps" id="lessonSteps"><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div></div>
+    <span class="pct" id="lessonPct">0%</span>
+  </div>
+  <div class="score-bar">
+    <span class="score-lbl">Score</span>
+    <span class="score-num" id="scoreNum">0</span>
+    <span class="score-denom" id="scoreDen">/0</span>
+    <span class="score-stars" id="scoreStars"></span>
+  </div>
+
+  <!-- WARM-UP -->
+  <section class="lesson-section">
+    <h2>Warm-Up</h2>
+    <div class="warmup-box">
+      <h3>🔥 Quick Questions (3 minutes)</h3>
+      <p>Can you answer these without looking? Try to say full sentences!</p>
+      <ul style="margin-top:10px; margin-left:20px; line-height:2.2;">
+        <li>What is your name?</li>
+        <li>How old are you?</li>
+        <li>Where are you from?</li>
+        <li>What is your favourite sport?</li>
+      </ul>
+      <p style="margin-top:12px; font-size:0.9rem; color:#6b7280;">Answer your teacher. Use full sentences: <em>"My name is…"</em></p>
+    </div>
+  </section>
+
+  <!-- PRESENTATION -->
+  <section class="lesson-section">
+    <h2>Presentation</h2>
+
+    <div class="grammar-box">
+      <h3>📌 Verb To Be – Full Table</h3>
+      <table>
+        <thead><tr><th>Subject</th><th>Verb To Be</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td>I</td><td><strong>am</strong></td><td>I am Fatih.</td></tr>
+          <tr><td>You</td><td><strong>are</strong></td><td>You are a student.</td></tr>
+          <tr><td>He / She / It</td><td><strong>is</strong></td><td>He is 12 years old.</td></tr>
+          <tr><td>We</td><td><strong>are</strong></td><td>We are from Turkey.</td></tr>
+          <tr><td>They</td><td><strong>are</strong></td><td>They are football players.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grammar-box">
+      <h3>📌 Negative Form</h3>
+      <table>
+        <thead><tr><th>Subject</th><th>Negative</th><th>Short form</th></tr></thead>
+        <tbody>
+          <tr><td>I</td><td>I am not</td><td>I'm not</td></tr>
+          <tr><td>You</td><td>You are not</td><td>You aren't</td></tr>
+          <tr><td>He / She / It</td><td>He is not</td><td>He isn't</td></tr>
+          <tr><td>We / They</td><td>We are not</td><td>We aren't</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grammar-box">
+      <h3>📌 Questions</h3>
+      <table>
+        <thead><tr><th>Question</th><th>Short Answer</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Am</strong> I late?</td><td>Yes, you are. / No, you aren't.</td></tr>
+          <tr><td><strong>Are</strong> you a student?</td><td>Yes, I am. / No, I'm not.</td></tr>
+          <tr><td><strong>Is</strong> he from Istanbul?</td><td>Yes, he is. / No, he isn't.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="example-box">
+      ✅ My name <strong>is</strong> Fatih. I <strong>am</strong> 12 years old.<br>
+      ✅ My favourite team <strong>is</strong> Galatasaray. They <strong>are</strong> great!<br>
+      ✅ I <strong>am not</strong> from Ankara. I <strong>am</strong> from Eskişehir.<br>
+      ✅ <strong>Are</strong> you a gamer? — Yes, I am!
+    </div>
+
+    <div class="tip-box">
+      💡 <strong>Remember:</strong> In English we <em>always</em> use a subject pronoun. We can't say just <em>"Is student."</em> We must say <em>"He is a student."</em>
+    </div>
+  </section>
+
+  <!-- PRACTICE -->
+  <section class="lesson-section">
+    <h2>Practice</h2>
+
+    <!-- 1. Fill in the blanks -->
+    <div class="sec">
+      <button class="accordion">1. Fill in the Blanks – am / is / are</button>
+      <div class="panel">
+        <div class="card" id="l1-fill">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write <strong>am</strong>, <strong>is</strong>, or <strong>are</strong>.</p>
+          <div class="exercise"><label>1. I <input type="text" id="l1f1" data-answer="am" placeholder="?"> Fatih.</label></div>
+          <div class="exercise"><label>2. She <input type="text" id="l1f2" data-answer="is" placeholder="?"> my teacher.</label></div>
+          <div class="exercise"><label>3. We <input type="text" id="l1f3" data-answer="are" placeholder="?"> from Turkey.</label></div>
+          <div class="exercise"><label>4. Ronaldo <input type="text" id="l1f4" data-answer="is" placeholder="?"> a footballer.</label></div>
+          <div class="exercise"><label>5. You <input type="text" id="l1f5" data-answer="are" placeholder="?"> 12 years old.</label></div>
+          <div class="exercise"><label>6. They <input type="text" id="l1f6" data-answer="are" placeholder="?"> my friends.</label></div>
+          <div class="exercise"><label>7. The game <input type="text" id="l1f7" data-answer="is" placeholder="?"> very fun.</label></div>
+          <div class="exercise"><label>8. I <input type="text" id="l1f8" data-answer="am not" placeholder="?"> from Ankara.</label></div>
+          <button class="check-all-btn" onclick="checkAll('l1-fill')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Negative sentences -->
+    <div class="sec">
+      <button class="accordion">2. Make It Negative</button>
+      <div class="panel">
+        <div class="card" id="l1-neg">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write the negative short form (e.g. <em>isn't</em> / <em>aren't</em> / <em>I'm not</em>).</p>
+          <div class="exercise"><label>1. I am tired. → I <input type="text" id="l1n1" data-answer="'m not" placeholder="?"> tired.</label></div>
+          <div class="exercise"><label>2. He is a doctor. → He <input type="text" id="l1n2" data-answer="isn't" placeholder="?"> a doctor.</label></div>
+          <div class="exercise"><label>3. They are students. → They <input type="text" id="l1n3" data-answer="aren't" placeholder="?"> students.</label></div>
+          <div class="exercise"><label>4. We are late. → We <input type="text" id="l1n4" data-answer="aren't" placeholder="?"> late.</label></div>
+          <div class="exercise"><label>5. She is 10 years old. → She <input type="text" id="l1n5" data-answer="isn't" placeholder="?"> 10 years old.</label></div>
+          <button class="check-all-btn" onclick="checkAll('l1-neg')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Sentence ordering -->
+    <div class="sec">
+      <button class="accordion">3. Put the Words in Order</button>
+      <div class="panel">
+        <div class="card">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write a correct sentence using all the words.</p>
+          <div class="order-sentence">
+            <p>1. name / is / my / Fatih</p>
+            <input type="text" id="l1o1" data-answer="my name is fatih" placeholder="Write the full sentence">
+            <button class="check-btn" onclick="checkById('l1o1')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>2. are / you / a / student</p>
+            <input type="text" id="l1o2" data-answer="you are a student" placeholder="Write the full sentence">
+            <button class="check-btn" onclick="checkById('l1o2')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>3. from / we / Turkey / are</p>
+            <input type="text" id="l1o3" data-answer="we are from turkey" placeholder="Write the full sentence">
+            <button class="check-btn" onclick="checkById('l1o3')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>4. is / Messi / player / a / great</p>
+            <input type="text" id="l1o4" data-answer="messi is a great player" placeholder="Write the full sentence">
+            <button class="check-btn" onclick="checkById('l1o4')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>5. aren't / they / teachers</p>
+            <input type="text" id="l1o5" data-answer="they aren't teachers" placeholder="Write the full sentence">
+            <button class="check-btn" onclick="checkById('l1o5')">✓</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Questions & Short Answers -->
+    <div class="sec">
+      <button class="accordion">4. Short Answer Questions</button>
+      <div class="panel">
+        <div class="card" id="l1-qa">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write a short answer: <em>Yes, I am.</em> / <em>No, he isn't.</em> etc.</p>
+          <div class="exercise"><label>1. Are you a student? (✓) → <input type="text" id="l1q1" data-answer="yes, i am" placeholder="?"></label></div>
+          <div class="exercise"><label>2. Is she from Germany? (✗) → <input type="text" id="l1q2" data-answer="no, she isn't" placeholder="?"></label></div>
+          <div class="exercise"><label>3. Are they your friends? (✓) → <input type="text" id="l1q3" data-answer="yes, they are" placeholder="?"></label></div>
+          <div class="exercise"><label>4. Is the dog big? (✗) → <input type="text" id="l1q4" data-answer="no, it isn't" placeholder="?"></label></div>
+          <button class="check-all-btn" onclick="checkAll('l1-qa')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. Writing Task -->
+    <div class="sec">
+      <button class="accordion">5. Writing Task – About Me</button>
+      <div class="panel">
+        <div class="card">
+          <div class="writing-prompt">
+            <h4>✍️ Your Turn!</h4>
+            <p>Write <strong>6 sentences</strong> about yourself using verb to be. Use positive, negative, and question forms.</p>
+            <p style="font-size:0.85rem; margin-top:6px; color:var(--muted);">Ideas: your name, age, city, school, hobby, favourite sport/game/animal.</p>
+            <textarea rows="8" placeholder="1. My name is...&#10;2. I am ... years old.&#10;3. I am from...&#10;4. My favourite game is...&#10;5. I am not...&#10;6. Are you...?"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <nav class="page-nav">
+    <a href="L1_Introductions_Verb_To_Be_HW.html" class="hw-link">📝 Homework</a>
+    <a href="L2_Subject_Pronouns_Have.html">Next Lesson →</a>
+  </nav>
+
+</div>
+<script src="shared-lesson.js"></script>
+</body>
+</html>
