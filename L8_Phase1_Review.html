@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 8 – Phase 1 Review & Mini Test</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared-lesson.css" />
+</head>
+<body>
+<div class="container">
+
+  <header class="page-header">
+    <div class="lesson-badge-pill">Phase 1 · Lesson 8 · Final Review</div>
+    <h1>Phase 1 Review & Mini Test 🏆</h1>
+    <p class="subtitle">Let's see how much you've learned — you've got this, Fatih!</p>
+  </header>
+
+  <div class="prog">
+    <span class="prog-lbl">Progress</span>
+    <div class="steps" id="lessonSteps"><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div></div>
+    <span class="pct" id="lessonPct">0%</span>
+  </div>
+  <div class="score-bar">
+    <span class="score-lbl">Score</span>
+    <span class="score-num" id="scoreNum">0</span>
+    <span class="score-denom" id="scoreDen">/0</span>
+    <span class="score-stars" id="scoreStars"></span>
+  </div>
+
+  <!-- WHAT WE COVERED -->
+  <section class="lesson-section">
+    <h2>What We Covered in Phase 1</h2>
+    <div class="grammar-box">
+      <h3>📌 Phase 1 – Grammar Summary</h3>
+      <table>
+        <thead><tr><th>Lesson</th><th>Topic</th><th>Key Form</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Verb To Be</td><td>I am / He is / They are / isn't / aren't</td></tr>
+          <tr><td>2</td><td>Subject Pronouns & Have / Has</td><td>He / She / It · have / has / don't have / doesn't have</td></tr>
+          <tr><td>3</td><td>Present Simple</td><td>I play / He plays / don't / doesn't</td></tr>
+          <tr><td>4</td><td>Questions: Do / Does</td><td>Do you…? / Does he…? + short answers</td></tr>
+          <tr><td>5</td><td>Articles & Plurals</td><td>a / an / the / – · -s / -es / -ies / irregular</td></tr>
+          <tr><td>6</td><td>Time & Frequency</td><td>half past / quarter to · always / never / usually</td></tr>
+          <tr><td>7</td><td>Adjectives</td><td>position before noun / after be · opposites</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- MINI TEST -->
+  <section class="lesson-section">
+    <h2>Mini Test</h2>
+
+    <!-- Part 1: Verb to be + pronouns -->
+    <div class="sec">
+      <button class="accordion">Part 1 – Verb To Be & Pronouns</button>
+      <div class="panel">
+        <div class="card" id="l8-p1">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Fill in the correct form of <em>to be</em> or the correct pronoun.</p>
+          <div class="exercise"><label>1. I <input type="text" id="l8p1" data-answer="am" placeholder="?"> from Eskişehir.</label></div>
+          <div class="exercise"><label>2. My friends <input type="text" id="l8p2" data-answer="are" placeholder="?"> very funny.</label></div>
+          <div class="exercise"><label>3. The wolf <input type="text" id="l8p3" data-answer="is" placeholder="?"> a wild animal.</label></div>
+          <div class="exercise"><label>4. We <input type="text" id="l8p4" data-answer="aren't" placeholder="?"> late — don't worry!</label></div>
+          <div class="exercise"><label>5. My dog is black. <input type="text" id="l8p5" data-answer="it" placeholder="?"> is very cute.</label></div>
+          <div class="exercise"><label>6. <input type="text" id="l8p6" data-answer="is" placeholder="?"> your teacher from Turkey?</label></div>
+          <button class="check-all-btn" onclick="checkAll('l8-p1')">✓ Check Part 1</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Part 2: Have/has + present simple -->
+    <div class="sec">
+      <button class="accordion">Part 2 – Have / Has & Present Simple</button>
+      <div class="panel">
+        <div class="card" id="l8-p2">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write the correct verb form.</p>
+          <div class="exercise"><label>1. She <input type="text" id="l8v1" data-answer="has" placeholder="?"> a pet parrot.</label></div>
+          <div class="exercise"><label>2. I <input type="text" id="l8v2" data-answer="don't have" placeholder="?"> a bike yet.</label></div>
+          <div class="exercise"><label>3. He <input type="text" id="l8v3" data-answer="plays" placeholder="?"> football every evening.</label></div>
+          <div class="exercise"><label>4. They <input type="text" id="l8v4" data-answer="don't go" placeholder="?"> to school on Sundays.</label></div>
+          <div class="exercise"><label>5. My mum <input type="text" id="l8v5" data-answer="watches" placeholder="?"> the news every night.</label></div>
+          <div class="exercise"><label>6. My cat <input type="text" id="l8v6" data-answer="doesn't eat" placeholder="?"> vegetables.</label></div>
+          <button class="check-all-btn" onclick="checkAll('l8-p2')">✓ Check Part 2</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Part 3: Questions -->
+    <div class="sec">
+      <button class="accordion">Part 3 – Questions & Short Answers</button>
+      <div class="panel">
+        <div class="card" id="l8-p3">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write the question using the words given, then write a short answer.</p>
+          <div class="exercise"><label>1. you / like / action films? → <input type="text" id="l8q1" data-answer="do you like action films" placeholder="?"> — Yes, I do.</label></div>
+          <div class="exercise"><label>2. your sister / play / guitar? → <input type="text" id="l8q2" data-answer="does your sister play guitar" placeholder="?"> — No, she doesn't.</label></div>
+          <div class="exercise"><label>3. what / you / do / after school? → <input type="text" id="l8q3" data-answer="what do you do after school" placeholder="?"></label></div>
+          <div class="exercise"><label>4. how often / he / train? → <input type="text" id="l8q4" data-answer="how often does he train" placeholder="?"></label></div>
+          <button class="check-all-btn" onclick="checkAll('l8-p3')">✓ Check Part 3</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Part 4: Articles and Plurals -->
+    <div class="sec">
+      <button class="accordion">Part 4 – Articles & Plurals</button>
+      <div class="panel">
+        <div class="card" id="l8-p4">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Fill in the article (a / an / the / –) and write plurals where asked.</p>
+          <div class="exercise"><label>1. I want <input type="text" id="l8a1" data-answer="an" placeholder="?"> apple.</label></div>
+          <div class="exercise"><label>2. He has <input type="text" id="l8a2" data-answer="a" placeholder="?"> dog. <input type="text" id="l8a3" data-answer="the" placeholder="?"> dog is huge.</label></div>
+          <div class="exercise"><label>3. I love <input type="text" id="l8a4" data-answer="–" placeholder="?"> animals.</label></div>
+          <div class="exercise"><label>4. city → <input type="text" id="l8pl1" data-answer="cities" placeholder="plural">&nbsp;&nbsp; wolf → <input type="text" id="l8pl2" data-answer="wolves" placeholder="plural">&nbsp;&nbsp; child → <input type="text" id="l8pl3" data-answer="children" placeholder="plural"></label></div>
+          <button class="check-all-btn" onclick="checkAll('l8-p4')">✓ Check Part 4</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Part 5: Time & Frequency -->
+    <div class="sec">
+      <button class="accordion">Part 5 – Time & Frequency</button>
+      <div class="panel">
+        <div class="card" id="l8-p5">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write the time in words and complete the frequency sentences.</p>
+          <div class="exercise"><label>1. 7:30 → It's <input type="text" id="l8t1" data-answer="half past seven" placeholder="?"></label></div>
+          <div class="exercise"><label>2. 3:45 → It's <input type="text" id="l8t2" data-answer="quarter to four" placeholder="?"></label></div>
+          <div class="exercise"><label>3. I <input type="text" id="l8f1" data-answer="always" placeholder="frequency"> brush my teeth before bed. (100%)</label></div>
+          <div class="exercise"><label>4. He is <input type="text" id="l8f2" data-answer="never" placeholder="frequency"> rude to his teacher. (0%)</label></div>
+          <button class="check-all-btn" onclick="checkAll('l8-p5')">✓ Check Part 5</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Part 6: Adjectives -->
+    <div class="sec">
+      <button class="accordion">Part 6 – Adjectives</button>
+      <div class="panel">
+        <div class="card" id="l8-p6">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Fill in the opposite adjective.</p>
+          <div class="exercise"><label>1. strong → <input type="text" id="l8adj1" data-answer="weak" placeholder="?"></label></div>
+          <div class="exercise"><label>2. beautiful → <input type="text" id="l8adj2" data-answer="ugly" placeholder="?"></label></div>
+          <div class="exercise"><label>3. clever → <input type="text" id="l8adj3" data-answer="stupid" placeholder="?"></label></div>
+          <div class="exercise"><label>4. tiny → <input type="text" id="l8adj4" data-answer="huge" placeholder="?"></label></div>
+          <p style="margin-top:14px; margin-bottom:10px; font-size:0.9rem; color:var(--muted);">Put the adjective in the correct place.</p>
+          <div class="exercise"><label>5. She is a player. (talented) → She is a <input type="text" id="l8adj5" data-answer="talented player" placeholder="?">.</label></div>
+          <div class="exercise"><label>6. It was a film. (boring) → It was a <input type="text" id="l8adj6" data-answer="boring film" placeholder="?">.</label></div>
+          <button class="check-all-btn" onclick="checkAll('l8-p6')">✓ Check Part 6</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FINAL WRITING -->
+  <section class="lesson-section">
+    <h2>Final Writing Task</h2>
+    <div class="sec">
+      <button class="accordion">🖊️ Write About Yourself – Full Paragraph</button>
+      <div class="panel">
+        <div class="card">
+          <div class="writing-prompt">
+            <h4>✍️ All About Fatih</h4>
+            <p>Write a paragraph of <strong>10+ sentences</strong> about yourself. Use grammar from ALL 7 lessons!</p>
+            <div class="tip-box" style="margin-bottom:12px;">
+              💡 Try to include: verb to be · have/has · present simple · do/does questions · articles · plurals · time · frequency adverbs · adjectives
+            </div>
+            <textarea rows="14" placeholder="My name is Fatih. I am...&#10;I have...&#10;Every day, I...&#10;My favourite...&#10;I always...&#10;I never...&#10;I am a... person.&#10;My best friend is...&#10;We usually...&#10;Do you know what? I..."></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Final Speaking -->
+    <div class="sec">
+      <button class="accordion">🗣️ Final Speaking Challenge</button>
+      <div class="panel">
+        <div class="card">
+          <div class="speaking-prompt">
+            <h4>🗣️ Tell Me About Your Life!</h4>
+            <p>Speak for <strong>2 minutes</strong> about yourself without stopping. Your teacher will listen and note any grammar from Phase 1 that you use correctly.</p>
+            <ul style="margin-left:18px; margin-top:6px; line-height:2;">
+              <li>Who you are (name, age, city)</li>
+              <li>What you have (pets, hobbies, gadgets)</li>
+              <li>Your daily routine</li>
+              <li>Your interests and opinions</li>
+              <li>Describe a person you know</li>
+            </ul>
+            <textarea rows="4" placeholder="Notes / ideas before speaking..."></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHASE 1 COMPLETE BADGE -->
+  <div style="background:linear-gradient(135deg,#1d6fa4,#0ea47a,#3b82f6); border-radius:20px; padding:24px 22px; text-align:center; margin:20px 0; color:#fff;">
+    <div style="font-size:40px; margin-bottom:8px;">🎉</div>
+    <div style="font-family:'Fredoka One',cursive; font-size:24px; margin-bottom:6px;">Phase 1 Complete!</div>
+    <div style="font-size:13px; opacity:0.9;">Amazing work, Fatih! You've covered 7 essential grammar topics. Get ready for Phase 2! 🚀</div>
+  </div>
+
+  <nav class="page-nav">
+    <a href="L7_Adjectives_Descriptions.html">← Lesson 7</a>
+    <a href="L8_Phase1_Review_HW.html" class="hw-link">📝 Homework</a>
+  </nav>
+
+</div>
+<script src="shared-lesson.js"></script>
+</body>
+</html>

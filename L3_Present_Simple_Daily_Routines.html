@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 3 – Present Simple & Daily Routines</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared-lesson.css" />
+</head>
+<body>
+<div class="container">
+
+  <header class="page-header">
+    <div class="lesson-badge-pill">Phase 1 · Lesson 3</div>
+    <h1>Present Simple & Daily Routines ⏰</h1>
+    <p class="subtitle">Talk about things you do every day.</p>
+  </header>
+
+  <div class="prog">
+    <span class="prog-lbl">Progress</span>
+    <div class="steps" id="lessonSteps"><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div></div>
+    <span class="pct" id="lessonPct">0%</span>
+  </div>
+  <div class="score-bar">
+    <span class="score-lbl">Score</span>
+    <span class="score-num" id="scoreNum">0</span>
+    <span class="score-denom" id="scoreDen">/0</span>
+    <span class="score-stars" id="scoreStars"></span>
+  </div>
+
+  <section class="lesson-section">
+    <h2>Warm-Up</h2>
+    <div class="warmup-box">
+      <h3>🔥 Daily Routine Vocabulary (3 minutes)</h3>
+      <p>Do you remember the Baamboozle game? Say these routines out loud in English:</p>
+      <ul style="margin-top:10px; margin-left:20px; line-height:2.2;">
+        <li>wake up / get up / make your bed</li>
+        <li>brush teeth / wash your face / take a shower</li>
+        <li>have breakfast / have lunch / have dinner</li>
+        <li>do homework / come home / go to bed</li>
+      </ul>
+      <p style="margin-top:10px; font-size:0.9rem; color:#6b7280;">Now put them in the order YOU do them every day!</p>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>Presentation</h2>
+
+    <div class="grammar-box">
+      <h3>📌 Present Simple – How to Form It</h3>
+      <table>
+        <thead><tr><th>Subject</th><th>Rule</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td>I / You / We / They</td><td>base verb</td><td>I <strong>wake up</strong> at 7.</td></tr>
+          <tr><td>He / She / It</td><td>verb + <strong>-s</strong> or <strong>-es</strong></td><td>He <strong>wakes up</strong> at 8.</td></tr>
+          <tr><td>I / You / We / They (negative)</td><td><strong>don't</strong> + base verb</td><td>I <strong>don't go</strong> to bed early.</td></tr>
+          <tr><td>He / She / It (negative)</td><td><strong>doesn't</strong> + base verb</td><td>She <strong>doesn't eat</strong> breakfast.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grammar-box">
+      <h3>📌 Spelling: He/She/It +s</h3>
+      <table>
+        <thead><tr><th>Rule</th><th>Verb</th><th>He/She/It</th></tr></thead>
+        <tbody>
+          <tr><td>Most verbs: add -s</td><td>play</td><td>play<strong>s</strong></td></tr>
+          <tr><td>Verbs ending -s/-sh/-ch/-x/-o: add -es</td><td>watch, go</td><td>watch<strong>es</strong>, go<strong>es</strong></td></tr>
+          <tr><td>Consonant + y: change y → i + es</td><td>study</td><td>stud<strong>ies</strong></td></tr>
+          <tr><td>Irregular</td><td>have</td><td><strong>has</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="example-box">
+      ✅ I <strong>wake up</strong> at 6:30 every morning.<br>
+      ✅ He <strong>plays</strong> football after school.<br>
+      ✅ She <strong>doesn't watch</strong> TV in the morning.<br>
+      ✅ They <strong>don't do</strong> homework on Sundays.<br>
+      ✅ My dog <strong>goes</strong> crazy when I come home! 🐶
+    </div>
+
+    <div class="tip-box">
+      💡 <strong>Time expressions:</strong> every day, always, usually, often, sometimes, never, on Mondays, in the morning, at night.
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>Practice</h2>
+
+    <div class="sec">
+      <button class="accordion">1. Add -s or -es (He/She/It form)</button>
+      <div class="panel">
+        <div class="card" id="l3-spell">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write the correct He/She/It form of each verb.</p>
+          <div class="exercise"><label>1. play → he <input type="text" id="l3s1" data-answer="plays" placeholder="?"></label></div>
+          <div class="exercise"><label>2. wash → she <input type="text" id="l3s2" data-answer="washes" placeholder="?"></label></div>
+          <div class="exercise"><label>3. study → he <input type="text" id="l3s3" data-answer="studies" placeholder="?"></label></div>
+          <div class="exercise"><label>4. go → she <input type="text" id="l3s4" data-answer="goes" placeholder="?"></label></div>
+          <div class="exercise"><label>5. wake → he <input type="text" id="l3s5" data-answer="wakes" placeholder="?"></label></div>
+          <div class="exercise"><label>6. have → she <input type="text" id="l3s6" data-answer="has" placeholder="?"></label></div>
+          <div class="exercise"><label>7. brush → it <input type="text" id="l3s7" data-answer="brushes" placeholder="?"></label></div>
+          <button class="check-all-btn" onclick="checkAll('l3-spell')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">2. Fill in the Blanks – Daily Routines</button>
+      <div class="panel">
+        <div class="card" id="l3-fill">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Use the verb in brackets — correct form!</p>
+          <div class="exercise"><label>1. I <input type="text" id="l3f1" data-answer="wake up" placeholder="wake up"> at 7 o'clock every day.</label></div>
+          <div class="exercise"><label>2. My mum <input type="text" id="l3f2" data-answer="makes" placeholder="make"> breakfast every morning.</label></div>
+          <div class="exercise"><label>3. We <input type="text" id="l3f3" data-answer="don't go" placeholder="not go"> to school on Sunday.</label></div>
+          <div class="exercise"><label>4. My friend <input type="text" id="l3f4" data-answer="plays" placeholder="play"> video games after dinner.</label></div>
+          <div class="exercise"><label>5. She <input type="text" id="l3f5" data-answer="brushes" placeholder="brush"> her teeth twice a day.</label></div>
+          <div class="exercise"><label>6. They <input type="text" id="l3f6" data-answer="don't do" placeholder="not do"> homework at night.</label></div>
+          <div class="exercise"><label>7. He <input type="text" id="l3f7" data-answer="goes" placeholder="go"> to bed at 10.</label></div>
+          <button class="check-all-btn" onclick="checkAll('l3-fill')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">3. Sentence Ordering</button>
+      <div class="panel">
+        <div class="card">
+          <div class="order-sentence">
+            <p>1. wakes / at / he / up / 6</p>
+            <input type="text" id="l3o1" data-answer="he wakes up at 6" placeholder="Write the full sentence">
+            <button class="check-btn" onclick="checkById('l3o1')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>2. every / I / football / play / day</p>
+            <input type="text" id="l3o2" data-answer="i play football every day" placeholder="Write the full sentence">
+            <button class="check-btn" onclick="checkById('l3o2')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>3. her / doesn't / she / homework / do</p>
+            <input type="text" id="l3o3" data-answer="she doesn't do her homework" placeholder="Write the full sentence">
+            <button class="check-btn" onclick="checkById('l3o3')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>4. takes / a / shower / morning / he / every</p>
+            <input type="text" id="l3o4" data-answer="he takes a shower every morning" placeholder="Write the full sentence">
+            <button class="check-btn" onclick="checkById('l3o4')">✓</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">4. Writing Task</button>
+      <div class="panel">
+        <div class="card">
+          <div class="writing-prompt">
+            <h4>✍️ My Daily Routine</h4>
+            <p>Write <strong>8 sentences</strong> about your daily routine. Use morning, afternoon and evening activities.</p>
+            <p style="font-size:0.85rem; margin-top:6px; color:var(--muted);">Use time expressions: every day, always, usually, in the morning, at night, after school…</p>
+            <textarea rows="10" placeholder="In the morning, I wake up at...&#10;I always...&#10;After school, I...&#10;In the evening, my family...&#10;I never...&#10;I go to bed at..."></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">5. Speaking Task</button>
+      <div class="panel">
+        <div class="card">
+          <div class="speaking-prompt">
+            <h4>🗣️ My Day vs. My Friend's Day</h4>
+            <p>Describe what <strong>you</strong> do every day AND what your friend or brother/sister does. Use at least <strong>5 sentences</strong>.</p>
+            <ul style="margin-left:18px; margin-top:6px; line-height:2;">
+              <li>I wake up at… / He wakes up at…</li>
+              <li>I eat… / She eats…</li>
+              <li>I don't… / He doesn't…</li>
+            </ul>
+            <textarea rows="4" placeholder="Notes / ideas for speaking..."></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <nav class="page-nav">
+    <a href="L2_Subject_Pronouns_Have.html">← Lesson 2</a>
+    <a href="L3_Present_Simple_Daily_Routines_HW.html" class="hw-link">📝 Homework</a>
+    <a href="L4_Present_Simple_Questions.html">Next Lesson →</a>
+  </nav>
+
+</div>
+<script src="shared-lesson.js"></script>
+</body>
+</html>

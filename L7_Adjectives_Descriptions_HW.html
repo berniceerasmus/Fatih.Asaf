@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homework 7 – Adjectives & Descriptions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared-lesson.css" />
+</head>
+<body>
+<div class="container">
+
+  <header class="page-header">
+    <div class="lesson-badge-pill">Homework · Lesson 7</div>
+    <h1>Homework 7: Adjectives 📝</h1>
+    <p class="subtitle">Complete all exercises after the lesson.</p>
+  </header>
+
+  <div class="prog">
+    <span class="prog-lbl">Progress</span>
+    <div class="steps" id="lessonSteps"><div class="step"></div><div class="step"></div><div class="step"></div></div>
+    <span class="pct" id="lessonPct">0%</span>
+  </div>
+  <div class="score-bar">
+    <span class="score-lbl">Score</span>
+    <span class="score-num" id="scoreNum">0</span>
+    <span class="score-denom" id="scoreDen">/0</span>
+    <span class="score-stars" id="scoreStars"></span>
+  </div>
+
+  <section class="lesson-section">
+    <h2>Homework Practice</h2>
+
+    <div class="sec">
+      <button class="accordion">1. Fill in the Adjective</button>
+      <div class="panel">
+        <div class="card" id="hw7-fill">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Use one of these adjectives: <em>warm / wild / friendly / noisy / ancient / dark</em></p>
+          <div class="exercise"><label>1. The jungle is a <input type="text" id="hw7f1" data-answer="wild" placeholder="?"> place full of animals.</label></div>
+          <div class="exercise"><label>2. My neighbours are very <input type="text" id="hw7f2" data-answer="friendly" placeholder="?"> — they always say hello.</label></div>
+          <div class="exercise"><label>3. The forest was <input type="text" id="hw7f3" data-answer="dark" placeholder="?"> and a bit scary at night.</label></div>
+          <div class="exercise"><label>4. The weather in Eskişehir is <input type="text" id="hw7f4" data-answer="warm" placeholder="?"> in the summer.</label></div>
+          <div class="exercise"><label>5. The city centre was <input type="text" id="hw7f5" data-answer="noisy" placeholder="?"> — so many cars and people!</label></div>
+          <button class="check-all-btn" onclick="checkAll('hw7-fill')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">2. Word Order – Put Adjective in Correct Place</button>
+      <div class="panel">
+        <div class="card">
+          <div class="order-sentence">
+            <p>1. fast / a / he / is / player</p>
+            <input type="text" id="hw7o1" data-answer="he is a fast player" placeholder="Write the full sentence">
+            <button class="check-btn" onclick="checkById('hw7o1')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>2. tiny / the / cute / and / is / kitten</p>
+            <input type="text" id="hw7o2" data-answer="the kitten is tiny and cute" placeholder="Write the full sentence">
+            <button class="check-btn" onclick="checkById('hw7o2')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>3. huge / they / in / live / a / house</p>
+            <input type="text" id="hw7o3" data-answer="they live in a huge house" placeholder="Write the full sentence">
+            <button class="check-btn" onclick="checkById('hw7o3')">✓</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">3. Writing Task</button>
+      <div class="panel">
+        <div class="card">
+          <div class="writing-prompt">
+            <h4>✍️ Describe Your School / Classroom</h4>
+            <p>Write <strong>6 sentences</strong> describing your school or classroom using adjectives.</p>
+            <textarea rows="9" placeholder="My school is...&#10;The classrooms are...&#10;My favourite room is...&#10;My teacher is...&#10;My friends are...&#10;The school is..."></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <nav class="page-nav">
+    <a href="L7_Adjectives_Descriptions.html">← Back to Lesson</a>
+    <a href="L8_Phase1_Review.html">Next Lesson →</a>
+  </nav>
+
+</div>
+<script src="shared-lesson.js"></script>
+</body>
+</html>

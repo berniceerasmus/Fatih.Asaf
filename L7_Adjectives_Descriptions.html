@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 7 – Adjectives & Descriptions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared-lesson.css" />
+</head>
+<body>
+<div class="container">
+
+  <header class="page-header">
+    <div class="lesson-badge-pill">Phase 1 · Lesson 7</div>
+    <h1>Adjectives & Descriptions 🎨</h1>
+    <p class="subtitle">Describe people, places and things vividly in English.</p>
+  </header>
+
+  <div class="prog">
+    <span class="prog-lbl">Progress</span>
+    <div class="steps" id="lessonSteps"><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div></div>
+    <span class="pct" id="lessonPct">0%</span>
+  </div>
+  <div class="score-bar">
+    <span class="score-lbl">Score</span>
+    <span class="score-num" id="scoreNum">0</span>
+    <span class="score-denom" id="scoreDen">/0</span>
+    <span class="score-stars" id="scoreStars"></span>
+  </div>
+
+  <section class="lesson-section">
+    <h2>Warm-Up</h2>
+    <div class="warmup-box">
+      <h3>🔥 Describe It! (3 minutes)</h3>
+      <p>Your teacher shows you pictures. Describe each one in one sentence using an adjective. Can you use different adjectives each time?</p>
+      <ul style="margin-top:10px; margin-left:20px; line-height:2.2;">
+        <li>A lion → "It's a <strong>big</strong> / <strong>powerful</strong> / <strong>wild</strong> animal."</li>
+        <li>A football stadium → "It's a <strong>huge</strong> / <strong>amazing</strong> place."</li>
+        <li>Your favourite game → "It's <strong>exciting</strong> / <strong>difficult</strong> / <strong>fun</strong>."</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>Presentation</h2>
+
+    <div class="grammar-box">
+      <h3>📌 Adjective Position</h3>
+      <table>
+        <thead><tr><th>Position</th><th>Pattern</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td>Before noun</td><td>adjective + noun</td><td>a <strong>fast</strong> cheetah</td></tr>
+          <tr><td>After verb to be</td><td>subject + be + adjective</td><td>The cheetah <strong>is fast</strong>.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grammar-box">
+      <h3>📌 Key Adjective Categories</h3>
+      <table>
+        <thead><tr><th>Category</th><th>Adjectives</th></tr></thead>
+        <tbody>
+          <tr><td>Size</td><td>big, small, huge, tiny, tall, short</td></tr>
+          <tr><td>Opinion</td><td>amazing, boring, exciting, funny, scary, cool, terrible</td></tr>
+          <tr><td>Appearance</td><td>beautiful, ugly, dark, bright, colourful, clean, dirty</td></tr>
+          <tr><td>Personality</td><td>friendly, shy, brave, lazy, clever, kind, loud</td></tr>
+          <tr><td>Speed / Strength</td><td>fast, slow, strong, weak, powerful</td></tr>
+          <tr><td>Age / Temperature</td><td>old, new, young, hot, cold, warm</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="example-box">
+      ✅ Ronaldo is a <strong>fast</strong> and <strong>powerful</strong> player.<br>
+      ✅ That was an <strong>amazing</strong> goal!<br>
+      ✅ The wolf is a <strong>clever</strong> and <strong>brave</strong> animal.<br>
+      ✅ The new Minecraft update is really <strong>exciting</strong>.<br>
+      ✅ My dog is <strong>small</strong> but <strong>loud</strong>!
+    </div>
+
+    <div class="tip-box">
+      💡 <strong>Order of multiple adjectives:</strong> Size → Age → Colour → Material → Noun<br>
+      <em>a big, old, brown wooden table</em> ✅ &nbsp;&nbsp; <em>a wooden old big brown table</em> ❌
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>Practice</h2>
+
+    <div class="sec">
+      <button class="accordion">1. Choose the Correct Adjective</button>
+      <div class="panel">
+        <div class="card" id="l7-choose">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Use a word from the box: <em>boring / huge / clever / fast / brave / scary</em></p>
+          <div class="exercise"><label>1. A cheetah is the <input type="text" id="l7c1" data-answer="fast" placeholder="?">est land animal.</label></div>
+          <div class="exercise"><label>2. The haunted house was really <input type="text" id="l7c2" data-answer="scary" placeholder="?">.</label></div>
+          <div class="exercise"><label>3. That lesson was so <input type="text" id="l7c3" data-answer="boring" placeholder="?"> — I nearly fell asleep!</label></div>
+          <div class="exercise"><label>4. The stadium is <input type="text" id="l7c4" data-answer="huge" placeholder="?"> — it holds 50,000 people.</label></div>
+          <div class="exercise"><label>5. The hero was <input type="text" id="l7c5" data-answer="brave" placeholder="?"> enough to fight the dragon.</label></div>
+          <div class="exercise"><label>6. Dolphins are <input type="text" id="l7c6" data-answer="clever" placeholder="?"> animals — they can learn tricks.</label></div>
+          <button class="check-all-btn" onclick="checkAll('l7-choose')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">2. Describe with Adjectives</button>
+      <div class="panel">
+        <div class="card" id="l7-desc">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Rewrite using the adjective in the correct position.</p>
+          <div class="exercise"><label>1. I have a dog. (small) → I have a <input type="text" id="l7d1" data-answer="small dog" placeholder="?">.</label></div>
+          <div class="exercise"><label>2. It was a film. (exciting) → It was an <input type="text" id="l7d2" data-answer="exciting film" placeholder="?">.</label></div>
+          <div class="exercise"><label>3. The elephant is an animal. (powerful) → The elephant is a <input type="text" id="l7d3" data-answer="powerful animal" placeholder="?">.</label></div>
+          <div class="exercise"><label>4. He scored a goal. (beautiful) → He scored a <input type="text" id="l7d4" data-answer="beautiful goal" placeholder="?">.</label></div>
+          <button class="check-all-btn" onclick="checkAll('l7-desc')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">3. Opposite Adjectives</button>
+      <div class="panel">
+        <div class="card" id="l7-opp">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write the opposite adjective.</p>
+          <div class="exercise"><label>1. big → <input type="text" id="l7o1" data-answer="small" placeholder="?"></label></div>
+          <div class="exercise"><label>2. fast → <input type="text" id="l7o2" data-answer="slow" placeholder="?"></label></div>
+          <div class="exercise"><label>3. old → <input type="text" id="l7o3" data-answer="new" placeholder="?"></label></div>
+          <div class="exercise"><label>4. brave → <input type="text" id="l7o4" data-answer="cowardly" placeholder="?"></label></div>
+          <div class="exercise"><label>5. clever → <input type="text" id="l7o5" data-answer="stupid" placeholder="?"></label></div>
+          <div class="exercise"><label>6. exciting → <input type="text" id="l7o6" data-answer="boring" placeholder="?"></label></div>
+          <button class="check-all-btn" onclick="checkAll('l7-opp')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">4. Writing Task – Describe Your Favourite Player / Character</button>
+      <div class="panel">
+        <div class="card">
+          <div class="writing-prompt">
+            <h4>✍️ My Hero!</h4>
+            <p>Choose your favourite footballer, game character, or movie hero. Write <strong>7 sentences</strong> describing them. Use at least <strong>6 different adjectives</strong>.</p>
+            <textarea rows="10" placeholder="My favourite [player/character] is...&#10;He/She is...&#10;He/She has...&#10;He/She is a ... person/player/character.&#10;He/She isn't...&#10;His/Her best quality is...&#10;I think he/she is... because..."></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">5. Speaking Task</button>
+      <div class="panel">
+        <div class="card">
+          <div class="speaking-prompt">
+            <h4>🗣️ Describe Without Saying the Name!</h4>
+            <p>Think of a famous person, animal, or video game character. Describe them to your teacher using adjectives — but don't say their name! Your teacher guesses.</p>
+            <ul style="margin-left:18px; margin-top:6px; line-height:2;">
+              <li>Use at least 4 adjectives</li>
+              <li>Use both positions: before noun AND after verb to be</li>
+            </ul>
+            <textarea rows="4" placeholder="Notes..."></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <nav class="page-nav">
+    <a href="L6_Telling_Time_Frequency.html">← Lesson 6</a>
+    <a href="L7_Adjectives_Descriptions_HW.html" class="hw-link">📝 Homework</a>
+    <a href="L8_Phase1_Review.html">Next Lesson →</a>
+  </nav>
+
+</div>
+<script src="shared-lesson.js"></script>
+</body>
+</html>

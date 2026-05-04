@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homework 8 – Phase 1 Final Review</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared-lesson.css" />
+</head>
+<body>
+<div class="container">
+
+  <header class="page-header">
+    <div class="lesson-badge-pill">Homework · Lesson 8 · Final</div>
+    <h1>Homework 8: Phase 1 Final Review 📝</h1>
+    <p class="subtitle">Your final Phase 1 homework — show everything you've learned!</p>
+  </header>
+
+  <div class="prog">
+    <span class="prog-lbl">Progress</span>
+    <div class="steps" id="lessonSteps"><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div></div>
+    <span class="pct" id="lessonPct">0%</span>
+  </div>
+  <div class="score-bar">
+    <span class="score-lbl">Score</span>
+    <span class="score-num" id="scoreNum">0</span>
+    <span class="score-denom" id="scoreDen">/0</span>
+    <span class="score-stars" id="scoreStars"></span>
+  </div>
+
+  <section class="lesson-section">
+    <h2>Final Homework</h2>
+
+    <!-- Mixed grammar -->
+    <div class="sec">
+      <button class="accordion">1. Mixed Grammar – Fill in the Blanks</button>
+      <div class="panel">
+        <div class="card" id="hw8-mix">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Complete each sentence with the correct word or form.</p>
+          <div class="exercise"><label>1. She <input type="text" id="hw8m1" data-answer="doesn't have" placeholder="?"> a brother.</label></div>
+          <div class="exercise"><label>2. I <input type="text" id="hw8m2" data-answer="am" placeholder="?"> not scared of spiders.</label></div>
+          <div class="exercise"><label>3. <input type="text" id="hw8m3" data-answer="does" placeholder="?"> your dad cook at home?</label></div>
+          <div class="exercise"><label>4. We <input type="text" id="hw8m4" data-answer="often" placeholder="?"> go to the park on Sundays.</label></div>
+          <div class="exercise"><label>5. He <input type="text" id="hw8m5" data-answer="plays" placeholder="?"> basketball after school.</label></div>
+          <div class="exercise"><label>6. It's <input type="text" id="hw8m6" data-answer="quarter past" placeholder="?"> three. (3:15)</label></div>
+          <div class="exercise"><label>7. I have <input type="text" id="hw8m7" data-answer="an" placeholder="?"> old photo of my dog.</label></div>
+          <div class="exercise"><label>8. The opposite of brave is <input type="text" id="hw8m8" data-answer="cowardly" placeholder="?">.</label></div>
+          <button class="check-all-btn" onclick="checkAll('hw8-mix')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Error correction -->
+    <div class="sec">
+      <button class="accordion">2. Fix the Mistakes</button>
+      <div class="panel">
+        <div class="card">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Each sentence has one mistake. Write the correct sentence.</p>
+          <div class="order-sentence">
+            <p>1. He don't play football on Mondays. ❌</p>
+            <input type="text" id="hw8e1" data-answer="he doesn't play football on mondays" placeholder="Correct sentence">
+            <button class="check-btn" onclick="checkById('hw8e1')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>2. Does she has a dog? ❌</p>
+            <input type="text" id="hw8e2" data-answer="does she have a dog" placeholder="Correct sentence">
+            <button class="check-btn" onclick="checkById('hw8e2')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>3. I am never late, isn't it? ❌</p>
+            <input type="text" id="hw8e3" data-answer="i am never late, am i" placeholder="Correct sentence">
+            <button class="check-btn" onclick="checkById('hw8e3')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>4. She have two cat. ❌</p>
+            <input type="text" id="hw8e4" data-answer="she has two cats" placeholder="Correct sentence">
+            <button class="check-btn" onclick="checkById('hw8e4')">✓</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Final paragraph writing -->
+    <div class="sec">
+      <button class="accordion">3. Final Writing – My Best Friend</button>
+      <div class="panel">
+        <div class="card">
+          <div class="writing-prompt">
+            <h4>✍️ Write About Your Best Friend</h4>
+            <p>Write a paragraph of <strong>8–10 sentences</strong> about your best friend. Use grammar from ALL of Phase 1.</p>
+            <div class="instr">
+              ✅ Include: their name &amp; age · what they have · what they do every day · their routine · what time they do things · how often · describe them with adjectives
+            </div>
+            <textarea rows="13" placeholder="My best friend's name is...&#10;He/She is...&#10;He/She has...&#10;Every day, he/she...&#10;He/She always...&#10;He/She never...&#10;He/She is a... person.&#10;His/Her favourite...&#10;He/She usually wakes up at...&#10;I think he/she is..."></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phase 1 self-evaluation -->
+    <div class="sec">
+      <button class="accordion">4. Phase 1 Self-Evaluation ⭐</button>
+      <div class="panel">
+        <div class="card">
+          <div class="writing-prompt">
+            <h4>🤔 How do you feel about each topic?</h4>
+            <p>Rate yourself 1–5 (1 = need more practice, 5 = very confident!) and write any questions you still have.</p>
+            <textarea rows="12" placeholder="Verb To Be: .../5&#10;Have / Has: .../5&#10;Present Simple: .../5&#10;Do / Does Questions: .../5&#10;Articles & Plurals: .../5&#10;Telling the Time: .../5&#10;Frequency Adverbs: .../5&#10;Adjectives: .../5&#10;&#10;Questions I still have:&#10;"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <div style="background:linear-gradient(135deg,#1d6fa4,#0ea47a); border-radius:16px; padding:20px 22px; text-align:center; color:#fff; margin:16px 0;">
+    <div style="font-size:32px; margin-bottom:6px;">🎓</div>
+    <div style="font-family:'Fredoka One',cursive; font-size:20px;">Phase 1 Homework Complete!</div>
+    <div style="font-size:12px; opacity:0.88; margin-top:5px;">Fantastic effort, Fatih. Phase 2 is going to be even better! 🚀</div>
+  </div>
+
+  <nav class="page-nav">
+    <a href="L8_Phase1_Review.html">← Back to Lesson</a>
+  </nav>
+
+</div>
+<script src="shared-lesson.js"></script>
+</body>
+</html>

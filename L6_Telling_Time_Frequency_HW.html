@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homework 6 – Telling the Time & Frequency Adverbs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared-lesson.css" />
+</head>
+<body>
+<div class="container">
+
+  <header class="page-header">
+    <div class="lesson-badge-pill">Homework · Lesson 6</div>
+    <h1>Homework 6: Time & Frequency 📝</h1>
+    <p class="subtitle">Complete all exercises after the lesson.</p>
+  </header>
+
+  <div class="prog">
+    <span class="prog-lbl">Progress</span>
+    <div class="steps" id="lessonSteps"><div class="step"></div><div class="step"></div><div class="step"></div></div>
+    <span class="pct" id="lessonPct">0%</span>
+  </div>
+  <div class="score-bar">
+    <span class="score-lbl">Score</span>
+    <span class="score-num" id="scoreNum">0</span>
+    <span class="score-denom" id="scoreDen">/0</span>
+    <span class="score-stars" id="scoreStars"></span>
+  </div>
+
+  <section class="lesson-section">
+    <h2>Homework Practice</h2>
+
+    <div class="sec">
+      <button class="accordion">1. Write the Time</button>
+      <div class="panel">
+        <div class="card" id="hw6-time">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write the time in words.</p>
+          <div class="exercise"><label>1. 6:00 → It's <input type="text" id="hw6t1" data-answer="six o'clock" placeholder="?"></label></div>
+          <div class="exercise"><label>2. 10:15 → It's <input type="text" id="hw6t2" data-answer="quarter past ten" placeholder="?"></label></div>
+          <div class="exercise"><label>3. 1:30 → It's <input type="text" id="hw6t3" data-answer="half past one" placeholder="?"></label></div>
+          <div class="exercise"><label>4. 9:45 → It's <input type="text" id="hw6t4" data-answer="quarter to ten" placeholder="?"></label></div>
+          <div class="exercise"><label>5. 3:10 → It's <input type="text" id="hw6t5" data-answer="ten past three" placeholder="?"></label></div>
+          <button class="check-all-btn" onclick="checkAll('hw6-time')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">2. Correct Word Order with Frequency</button>
+      <div class="panel">
+        <div class="card">
+          <div class="order-sentence">
+            <p>1. I / play / always / football / after / school</p>
+            <input type="text" id="hw6o1" data-answer="i always play football after school" placeholder="Write the full sentence">
+            <button class="check-btn" onclick="checkById('hw6o1')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>2. is / she / late / never</p>
+            <input type="text" id="hw6o2" data-answer="she is never late" placeholder="Write the full sentence">
+            <button class="check-btn" onclick="checkById('hw6o2')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>3. sometimes / we / movies / watch / on Saturday</p>
+            <input type="text" id="hw6o3" data-answer="we sometimes watch movies on saturday" placeholder="Write the full sentence">
+            <button class="check-btn" onclick="checkById('hw6o3')">✓</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">3. Writing Task</button>
+      <div class="panel">
+        <div class="card">
+          <div class="writing-prompt">
+            <h4>✍️ My Daily Time Table</h4>
+            <p>Write your daily schedule. Include <strong>6 activities</strong> with the time you do them and a frequency adverb for each.</p>
+            <textarea rows="9" placeholder="I always wake up at...&#10;I usually have breakfast at...&#10;School starts at...&#10;I often...&#10;I sometimes...&#10;I never..."></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <nav class="page-nav">
+    <a href="L6_Telling_Time_Frequency.html">← Back to Lesson</a>
+    <a href="L7_Adjectives_Descriptions.html">Next Lesson →</a>
+  </nav>
+
+</div>
+<script src="shared-lesson.js"></script>
+</body>
+</html>

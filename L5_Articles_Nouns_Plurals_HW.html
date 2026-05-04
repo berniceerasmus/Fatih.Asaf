@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homework 5 – Articles, Nouns & Plurals</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared-lesson.css" />
+</head>
+<body>
+<div class="container">
+
+  <header class="page-header">
+    <div class="lesson-badge-pill">Homework · Lesson 5</div>
+    <h1>Homework 5: Articles & Plurals 📝</h1>
+    <p class="subtitle">Complete all exercises after the lesson.</p>
+  </header>
+
+  <div class="prog">
+    <span class="prog-lbl">Progress</span>
+    <div class="steps" id="lessonSteps"><div class="step"></div><div class="step"></div><div class="step"></div></div>
+    <span class="pct" id="lessonPct">0%</span>
+  </div>
+  <div class="score-bar">
+    <span class="score-lbl">Score</span>
+    <span class="score-num" id="scoreNum">0</span>
+    <span class="score-denom" id="scoreDen">/0</span>
+    <span class="score-stars" id="scoreStars"></span>
+  </div>
+
+  <section class="lesson-section">
+    <h2>Homework Practice</h2>
+
+    <div class="sec">
+      <button class="accordion">1. A, An, The or –</button>
+      <div class="panel">
+        <div class="card" id="hw5-art">
+          <div class="exercise"><label>1. There is <input type="text" id="hw5a1" data-answer="an" placeholder="?"> owl in that tree.</label></div>
+          <div class="exercise"><label>2. I have <input type="text" id="hw5a2" data-answer="a" placeholder="?"> new phone. <input type="text" id="hw5a3" data-answer="the" placeholder="?"> phone is really fast!</label></div>
+          <div class="exercise"><label>3. I love <input type="text" id="hw5a4" data-answer="–" placeholder="?"> football.</label></div>
+          <div class="exercise"><label>4. Can I have <input type="text" id="hw5a5" data-answer="an" placeholder="?"> apple?</label></div>
+          <div class="exercise"><label>5. We won <input type="text" id="hw5a6" data-answer="the" placeholder="?"> match yesterday!</label></div>
+          <button class="check-all-btn" onclick="checkAll('hw5-art')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">2. Plural Forms</button>
+      <div class="panel">
+        <div class="card" id="hw5-pl">
+          <div class="exercise"><label>1. woman → <input type="text" id="hw5p1" data-answer="women" placeholder="?"></label></div>
+          <div class="exercise"><label>2. butterfly → <input type="text" id="hw5p2" data-answer="butterflies" placeholder="?"></label></div>
+          <div class="exercise"><label>3. tooth → <input type="text" id="hw5p3" data-answer="teeth" placeholder="?"></label></div>
+          <div class="exercise"><label>4. box → <input type="text" id="hw5p4" data-answer="boxes" placeholder="?"></label></div>
+          <div class="exercise"><label>5. knife → <input type="text" id="hw5p5" data-answer="knives" placeholder="?"></label></div>
+          <button class="check-all-btn" onclick="checkAll('hw5-pl')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">3. Writing Task</button>
+      <div class="panel">
+        <div class="card">
+          <div class="writing-prompt">
+            <h4>✍️ My Room</h4>
+            <p>Describe your room using <strong>a</strong>, <strong>an</strong>, <strong>the</strong> and plural nouns. Write <strong>6 sentences</strong>.</p>
+            <p style="font-size:0.85rem; margin-top:6px; color:var(--muted);">What do you have? What is on your desk/wall? What do you see?</p>
+            <textarea rows="9" placeholder="In my room, there is a...&#10;I have an...&#10;The ... is...&#10;On my desk, there are...&#10;I don't have a...&#10;The walls are..."></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <nav class="page-nav">
+    <a href="L5_Articles_Nouns_Plurals.html">← Back to Lesson</a>
+    <a href="L6_Telling_Time_Frequency.html">Next Lesson →</a>
+  </nav>
+
+</div>
+<script src="shared-lesson.js"></script>
+</body>
+</html>

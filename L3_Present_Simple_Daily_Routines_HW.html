@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homework 3 – Present Simple & Daily Routines</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared-lesson.css" />
+</head>
+<body>
+<div class="container">
+
+  <header class="page-header">
+    <div class="lesson-badge-pill">Homework · Lesson 3</div>
+    <h1>Homework 3: Present Simple 📝</h1>
+    <p class="subtitle">Complete all exercises after the lesson.</p>
+  </header>
+
+  <div class="prog">
+    <span class="prog-lbl">Progress</span>
+    <div class="steps" id="lessonSteps"><div class="step"></div><div class="step"></div><div class="step"></div></div>
+    <span class="pct" id="lessonPct">0%</span>
+  </div>
+  <div class="score-bar">
+    <span class="score-lbl">Score</span>
+    <span class="score-num" id="scoreNum">0</span>
+    <span class="score-denom" id="scoreDen">/0</span>
+    <span class="score-stars" id="scoreStars"></span>
+  </div>
+
+  <section class="lesson-section">
+    <h2>Homework Practice</h2>
+
+    <div class="sec">
+      <button class="accordion">1. Correct Form of the Verb</button>
+      <div class="panel">
+        <div class="card" id="hw3-fill">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write the correct present simple form. Use the verb in brackets.</p>
+          <div class="exercise"><label>1. My dad <input type="text" id="hw3f1" data-answer="wakes up" placeholder="wake up"> very early.</label></div>
+          <div class="exercise"><label>2. I <input type="text" id="hw3f2" data-answer="don't eat" placeholder="not eat"> breakfast at school.</label></div>
+          <div class="exercise"><label>3. She <input type="text" id="hw3f3" data-answer="studies" placeholder="study"> English every day.</label></div>
+          <div class="exercise"><label>4. We <input type="text" id="hw3f4" data-answer="watch" placeholder="watch"> movies on weekends.</label></div>
+          <div class="exercise"><label>5. He <input type="text" id="hw3f5" data-answer="doesn't play" placeholder="not play"> football — he prefers basketball.</label></div>
+          <div class="exercise"><label>6. My cat <input type="text" id="hw3f6" data-answer="sleeps" placeholder="sleep"> all day long!</label></div>
+          <button class="check-all-btn" onclick="checkAll('hw3-fill')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">2. Word Order</button>
+      <div class="panel">
+        <div class="card">
+          <div class="order-sentence">
+            <p>1. morning / I / brush / every / teeth / my</p>
+            <input type="text" id="hw3o1" data-answer="i brush my teeth every morning" placeholder="Write the full sentence">
+            <button class="check-btn" onclick="checkById('hw3o1')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>2. doesn't / she / late / go / to / bed</p>
+            <input type="text" id="hw3o2" data-answer="she doesn't go to bed late" placeholder="Write the full sentence">
+            <button class="check-btn" onclick="checkById('hw3o2')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>3. after / plays / he / school / games</p>
+            <input type="text" id="hw3o3" data-answer="he plays games after school" placeholder="Write the full sentence">
+            <button class="check-btn" onclick="checkById('hw3o3')">✓</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">3. Writing Task</button>
+      <div class="panel">
+        <div class="card">
+          <div class="writing-prompt">
+            <h4>✍️ A School Day</h4>
+            <p>Describe a typical school day. Write <strong>6–8 sentences</strong> from waking up to going to bed.</p>
+            <textarea rows="10" placeholder="I wake up at...&#10;I have breakfast...&#10;I go to school at...&#10;After school...&#10;In the evening...&#10;I go to bed at..."></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <nav class="page-nav">
+    <a href="L3_Present_Simple_Daily_Routines.html">← Back to Lesson</a>
+    <a href="L4_Present_Simple_Questions.html">Next Lesson →</a>
+  </nav>
+
+</div>
+<script src="shared-lesson.js"></script>
+</body>
+</html>

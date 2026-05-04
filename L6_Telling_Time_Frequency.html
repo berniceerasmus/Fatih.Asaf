@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 6 – Telling the Time & Frequency Adverbs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared-lesson.css" />
+</head>
+<body>
+<div class="container">
+
+  <header class="page-header">
+    <div class="lesson-badge-pill">Phase 1 · Lesson 6</div>
+    <h1>Telling the Time & Frequency Adverbs 🕐</h1>
+    <p class="subtitle">Say what time it is and how often you do things.</p>
+  </header>
+
+  <div class="prog">
+    <span class="prog-lbl">Progress</span>
+    <div class="steps" id="lessonSteps"><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div></div>
+    <span class="pct" id="lessonPct">0%</span>
+  </div>
+  <div class="score-bar">
+    <span class="score-lbl">Score</span>
+    <span class="score-num" id="scoreNum">0</span>
+    <span class="score-denom" id="scoreDen">/0</span>
+    <span class="score-stars" id="scoreStars"></span>
+  </div>
+
+  <section class="lesson-section">
+    <h2>Warm-Up</h2>
+    <div class="warmup-box">
+      <h3>🔥 Clock Reading (3 minutes)</h3>
+      <p>Your teacher shows you clock faces. Say the time in English as fast as you can!</p>
+      <ul style="margin-top:10px; margin-left:20px; line-height:2.2;">
+        <li>3:00 → "It's three o'clock"</li>
+        <li>7:30 → "It's half past seven"</li>
+        <li>6:15 → "It's quarter past six"</li>
+        <li>9:45 → "It's quarter to ten"</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>Presentation</h2>
+
+    <div class="grammar-box">
+      <h3>📌 Telling the Time</h3>
+      <table>
+        <thead><tr><th>Time</th><th>How to say it</th></tr></thead>
+        <tbody>
+          <tr><td>5:00</td><td>It's <strong>five o'clock</strong></td></tr>
+          <tr><td>5:15</td><td>It's <strong>quarter past</strong> five</td></tr>
+          <tr><td>5:30</td><td>It's <strong>half past</strong> five</td></tr>
+          <tr><td>5:45</td><td>It's <strong>quarter to</strong> six</td></tr>
+          <tr><td>5:10</td><td>It's <strong>ten past</strong> five</td></tr>
+          <tr><td>5:50</td><td>It's <strong>ten to</strong> six</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grammar-box">
+      <h3>📌 Frequency Adverbs – How often?</h3>
+      <table>
+        <thead><tr><th>Adverb</th><th>Meaning</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td><strong>always</strong></td><td>100%</td><td>I <strong>always</strong> brush my teeth.</td></tr>
+          <tr><td><strong>usually</strong></td><td>~80%</td><td>He <strong>usually</strong> wakes up at 7.</td></tr>
+          <tr><td><strong>often</strong></td><td>~60%</td><td>We <strong>often</strong> play football.</td></tr>
+          <tr><td><strong>sometimes</strong></td><td>~40%</td><td>She <strong>sometimes</strong> watches films.</td></tr>
+          <tr><td><strong>rarely</strong></td><td>~20%</td><td>I <strong>rarely</strong> eat fast food.</td></tr>
+          <tr><td><strong>never</strong></td><td>0%</td><td>He <strong>never</strong> misses practice.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="example-box">
+      ✅ School starts at <strong>half past eight</strong>.<br>
+      ✅ The match is at <strong>quarter to five</strong>.<br>
+      ✅ I <strong>always</strong> do my homework after dinner.<br>
+      ✅ He <strong>sometimes</strong> plays Minecraft until midnight! 🎮<br>
+      ✅ We <strong>never</strong> miss a Galatasaray match.
+    </div>
+
+    <div class="tip-box">
+      💡 <strong>Word order:</strong> Frequency adverbs go <em>before</em> the main verb but <em>after</em> the verb to be.<br>
+      ✅ I <strong>always</strong> eat breakfast. &nbsp;&nbsp; ✅ She <strong>is</strong> always happy.
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>Practice</h2>
+
+    <div class="sec">
+      <button class="accordion">1. Write the Time in Words</button>
+      <div class="panel">
+        <div class="card" id="l6-time">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write how you say each time in English.</p>
+          <div class="exercise"><label>1. 3:00 → It's <input type="text" id="l6t1" data-answer="three o'clock" placeholder="?"></label></div>
+          <div class="exercise"><label>2. 8:15 → It's <input type="text" id="l6t2" data-answer="quarter past eight" placeholder="?"></label></div>
+          <div class="exercise"><label>3. 11:30 → It's <input type="text" id="l6t3" data-answer="half past eleven" placeholder="?"></label></div>
+          <div class="exercise"><label>4. 4:45 → It's <input type="text" id="l6t4" data-answer="quarter to five" placeholder="?"></label></div>
+          <div class="exercise"><label>5. 7:20 → It's <input type="text" id="l6t5" data-answer="twenty past seven" placeholder="?"></label></div>
+          <div class="exercise"><label>6. 2:50 → It's <input type="text" id="l6t6" data-answer="ten to three" placeholder="?"></label></div>
+          <button class="check-all-btn" onclick="checkAll('l6-time')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">2. Add the Frequency Adverb</button>
+      <div class="panel">
+        <div class="card" id="l6-freq">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Put the adverb in the correct place in the sentence.</p>
+          <div class="exercise"><label>1. I eat breakfast. (always) → <input type="text" id="l6f1" data-answer="i always eat breakfast" placeholder="?"></label></div>
+          <div class="exercise"><label>2. She is late for school. (never) → <input type="text" id="l6f2" data-answer="she is never late for school" placeholder="?"></label></div>
+          <div class="exercise"><label>3. They play football on weekends. (usually) → <input type="text" id="l6f3" data-answer="they usually play football on weekends" placeholder="?"></label></div>
+          <div class="exercise"><label>4. He watches horror films. (rarely) → <input type="text" id="l6f4" data-answer="he rarely watches horror films" placeholder="?"></label></div>
+          <div class="exercise"><label>5. We are happy in class. (always) → <input type="text" id="l6f5" data-answer="we are always happy in class" placeholder="?"></label></div>
+          <button class="check-all-btn" onclick="checkAll('l6-freq')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">3. My Week – Fill in the Blanks</button>
+      <div class="panel">
+        <div class="card" id="l6-week">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Complete with a suitable frequency adverb. (Multiple answers can be correct — accept any reasonable answer.)</p>
+          <div class="exercise"><label>1. I <input type="text" id="l6w1" data-answer="always" placeholder="?"> wake up at the same time on school days.</label></div>
+          <div class="exercise"><label>2. My team <input type="text" id="l6w2" data-answer="often" placeholder="?"> wins our matches.</label></div>
+          <div class="exercise"><label>3. I <input type="text" id="l6w3" data-answer="never" placeholder="?"> go to bed after midnight.</label></div>
+          <div class="exercise"><label>4. We <input type="text" id="l6w4" data-answer="sometimes" placeholder="?"> order pizza on Fridays.</label></div>
+          <button class="check-all-btn" onclick="checkAll('l6-week')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">4. Writing Task</button>
+      <div class="panel">
+        <div class="card">
+          <div class="writing-prompt">
+            <h4>✍️ My Perfect Weekend</h4>
+            <p>Write <strong>7 sentences</strong> about your ideal weekend. Include the time you do things AND frequency adverbs.</p>
+            <textarea rows="9" placeholder="On Saturday, I wake up at...&#10;I always...&#10;At half past...&#10;I usually...&#10;In the evening, I...&#10;I never...&#10;I go to bed at..."></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">5. Speaking Task</button>
+      <div class="panel">
+        <div class="card">
+          <div class="speaking-prompt">
+            <h4>🗣️ My Football / Game Schedule</h4>
+            <p>Tell your teacher about your training or gaming schedule. Say:</p>
+            <ul style="margin-left:18px; margin-top:6px; line-height:2;">
+              <li>What time you do things (use o'clock / half past / quarter to…)</li>
+              <li>How often (always / usually / sometimes / never)</li>
+            </ul>
+            <textarea rows="4" placeholder="Notes..."></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <nav class="page-nav">
+    <a href="L5_Articles_Nouns_Plurals.html">← Lesson 5</a>
+    <a href="L6_Telling_Time_Frequency_HW.html" class="hw-link">📝 Homework</a>
+    <a href="L7_Adjectives_Descriptions.html">Next Lesson →</a>
+  </nav>
+
+</div>
+<script src="shared-lesson.js"></script>
+</body>
+</html>

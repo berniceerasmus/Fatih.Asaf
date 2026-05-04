@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homework 2 – Subject Pronouns & Have / Has</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared-lesson.css" />
+</head>
+<body>
+<div class="container">
+
+  <header class="page-header">
+    <div class="lesson-badge-pill">Homework · Lesson 2</div>
+    <h1>Homework 2: Pronouns & Have/Has 📝</h1>
+    <p class="subtitle">Complete all exercises after the lesson.</p>
+  </header>
+
+  <div class="prog">
+    <span class="prog-lbl">Progress</span>
+    <div class="steps" id="lessonSteps"><div class="step"></div><div class="step"></div><div class="step"></div></div>
+    <span class="pct" id="lessonPct">0%</span>
+  </div>
+  <div class="score-bar">
+    <span class="score-lbl">Score</span>
+    <span class="score-num" id="scoreNum">0</span>
+    <span class="score-denom" id="scoreDen">/0</span>
+    <span class="score-stars" id="scoreStars"></span>
+  </div>
+
+  <section class="lesson-section">
+    <h2>Homework Practice</h2>
+
+    <div class="sec">
+      <button class="accordion">1. Have or Has – Complete the Sentences</button>
+      <div class="panel">
+        <div class="card" id="hw2-fill">
+          <div class="exercise"><label>1. My brother <input type="text" id="hw2f1" data-answer="has" placeholder="?"> a new bicycle.</label></div>
+          <div class="exercise"><label>2. I <input type="text" id="hw2f2" data-answer="don't have" placeholder="?"> a pet.</label></div>
+          <div class="exercise"><label>3. The eagle <input type="text" id="hw2f3" data-answer="has" placeholder="?"> very sharp eyes.</label></div>
+          <div class="exercise"><label>4. We <input type="text" id="hw2f4" data-answer="have" placeholder="?"> a match tomorrow.</label></div>
+          <div class="exercise"><label>5. She <input type="text" id="hw2f5" data-answer="doesn't have" placeholder="?"> a phone yet.</label></div>
+          <button class="check-all-btn" onclick="checkAll('hw2-fill')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">2. Pronoun Replacement</button>
+      <div class="panel">
+        <div class="card" id="hw2-pron">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Replace the bold word(s) with the correct pronoun.</p>
+          <div class="exercise"><label>1. <b>My cat</b> has green eyes. → <input type="text" id="hw2p1" data-answer="it" placeholder="?"> has green eyes.</label></div>
+          <div class="exercise"><label>2. <b>My parents</b> are at work. → <input type="text" id="hw2p2" data-answer="they" placeholder="?"> are at work.</label></div>
+          <div class="exercise"><label>3. <b>My best friend</b> is really funny. → <input type="text" id="hw2p3" data-answer="he" placeholder="?"> is really funny.</label></div>
+          <div class="exercise"><label>4. <b>My sister and I</b> love music. → <input type="text" id="hw2p4" data-answer="we" placeholder="?"> love music.</label></div>
+          <button class="check-all-btn" onclick="checkAll('hw2-pron')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">3. Writing Task</button>
+      <div class="panel">
+        <div class="card">
+          <div class="writing-prompt">
+            <h4>✍️ My Favourite Animal</h4>
+            <p>Write <strong>5–6 sentences</strong> about your favourite animal. Use <em>it has</em>, <em>it is</em>, and subject pronouns.</p>
+            <textarea rows="8" placeholder="My favourite animal is a...&#10;It is...&#10;It has...&#10;It doesn't have...&#10;I have / don't have one..."></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <nav class="page-nav">
+    <a href="L2_Subject_Pronouns_Have.html">← Back to Lesson</a>
+    <a href="L3_Present_Simple_Daily_Routines.html">Next Lesson →</a>
+  </nav>
+
+</div>
+<script src="shared-lesson.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 4 – Present Simple Questions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared-lesson.css" />
+</head>
+<body>
+<div class="container">
+
+  <header class="page-header">
+    <div class="lesson-badge-pill">Phase 1 · Lesson 4</div>
+    <h1>Present Simple Questions ❓</h1>
+    <p class="subtitle">Learn to ask and answer questions with Do and Does.</p>
+  </header>
+
+  <div class="prog">
+    <span class="prog-lbl">Progress</span>
+    <div class="steps" id="lessonSteps"><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div></div>
+    <span class="pct" id="lessonPct">0%</span>
+  </div>
+  <div class="score-bar">
+    <span class="score-lbl">Score</span>
+    <span class="score-num" id="scoreNum">0</span>
+    <span class="score-denom" id="scoreDen">/0</span>
+    <span class="score-stars" id="scoreStars"></span>
+  </div>
+
+  <!-- WARM-UP -->
+  <section class="lesson-section">
+    <h2>Warm-Up</h2>
+    <div class="warmup-box">
+      <h3>🔥 Quick Questions (3 minutes)</h3>
+      <p>Your teacher will ask you these questions. Answer in full sentences!</p>
+      <ul style="margin-top:10px; margin-left:20px; line-height:2.2;">
+        <li>Do you play football?</li>
+        <li>Do you like animals?</li>
+        <li>Does your mum cook every day?</li>
+        <li>Does your best friend like video games?</li>
+      </ul>
+      <p style="margin-top:10px; font-size:0.9rem; color:#6b7280;">Answer: <em>"Yes, I do."</em> / <em>"No, I don't."</em> / full sentence!</p>
+    </div>
+  </section>
+
+  <!-- PRESENTATION -->
+  <section class="lesson-section">
+    <h2>Presentation</h2>
+
+    <div class="grammar-box">
+      <h3>📌 How to Make Questions</h3>
+      <table>
+        <thead><tr><th>Subject</th><th>Helper verb</th><th>Example Question</th><th>Short Answer</th></tr></thead>
+        <tbody>
+          <tr><td>I / You / We / They</td><td><strong>Do</strong></td><td><strong>Do</strong> you play football?</td><td>Yes, I do. / No, I don't.</td></tr>
+          <tr><td>He / She / It</td><td><strong>Does</strong></td><td><strong>Does</strong> he play football?</td><td>Yes, he does. / No, he doesn't.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grammar-box">
+      <h3>📌 Wh- Questions</h3>
+      <table>
+        <thead><tr><th>Wh- word</th><th>Structure</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td>What</td><td>What do/does + subject + verb?</td><td>What <strong>do</strong> you eat for breakfast?</td></tr>
+          <tr><td>When</td><td>When do/does + subject + verb?</td><td>When <strong>does</strong> he wake up?</td></tr>
+          <tr><td>Where</td><td>Where do/does + subject + go?</td><td>Where <strong>do</strong> they play?</td></tr>
+          <tr><td>How often</td><td>How often do/does + subject + verb?</td><td>How often <strong>do</strong> you train?</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="example-box">
+      ✅ <strong>Do</strong> you like action movies? — Yes, I do!<br>
+      ✅ <strong>Does</strong> your friend play Minecraft? — No, he doesn't.<br>
+      ✅ <strong>What</strong> do you do after school? — I play football.<br>
+      ✅ <strong>When does</strong> the match start? — It starts at 5 o'clock.<br>
+      ✅ <strong>How often do</strong> you train? — Three times a week.
+    </div>
+
+    <div class="tip-box">
+      💡 <strong>Important:</strong> When you use <em>does</em>, the main verb goes back to the base form — no -s!<br>
+      ❌ Does he <u>plays</u>? &nbsp;&nbsp; ✅ Does he <u>play</u>?
+    </div>
+  </section>
+
+  <!-- PRACTICE -->
+  <section class="lesson-section">
+    <h2>Practice</h2>
+
+    <!-- 1. Do or Does -->
+    <div class="sec">
+      <button class="accordion">1. Do or Does?</button>
+      <div class="panel">
+        <div class="card" id="l4-dodo">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Fill in <strong>do</strong> or <strong>does</strong>.</p>
+          <div class="exercise"><label>1. <input type="text" id="l4d1" data-answer="do" placeholder="?"> you like cats?</label></div>
+          <div class="exercise"><label>2. <input type="text" id="l4d2" data-answer="does" placeholder="?"> she speak English?</label></div>
+          <div class="exercise"><label>3. <input type="text" id="l4d3" data-answer="do" placeholder="?"> they train on Saturdays?</label></div>
+          <div class="exercise"><label>4. <input type="text" id="l4d4" data-answer="does" placeholder="?"> your brother play video games?</label></div>
+          <div class="exercise"><label>5. <input type="text" id="l4d5" data-answer="do" placeholder="?"> we have school tomorrow?</label></div>
+          <div class="exercise"><label>6. <input type="text" id="l4d6" data-answer="does" placeholder="?"> the dog eat twice a day?</label></div>
+          <button class="check-all-btn" onclick="checkAll('l4-dodo')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Write short answers -->
+    <div class="sec">
+      <button class="accordion">2. Short Answers</button>
+      <div class="panel">
+        <div class="card" id="l4-short">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write the correct short answer.</p>
+          <div class="exercise"><label>1. Do you play football? (✓) → <input type="text" id="l4s1" data-answer="yes, i do" placeholder="?"></label></div>
+          <div class="exercise"><label>2. Does she like music? (✗) → <input type="text" id="l4s2" data-answer="no, she doesn't" placeholder="?"></label></div>
+          <div class="exercise"><label>3. Do they have a dog? (✓) → <input type="text" id="l4s3" data-answer="yes, they do" placeholder="?"></label></div>
+          <div class="exercise"><label>4. Does he go to bed early? (✗) → <input type="text" id="l4s4" data-answer="no, he doesn't" placeholder="?"></label></div>
+          <div class="exercise"><label>5. Do you study every day? (✓) → <input type="text" id="l4s5" data-answer="yes, i do" placeholder="?"></label></div>
+          <button class="check-all-btn" onclick="checkAll('l4-short')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Make the question -->
+    <div class="sec">
+      <button class="accordion">3. Write the Question</button>
+      <div class="panel">
+        <div class="card" id="l4-q">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Turn the sentence into a yes/no question.</p>
+          <div class="exercise"><label>1. You like hip-hop music. → <input type="text" id="l4q1" data-answer="do you like hip-hop music" placeholder="?"></label></div>
+          <div class="exercise"><label>2. He watches football on TV. → <input type="text" id="l4q2" data-answer="does he watch football on tv" placeholder="?"></label></div>
+          <div class="exercise"><label>3. They play games every evening. → <input type="text" id="l4q3" data-answer="do they play games every evening" placeholder="?"></label></div>
+          <div class="exercise"><label>4. She has a pet cat. → <input type="text" id="l4q4" data-answer="does she have a pet cat" placeholder="?"></label></div>
+          <button class="check-all-btn" onclick="checkAll('l4-q')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Word order - wh questions -->
+    <div class="sec">
+      <button class="accordion">4. Wh- Question Order</button>
+      <div class="panel">
+        <div class="card">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Put the words in the correct order to make a Wh- question.</p>
+          <div class="order-sentence">
+            <p>1. do / what / eat / you / for lunch</p>
+            <input type="text" id="l4o1" data-answer="what do you eat for lunch" placeholder="Write the full question">
+            <button class="check-btn" onclick="checkById('l4o1')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>2. does / when / school / start</p>
+            <input type="text" id="l4o2" data-answer="when does school start" placeholder="Write the full question">
+            <button class="check-btn" onclick="checkById('l4o2')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>3. often / you / do / how / train</p>
+            <input type="text" id="l4o3" data-answer="how often do you train" placeholder="Write the full question">
+            <button class="check-btn" onclick="checkById('l4o3')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>4. does / where / your family / live</p>
+            <input type="text" id="l4o4" data-answer="where does your family live" placeholder="Write the full question">
+            <button class="check-btn" onclick="checkById('l4o4')">✓</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. Speaking: Interview -->
+    <div class="sec">
+      <button class="accordion">5. Speaking Task – Mini Interview</button>
+      <div class="panel">
+        <div class="card">
+          <div class="speaking-prompt">
+            <h4>🗣️ Interview Your Teacher!</h4>
+            <p>Write <strong>5 questions</strong> to ask your teacher using <em>Do you…?</em> and <em>Does your…?</em> Then ask them!</p>
+            <p style="font-size:0.85rem; margin-top:6px; color:var(--muted);">Topics: food, sports, animals, music, free time, games, daily routine.</p>
+            <textarea rows="8" placeholder="1. Do you like...?&#10;2. Do you have...?&#10;3. Does your... ?&#10;4. What do you...?&#10;5. How often do you...?"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <nav class="page-nav">
+    <a href="L3_Present_Simple_Daily_Routines.html">← Lesson 3</a>
+    <a href="L4_Present_Simple_Questions_HW.html" class="hw-link">📝 Homework</a>
+    <a href="L5_Articles_Nouns_Plurals.html">Next Lesson →</a>
+  </nav>
+
+</div>
+<script src="shared-lesson.js"></script>
+</body>
+</html>
