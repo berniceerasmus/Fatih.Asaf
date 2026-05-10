@@ -6,6 +6,20 @@
   <title>Homework 2 – Subject Pronouns & Have / Has</title>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="shared-lesson.css" />
+  <style>
+    .mc-options { display:flex; flex-wrap:wrap; gap:10px; margin-top:10px; }
+    .mc-btn { background:#f0f4ff; border:2px solid #c5d0f0; border-radius:10px; padding:8px 18px; font-size:0.95rem; font-family:'Nunito',sans-serif; font-weight:700; cursor:pointer; transition:all .2s; }
+    .mc-btn:hover { background:#dce6ff; }
+    .mc-btn.correct { background:#d4f5e2; border-color:#2ecc71; color:#1a7a45; }
+    .mc-btn.wrong { background:#fde8e8; border-color:#e74c3c; color:#a12020; }
+    .match-row { display:flex; align-items:center; gap:10px; margin-bottom:10px; flex-wrap:wrap; }
+    .match-left { background:#e8f0fe; border-radius:8px; padding:7px 14px; font-weight:700; min-width:160px; font-size:0.92rem; }
+    .match-select { border:2px solid #c5d0f0; border-radius:8px; padding:7px 10px; font-family:'Nunito',sans-serif; font-weight:600; font-size:0.9rem; background:#fff; cursor:pointer; }
+    .match-select.correct { border-color:#2ecc71; background:#d4f5e2; }
+    .match-select.wrong { border-color:#e74c3c; background:#fde8e8; }
+    .reading-box { background:#f7f9ff; border-left:4px solid #4a90d9; border-radius:10px; padding:16px 18px; margin-bottom:16px; font-size:0.95rem; line-height:1.7; }
+    .reading-box strong { color:#1d6fa4; }
+  </style>
 </head>
 <body>
 <div class="container">
@@ -18,7 +32,7 @@
 
   <div class="prog">
     <span class="prog-lbl">Progress</span>
-    <div class="steps" id="lessonSteps"><div class="step"></div><div class="step"></div><div class="step"></div></div>
+    <div class="steps" id="lessonSteps"><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div></div>
     <span class="pct" id="lessonPct">0%</span>
   </div>
   <div class="score-bar">
@@ -31,6 +45,7 @@
   <section class="lesson-section">
     <h2>Homework Practice</h2>
 
+    <!-- 1. Have or Has -->
     <div class="sec">
       <button class="accordion">1. Have or Has – Complete the Sentences</button>
       <div class="panel">
@@ -40,33 +55,332 @@
           <div class="exercise"><label>3. The eagle <input type="text" id="hw2f3" data-answer="has" placeholder="?"> very sharp eyes.</label></div>
           <div class="exercise"><label>4. We <input type="text" id="hw2f4" data-answer="have" placeholder="?"> a match tomorrow.</label></div>
           <div class="exercise"><label>5. She <input type="text" id="hw2f5" data-answer="doesn't have" placeholder="?"> a phone yet.</label></div>
+          <div class="exercise"><label>6. The shark <input type="text" id="hw2f6" data-answer="has" placeholder="?"> very sharp teeth.</label></div>
+          <div class="exercise"><label>7. My parents <input type="text" id="hw2f7" data-answer="have" placeholder="?"> a car.</label></div>
+          <div class="exercise"><label>8. He <input type="text" id="hw2f8" data-answer="doesn't have" placeholder="?"> a sister.</label></div>
+          <div class="exercise"><label>9. The cheetah <input type="text" id="hw2f9" data-answer="has" placeholder="?"> spots on its body.</label></div>
+          <div class="exercise"><label>10. You and I <input type="text" id="hw2f10" data-answer="have" placeholder="?"> a lot in common.</label></div>
           <button class="check-all-btn" onclick="checkAll('hw2-fill')">✓ Check All</button>
         </div>
       </div>
     </div>
 
+    <!-- 2. Multiple Choice - Pronouns -->
     <div class="sec">
-      <button class="accordion">2. Pronoun Replacement</button>
+      <button class="accordion">2. Multiple Choice – Which Pronoun?</button>
+      <div class="panel">
+        <div class="card">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Choose the correct subject pronoun.</p>
+          <div class="exercise" style="margin-bottom:18px;">
+            <p>1. _____ is my best friend. (talking about a boy)</p>
+            <div class="mc-options">
+              <button class="mc-btn" onclick="checkMC(this,'wrong')">She</button>
+              <button class="mc-btn" onclick="checkMC(this,'correct')">He</button>
+              <button class="mc-btn" onclick="checkMC(this,'wrong')">It</button>
+            </div>
+          </div>
+          <div class="exercise" style="margin-bottom:18px;">
+            <p>2. _____ are in the same team. (me + my friends)</p>
+            <div class="mc-options">
+              <button class="mc-btn" onclick="checkMC(this,'wrong')">They</button>
+              <button class="mc-btn" onclick="checkMC(this,'correct')">We</button>
+              <button class="mc-btn" onclick="checkMC(this,'wrong')">You</button>
+            </div>
+          </div>
+          <div class="exercise" style="margin-bottom:18px;">
+            <p>3. _____ has a long tail. (talking about a cat)</p>
+            <div class="mc-options">
+              <button class="mc-btn" onclick="checkMC(this,'wrong')">He</button>
+              <button class="mc-btn" onclick="checkMC(this,'wrong')">She</button>
+              <button class="mc-btn" onclick="checkMC(this,'correct')">It</button>
+            </div>
+          </div>
+          <div class="exercise" style="margin-bottom:18px;">
+            <p>4. _____ have three dogs. (talking about two boys)</p>
+            <div class="mc-options">
+              <button class="mc-btn" onclick="checkMC(this,'correct')">They</button>
+              <button class="mc-btn" onclick="checkMC(this,'wrong')">We</button>
+              <button class="mc-btn" onclick="checkMC(this,'wrong')">He</button>
+            </div>
+          </div>
+          <div class="exercise" style="margin-bottom:18px;">
+            <p>5. _____ is my favourite teacher. (talking about a woman)</p>
+            <div class="mc-options">
+              <button class="mc-btn" onclick="checkMC(this,'wrong')">He</button>
+              <button class="mc-btn" onclick="checkMC(this,'correct')">She</button>
+              <button class="mc-btn" onclick="checkMC(this,'wrong')">It</button>
+            </div>
+          </div>
+          <div class="exercise" style="margin-bottom:18px;">
+            <p>6. _____ don't have homework today. (talking about yourself)</p>
+            <div class="mc-options">
+              <button class="mc-btn" onclick="checkMC(this,'correct')">I</button>
+              <button class="mc-btn" onclick="checkMC(this,'wrong')">He</button>
+              <button class="mc-btn" onclick="checkMC(this,'wrong')">They</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Pronoun Replacement -->
+    <div class="sec">
+      <button class="accordion">3. Pronoun Replacement</button>
       <div class="panel">
         <div class="card" id="hw2-pron">
           <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Replace the bold word(s) with the correct pronoun.</p>
           <div class="exercise"><label>1. <b>My cat</b> has green eyes. → <input type="text" id="hw2p1" data-answer="it" placeholder="?"> has green eyes.</label></div>
           <div class="exercise"><label>2. <b>My parents</b> are at work. → <input type="text" id="hw2p2" data-answer="they" placeholder="?"> are at work.</label></div>
-          <div class="exercise"><label>3. <b>My best friend</b> is really funny. → <input type="text" id="hw2p3" data-answer="he" placeholder="?"> is really funny.</label></div>
+          <div class="exercise"><label>3. <b>My best friend</b> (a boy) is really funny. → <input type="text" id="hw2p3" data-answer="he" placeholder="?"> is really funny.</label></div>
           <div class="exercise"><label>4. <b>My sister and I</b> love music. → <input type="text" id="hw2p4" data-answer="we" placeholder="?"> love music.</label></div>
+          <div class="exercise"><label>5. <b>The lion</b> has a big mane. → <input type="text" id="hw2p5" data-answer="it" placeholder="?"> has a big mane.</label></div>
+          <div class="exercise"><label>6. <b>Ms. Demir</b> is a great teacher. → <input type="text" id="hw2p6" data-answer="she" placeholder="?"> is a great teacher.</label></div>
+          <div class="exercise"><label>7. <b>My teammates</b> are very fast. → <input type="text" id="hw2p7" data-answer="they" placeholder="?"> are very fast.</label></div>
           <button class="check-all-btn" onclick="checkAll('hw2-pron')">✓ Check All</button>
         </div>
       </div>
     </div>
 
+    <!-- 4. Matching – Pronoun to Have/Has -->
     <div class="sec">
-      <button class="accordion">3. Writing Task</button>
+      <button class="accordion">4. Matching – Pronoun + have or has?</button>
       <div class="panel">
         <div class="card">
-          <div class="writing-prompt">
-            <h4>✍️ My Favourite Animal</h4>
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Choose <em>have</em> or <em>has</em> for each subject.</p>
+          <div class="match-row"><span class="match-left">I</span><select class="match-select" data-answer="have" onchange="checkMatch(this)"><option value="">–</option><option>have</option><option>has</option></select></div>
+          <div class="match-row"><span class="match-left">He</span><select class="match-select" data-answer="has" onchange="checkMatch(this)"><option value="">–</option><option>have</option><option>has</option></select></div>
+          <div class="match-row"><span class="match-left">She</span><select class="match-select" data-answer="has" onchange="checkMatch(this)"><option value="">–</option><option>have</option><option>has</option></select></div>
+          <div class="match-row"><span class="match-left">It</span><select class="match-select" data-answer="has" onchange="checkMatch(this)"><option value="">–</option><option>have</option><option>has</option></select></div>
+          <div class="match-row"><span class="match-left">We</span><select class="match-select" data-answer="have" onchange="checkMatch(this)"><option value="">–</option><option>have</option><option>has</option></select></div>
+          <div class="match-row"><span class="match-left">They</span><select class="match-select" data-answer="have" onchange="checkMatch(this)"><option value="">–</option><option>have</option><option>has</option></select></div>
+          <div class="match-row"><span class="match-left">You</span><select class="match-select" data-answer="have" onchange="checkMatch(this)"><option value="">–</option><option>have</option><option>has</option></select></div>
+          <div class="match-row"><span class="match-left">My dog</span><select class="match-select" data-answer="has" onchange="checkMatch(this)"><option value="">–</option><option>have</option><option>has</option></select></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. Word Order -->
+    <div class="sec">
+      <button class="accordion">5. Word Order</button>
+      <div class="panel">
+        <div class="card">
+          <div class="order-sentence">
+            <p>1. has / brother / my / new / a / bike</p>
+            <input type="text" id="hw2o1" data-answer="my brother has a new bike" placeholder="Write the full sentence">
+            <button class="check-btn" onclick="checkById('hw2o1')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>2. don't / I / pet / have / a</p>
+            <input type="text" id="hw2o2" data-answer="i don't have a pet" placeholder="Write the full sentence">
+            <button class="check-btn" onclick="checkById('hw2o2')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>3. they / in / same / the / team / are</p>
+            <input type="text" id="hw2o3" data-answer="they are in the same team" placeholder="Write the full sentence">
+            <button class="check-btn" onclick="checkById('hw2o3')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>4. has / eagle / sharp / the / eyes</p>
+            <input type="text" id="hw2o4" data-answer="the eagle has sharp eyes" placeholder="Write the full sentence">
+            <button class="check-btn" onclick="checkById('hw2o4')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>5. doesn't / she / a / have / phone</p>
+            <input type="text" id="hw2o5" data-answer="she doesn't have a phone" placeholder="Write the full sentence">
+            <button class="check-btn" onclick="checkById('hw2o5')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>6. have / we / game / a / tomorrow</p>
+            <input type="text" id="hw2o6" data-answer="we have a game tomorrow" placeholder="Write the full sentence">
+            <button class="check-btn" onclick="checkById('hw2o6')">✓</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. Negatives -->
+    <div class="sec">
+      <button class="accordion">6. Make It Negative</button>
+      <div class="panel">
+        <div class="card" id="hw2-neg">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Change each sentence to negative using <em>don't have</em> or <em>doesn't have</em>.</p>
+          <div class="exercise"><label>1. I have a bicycle. → I <input type="text" id="hw2n1" data-answer="don't have" placeholder="?"> a bicycle.</label></div>
+          <div class="exercise"><label>2. She has a dog. → She <input type="text" id="hw2n2" data-answer="doesn't have" placeholder="?"> a dog.</label></div>
+          <div class="exercise"><label>3. They have a garden. → They <input type="text" id="hw2n3" data-answer="don't have" placeholder="?"> a garden.</label></div>
+          <div class="exercise"><label>4. He has a brother. → He <input type="text" id="hw2n4" data-answer="doesn't have" placeholder="?"> a brother.</label></div>
+          <div class="exercise"><label>5. We have homework. → We <input type="text" id="hw2n5" data-answer="don't have" placeholder="?"> homework.</label></div>
+          <button class="check-all-btn" onclick="checkAll('hw2-neg')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. Reading -->
+    <div class="sec">
+      <button class="accordion">7. Reading – Superheroes and Animals!</button>
+      <div class="panel">
+        <div class="card">
+          <div class="reading-box">
+            <strong>My name is Kerem.</strong> I have a pet snake. Its name is Spike. It has yellow and black scales. It doesn't have legs — it moves very fast without them! My sister has a rabbit. She calls it Fluffy. Fluffy has long ears and a small nose. My dad doesn't have any pets. He thinks animals are a lot of work. But he loves watching nature documentaries. We all have different interests!
+          </div>
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Answer the questions about the text.</p>
+          <div class="order-sentence">
+            <p>1. Does Kerem have a pet?</p>
+            <input type="text" id="hw2r1" data-answer="yes, he does" placeholder="Your answer">
+            <button class="check-btn" onclick="checkById('hw2r1')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>2. Does Spike have legs?</p>
+            <input type="text" id="hw2r2" data-answer="no, it doesn't" placeholder="Your answer">
+            <button class="check-btn" onclick="checkById('hw2r2')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>3. What does Fluffy have? (write a sentence)</p>
+            <input type="text" id="hw2r3" data-answer="it has long ears and a small nose" placeholder="It has...">
+            <button class="check-btn" onclick="checkById('hw2r3')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>4. Does Kerem's dad have a pet?</p>
+            <input type="text" id="hw2r4" data-answer="no, he doesn't" placeholder="Your answer">
+            <button class="check-btn" onclick="checkById('hw2r4')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>5. What colour is Spike? (write a sentence)</p>
+            <input type="text" id="hw2r5" data-answer="it has yellow and black scales" placeholder="It has...">
+            <button class="check-btn" onclick="checkById('hw2r5')">✓</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. Error Correction -->
+    <div class="sec">
+      <button class="accordion">8. Fix the Mistake ❌</button>
+      <div class="panel">
+        <div class="card">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Each sentence has one mistake. Write the correct sentence.</p>
+          <div class="order-sentence">
+            <p>1. She have a new phone. ❌</p>
+            <input type="text" id="hw2e1" data-answer="she has a new phone" placeholder="Correct sentence">
+            <button class="check-btn" onclick="checkById('hw2e1')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>2. He don't have a pet. ❌</p>
+            <input type="text" id="hw2e2" data-answer="he doesn't have a pet" placeholder="Correct sentence">
+            <button class="check-btn" onclick="checkById('hw2e2')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>3. My cats has green eyes. ❌</p>
+            <input type="text" id="hw2e3" data-answer="my cats have green eyes" placeholder="Correct sentence">
+            <button class="check-btn" onclick="checkById('hw2e3')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>4. We has a big garden. ❌</p>
+            <input type="text" id="hw2e4" data-answer="we have a big garden" placeholder="Correct sentence">
+            <button class="check-btn" onclick="checkById('hw2e4')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>5. Them are my friends. ❌</p>
+            <input type="text" id="hw2e5" data-answer="they are my friends" placeholder="Correct sentence">
+            <button class="check-btn" onclick="checkById('hw2e5')">✓</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9. Questions with have/has -->
+    <div class="sec">
+      <button class="accordion">9. Write the Question</button>
+      <div class="panel">
+        <div class="card" id="hw2-q">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write a question for each answer.</p>
+          <div class="exercise"><label>A: Yes, she has a dog. → Q: <input type="text" id="hw2q1" data-answer="does she have a dog" placeholder="Does she...?"></label></div>
+          <div class="exercise"><label>A: No, I don't have a phone. → Q: <input type="text" id="hw2q2" data-answer="do you have a phone" placeholder="Do you...?"></label></div>
+          <div class="exercise"><label>A: Yes, he has two brothers. → Q: <input type="text" id="hw2q3" data-answer="does he have two brothers" placeholder="Does he...?"></label></div>
+          <div class="exercise"><label>A: No, they don't have homework. → Q: <input type="text" id="hw2q4" data-answer="do they have homework" placeholder="Do they...?"></label></div>
+          <button class="check-all-btn" onclick="checkAll('hw2-q')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 10. Sentence writing from prompts -->
+    <div class="sec">
+      <button class="accordion">10. Build Sentences</button>
+      <div class="panel">
+        <div class="card">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Use the prompt to write a full sentence with <em>have/has</em> or a pronoun.</p>
+          <div class="order-sentence">
+            <p>1. (tiger / long claws)</p>
+            <input type="text" id="hw2w1" data-answer="a tiger has long claws" placeholder="A tiger...">
+            <button class="check-btn" onclick="checkById('hw2w1')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>2. (I / not / car)</p>
+            <input type="text" id="hw2w2" data-answer="i don't have a car" placeholder="I...">
+            <button class="check-btn" onclick="checkById('hw2w2')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>3. (my class / 25 students)</p>
+            <input type="text" id="hw2w3" data-answer="my class has 25 students" placeholder="My class...">
+            <button class="check-btn" onclick="checkById('hw2w3')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>4. (we / great / team)</p>
+            <input type="text" id="hw2w4" data-answer="we have a great team" placeholder="We...">
+            <button class="check-btn" onclick="checkById('hw2w4')">✓</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 11. True or False -->
+    <div class="sec">
+      <button class="accordion">11. Grammar Rules – True or False?</button>
+      <div class="panel">
+        <div class="card">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write <strong>True</strong> or <strong>False</strong>.</p>
+          <div class="order-sentence">
+            <p>1. "He" and "She" use "has".</p>
+            <input type="text" id="hw2tf1" data-answer="true" placeholder="True / False">
+            <button class="check-btn" onclick="checkById('hw2tf1')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>2. "They" uses "has".</p>
+            <input type="text" id="hw2tf2" data-answer="false" placeholder="True / False">
+            <button class="check-btn" onclick="checkById('hw2tf2')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>3. "I haven't a pen" is correct English.</p>
+            <input type="text" id="hw2tf3" data-answer="false" placeholder="True / False">
+            <button class="check-btn" onclick="checkById('hw2tf3')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>4. "It" uses "has".</p>
+            <input type="text" id="hw2tf4" data-answer="true" placeholder="True / False">
+            <button class="check-btn" onclick="checkById('hw2tf4')">✓</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 12. Writing Tasks -->
+    <div class="sec">
+      <button class="accordion">12. Writing Tasks ✍️</button>
+      <div class="panel">
+        <div class="card">
+          <div class="writing-prompt" style="margin-bottom:20px;">
+            <h4>✍️ A. My Favourite Animal</h4>
             <p>Write <strong>5–6 sentences</strong> about your favourite animal. Use <em>it has</em>, <em>it is</em>, and subject pronouns.</p>
             <textarea rows="8" placeholder="My favourite animal is a...&#10;It is...&#10;It has...&#10;It doesn't have...&#10;I have / don't have one..."></textarea>
+          </div>
+          <div class="writing-prompt" style="margin-bottom:20px;">
+            <h4>✍️ B. My Family</h4>
+            <p>Write <strong>5 sentences</strong> about your family. Say what they have or don't have. Use pronouns (he, she, they).</p>
+            <textarea rows="7" placeholder="My mum has...&#10;She doesn't have...&#10;My dad has...&#10;He is...&#10;My brother/sister has..."></textarea>
+          </div>
+          <div class="writing-prompt">
+            <h4>✍️ C. A Superhero of Your Choice</h4>
+            <p>Describe a superhero (real or made up!). Write <strong>5 sentences</strong> using <em>has / doesn't have / he / she / it</em>.</p>
+            <textarea rows="7" placeholder="My superhero's name is...&#10;He/She has...&#10;He/She doesn't have...&#10;His/Her power is...&#10;He/She is..."></textarea>
           </div>
         </div>
       </div>
@@ -81,5 +395,17 @@
 
 </div>
 <script src="shared-lesson.js"></script>
+<script>
+function checkMC(btn, result) {
+  const group = btn.closest('.mc-options');
+  group.querySelectorAll('.mc-btn').forEach(b => b.classList.remove('correct','wrong'));
+  btn.classList.add(result);
+}
+function checkMatch(sel) {
+  sel.classList.remove('correct','wrong');
+  if(sel.value === sel.dataset.answer) sel.classList.add('correct');
+  else if(sel.value) sel.classList.add('wrong');
+}
+</script>
 </body>
 </html>
