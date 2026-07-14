@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booster Homework – The, Zero Article & Countable / Uncountable</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream:#f0f7ff;--c1:#1d6fa4;--c1d:rgba(29,111,164,.10);--c2:#0ea47a;
+      --c2d:rgba(14,164,122,.10);--c3:#f59e0b;--c3d:rgba(245,158,11,.13);
+      --c4:#3b82f6;--c4d:rgba(59,130,246,.10);--c5:#10b981;--c5d:rgba(16,185,129,.12);
+      --c6:#ef4444;--c6d:rgba(239,68,68,.10);--c7:#8b5cf6;--c7d:rgba(139,92,246,.10);
+      --text:#1e293b;--muted:#64748b;--border:#bfdbfe;--surf:#f8fbff;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{font-family:'Nunito',sans-serif;background:var(--cream);color:var(--text);line-height:1.7;}
+    body::before{content:'';position:fixed;inset:0;background-image:radial-gradient(circle,rgba(29,111,164,.05) 1px,transparent 1px);background-size:44px 44px;pointer-events:none;z-index:0;}
+    .container{max-width:840px;margin:0 auto;padding:34px 16px 80px;position:relative;z-index:1;}
+    .page-header{background:linear-gradient(135deg,#1d6fa4,#0ea47a,#3b82f6);border-radius:22px;padding:26px 28px 28px;margin-bottom:16px;color:#fff;}
+    .lesson-badge-pill{display:inline-block;background:rgba(255,255,255,.25);border:2px solid rgba(255,255,255,.35);border-radius:50px;padding:3px 13px;font-size:11px;font-weight:900;color:#fff;letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px;}
+    .page-header h1{font-family:'Fredoka One',cursive;font-size:clamp(19px,4.5vw,32px);color:#fff;line-height:1.1;margin-bottom:7px;}
+    .page-header .subtitle{font-size:13px;color:rgba(255,255,255,.88);font-weight:700;}
+    .prog{background:var(--surf);border:2px solid var(--border);border-radius:13px;padding:11px 15px;display:flex;align-items:center;gap:12px;margin-bottom:16px;}
+    .prog-lbl{font-size:10px;font-weight:900;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;white-space:nowrap;}
+    .steps{display:flex;gap:4px;flex:1;}
+    .step{flex:1;height:8px;border-radius:8px;background:var(--border);transition:background .3s;}
+    .step.done{background:var(--c1);}.step.active{background:var(--c3);}
+    .pct{font-family:'Fredoka One',cursive;font-size:15px;color:var(--c1);}
+    .score-bar{background:var(--surf);border:2px solid var(--border);border-radius:13px;padding:10px 16px;display:flex;align-items:center;gap:12px;margin-bottom:16px;font-size:13px;font-weight:700;}
+    .score-lbl{font-size:10px;font-weight:900;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;}
+    .score-num{font-family:'Fredoka One',cursive;font-size:22px;color:var(--c1);line-height:1;}
+    .score-denom{font-size:13px;color:var(--muted);font-weight:900;}
+    .score-stars{font-size:16px;margin-left:auto;}
+    .lesson-section{margin-bottom:6px;}
+    .lesson-section>h2{font-family:'Fredoka One',cursive;font-size:17px;color:var(--text);margin:18px 0 9px;}
+    .sec{background:var(--surf);border:2px solid var(--border);border-radius:18px;margin-bottom:11px;overflow:hidden;}
+    .accordion{display:flex;align-items:center;gap:11px;width:100%;padding:13px 18px;border:none;border-bottom:2px dashed var(--border);background:transparent;cursor:pointer;user-select:none;font-family:'Nunito',sans-serif;font-weight:800;font-size:15px;color:var(--text);text-align:left;transition:background .15s;}
+    .accordion:hover{background:var(--c1d);}
+    .panel{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s;padding:0 18px;background:var(--surf);}
+    .panel.open{max-height:6000px;padding:16px 18px 22px;}
+    .instr{background:var(--c3d);border:2px solid var(--c3);border-radius:9px;padding:7px 11px;font-size:12.5px;font-weight:700;color:#78350f;margin-bottom:10px;line-height:1.6;}
+    .exercise{display:flex;flex-wrap:wrap;align-items:center;gap:5px;background:var(--cream);border:2px solid var(--border);border-radius:11px;padding:9px 11px;margin-bottom:6px;font-size:13px;font-weight:700;line-height:1.9;}
+    input[type="text"]{border:none;border-bottom:2.5px solid var(--border);background:transparent;font-family:'Nunito',sans-serif;font-size:13px;font-weight:800;color:var(--text);outline:none;min-width:80px;text-align:center;padding:2px 5px;transition:border-color .2s;vertical-align:middle;}
+    input[type="text"]:focus{border-bottom-color:var(--c1);}
+    input[type="text"].correct{border-bottom-color:var(--c5);color:var(--c5);background:rgba(16,185,129,.08);border-radius:4px;}
+    input[type="text"].incorrect{border-bottom-color:var(--c6);color:var(--c6);background:var(--c6d);border-radius:4px;}
+    .check-btn{background:var(--c1);color:#fff;border:none;border-radius:50px;padding:3px 10px;font-family:'Nunito',sans-serif;font-size:11px;font-weight:900;cursor:pointer;transition:background .15s;vertical-align:middle;margin-left:4px;}
+    .check-btn:hover{background:var(--c2);}
+    .check-all-btn{width:100%;color:#fff;border:none;border-radius:12px;padding:12px;font-family:'Fredoka One',cursive;font-size:16px;cursor:pointer;margin-top:10px;background:linear-gradient(135deg,var(--c1),var(--c4));transition:transform .15s;}
+    .check-all-btn:hover{transform:translateY(-1px);}
+    .order-sentence{background:var(--cream);border:2px solid var(--border);border-radius:11px;padding:10px 12px;margin-bottom:7px;}
+    .order-sentence p{font-size:12px;font-weight:900;color:var(--muted);margin-bottom:6px;font-style:italic;}
+    .order-sentence input[type="text"]{width:calc(100% - 60px);min-width:unset;text-align:left;}
+    .writing-prompt{background:var(--c2d);border:2px solid rgba(14,164,122,.3);border-radius:12px;padding:12px 14px;font-size:13px;font-weight:700;}
+    .writing-prompt h4{font-family:'Fredoka One',cursive;font-size:14px;color:var(--c2);margin-bottom:5px;}
+    textarea{width:100%;border:2px solid var(--border);border-radius:9px;padding:10px 12px;font-family:'Nunito',sans-serif;font-size:13px;font-weight:700;color:var(--text);background:var(--cream);resize:vertical;margin-top:8px;transition:border-color .2s;line-height:1.7;outline:none;}
+    textarea:focus{border-color:var(--c1);background:var(--surf);}
+    .tr-badge{display:inline-block;background:rgba(139,92,246,.15);border:1.5px solid var(--c7);border-radius:6px;padding:1px 7px;font-size:11px;font-weight:900;color:var(--c7);margin-left:6px;vertical-align:middle;font-style:italic;}
+    .page-nav{display:flex;justify-content:center;align-items:center;margin-top:24px;gap:10px;flex-wrap:wrap;}
+    .page-nav a{display:inline-block;padding:10px 22px;border-radius:50px;border:2.5px solid var(--border);background:var(--surf);font-family:'Fredoka One',cursive;font-size:13px;transition:all .18s;color:var(--muted);text-decoration:none;}
+    .page-nav a:hover{transform:translateY(-2px);border-color:var(--c1);color:var(--c1);}
+    .grammar-box{border-radius:13px;padding:13px 15px;margin-bottom:13px;border:2px solid var(--c2);background:var(--c2d);}
+    .grammar-box h3{font-family:'Fredoka One',cursive;font-size:14px;margin-bottom:8px;color:var(--c2);}
+    .grammar-box table{width:100%;border-collapse:collapse;font-size:13px;border-radius:12px;overflow:hidden;border:2px solid var(--border);}
+    .grammar-box thead tr{background:linear-gradient(90deg,var(--c1),var(--c4));}
+    .grammar-box th{padding:8px 11px;font-weight:900;color:#fff;text-align:left;font-size:10px;text-transform:uppercase;letter-spacing:.08em;}
+    .grammar-box tbody tr:nth-child(even){background:var(--c1d);}
+    .grammar-box tbody tr:nth-child(odd){background:var(--surf);}
+    .grammar-box td{padding:7px 11px;font-size:13px;}
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header class="page-header">
+    <div class="lesson-badge-pill">Booster Homework · L5B</div>
+    <h1>Homework: The, Zero Article & Countable / Uncountable 📝</h1>
+    <p class="subtitle">Consolidate everything from today's booster lesson.</p>
+  </header>
+
+  <div class="prog">
+    <span class="prog-lbl">Progress</span>
+    <div class="steps" id="lessonSteps">
+      <div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div>
+    </div>
+    <span class="pct" id="lessonPct">0%</span>
+  </div>
+  <div class="score-bar">
+    <span class="score-lbl">Score</span>
+    <span class="score-num" id="scoreNum">0</span>
+    <span class="score-denom" id="scoreDen">/0</span>
+    <span class="score-stars" id="scoreStars"></span>
+  </div>
+
+  <!-- MINI CHEAT SHEET -->
+  <section class="lesson-section">
+    <h2>📎 Quick Reminder Before You Start</h2>
+    <div class="grammar-box">
+      <h3>The Rule in 4 Lines</h3>
+      <table>
+        <thead><tr><th>Situation</th><th>Article</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td>First mention, singular, countable</td><td><strong>a / an</strong></td><td>I saw <strong>a</strong> wolf.</td></tr>
+          <tr><td>Specific / both know which one / unique</td><td><strong>the</strong></td><td><strong>The</strong> wolf was huge.</td></tr>
+          <tr><td>General (all of something) / uncountable</td><td><strong>–</strong></td><td>I love <strong>–</strong> music.</td></tr>
+          <tr><td>Institutions used for purpose (school, work, bed)</td><td><strong>–</strong></td><td>She goes to <strong>–</strong> school.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>Homework Exercises</h2>
+
+    <!-- HW 1: Countable or Uncountable -->
+    <div class="sec">
+      <button class="accordion">1. Countable (C) or Uncountable (U)? <span class="tr-badge">Sayılabilir mi?</span></button>
+      <div class="panel">
+        <div class="card" id="hw1">
+          <div class="instr">Write C or U for each word.</div>
+          <div class="exercise"><label>1. rice → <input type="text" id="h1a" data-answer="u" placeholder="?"> &nbsp; 2. elephant → <input type="text" id="h1b" data-answer="c" placeholder="?"> &nbsp; 3. money → <input type="text" id="h1c" data-answer="u" placeholder="?"></label></div>
+          <div class="exercise"><label>4. idea → <input type="text" id="h1d" data-answer="c" placeholder="?"> &nbsp; 5. homework → <input type="text" id="h1e" data-answer="u" placeholder="?"> &nbsp; 6. weather → <input type="text" id="h1f" data-answer="u" placeholder="?"></label></div>
+          <div class="exercise"><label>7. phone → <input type="text" id="h1g" data-answer="c" placeholder="?"> &nbsp; 8. gold → <input type="text" id="h1h" data-answer="u" placeholder="?"> &nbsp; 9. news → <input type="text" id="h1i" data-answer="u" placeholder="?"></label></div>
+          <div class="exercise"><label>10. friendship → <input type="text" id="h1j" data-answer="u" placeholder="?"> &nbsp; 11. sandwich → <input type="text" id="h1k" data-answer="c" placeholder="?"> &nbsp; 12. information → <input type="text" id="h1l" data-answer="u" placeholder="?"></label></div>
+          <button class="check-all-btn" onclick="checkAll('hw1')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- HW 2: the or – -->
+    <div class="sec">
+      <button class="accordion">2. The or – (nothing)?</button>
+      <div class="panel">
+        <div class="card" id="hw2">
+          <div class="instr">Write <strong>the</strong> or <strong>–</strong> (a dash if no article needed).</div>
+          <div class="exercise"><label>1. I love <input type="text" id="h2a" data-answer="–" placeholder="?"> animals.</label></div>
+          <div class="exercise"><label>2. <input type="text" id="h2b" data-answer="the" placeholder="?"> animal I love most is the wolf.</label></div>
+          <div class="exercise"><label>3. My brother goes to <input type="text" id="h2c" data-answer="–" placeholder="?"> university in Ankara.</label></div>
+          <div class="exercise"><label>4. <input type="text" id="h2d" data-answer="the" placeholder="?"> university near my house is very big.</label></div>
+          <div class="exercise"><label>5. I usually drink <input type="text" id="h2e" data-answer="–" placeholder="?"> water when I train.</label></div>
+          <div class="exercise"><label>6. Can you pass me <input type="text" id="h2f" data-answer="the" placeholder="?"> water bottle?</label></div>
+          <div class="exercise"><label>7. <input type="text" id="h2g" data-answer="–" placeholder="?"> Dolphins are very intelligent creatures.</label></div>
+          <div class="exercise"><label>8. I saw <input type="text" id="h2h" data-answer="the" placeholder="?"> dolphin at the aquarium yesterday.</label></div>
+          <div class="exercise"><label>9. He is <input type="text" id="h2i" data-answer="the" placeholder="?"> fastest runner in our school.</label></div>
+          <div class="exercise"><label>10. My dad is still at <input type="text" id="h2j" data-answer="–" placeholder="?"> work.</label></div>
+          <button class="check-all-btn" onclick="checkAll('hw2')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- HW 3: All four articles -->
+    <div class="sec">
+      <button class="accordion">3. A, An, The or – ? (All Four!)</button>
+      <div class="panel">
+        <div class="card" id="hw3">
+          <div class="instr">Write <strong>a</strong>, <strong>an</strong>, <strong>the</strong>, or <strong>–</strong>.</div>
+          <div class="exercise"><label>1. I have <input type="text" id="h3a" data-answer="an" placeholder="?"> older brother. <input type="text" id="h3b" data-answer="the" placeholder="?"> brother is at university.</label></div>
+          <div class="exercise"><label>2. She studies <input type="text" id="h3c" data-answer="–" placeholder="?"> maths and <input type="text" id="h3d" data-answer="–" placeholder="?"> science.</label></div>
+          <div class="exercise"><label>3. He plays <input type="text" id="h3e" data-answer="–" placeholder="?"> basketball every afternoon.</label></div>
+          <div class="exercise"><label>4. There is <input type="text" id="h3f" data-answer="an" placeholder="?"> eagle in <input type="text" id="h3g" data-answer="the" placeholder="?"> tree outside.</label></div>
+          <div class="exercise"><label>5. I go to <input type="text" id="h3h" data-answer="–" placeholder="?"> bed at ten o'clock.</label></div>
+          <div class="exercise"><label>6. <input type="text" id="h3i" data-answer="–" placeholder="?"> Gold is <input type="text" id="h3j" data-answer="a" placeholder="?"> precious metal.</label></div>
+          <div class="exercise"><label>7. Do you have <input type="text" id="h3k" data-answer="–" placeholder="?"> time to help me?</label></div>
+          <div class="exercise"><label>8. Galatasaray is <input type="text" id="h3l" data-answer="the" placeholder="?"> best team in Turkey!</label></div>
+          <button class="check-all-btn" onclick="checkAll('hw3')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- HW 4: Error correction -->
+    <div class="sec">
+      <button class="accordion">4. Spot and Fix the Mistake</button>
+      <div class="panel">
+        <div class="card">
+          <div class="instr">Each sentence has one mistake. Write the corrected version.</div>
+          <div class="order-sentence">
+            <p>1. I don't have a homework tonight. ❌</p>
+            <input type="text" id="h4a" data-answer="i don't have any homework tonight" placeholder="Corrected sentence">
+            <button class="check-btn" onclick="checkById('h4a')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>2. The music is my favourite thing. ❌ (general)</p>
+            <input type="text" id="h4b" data-answer="music is my favourite thing" placeholder="Corrected sentence">
+            <button class="check-btn" onclick="checkById('h4b')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>3. She gave me an advice. ❌</p>
+            <input type="text" id="h4c" data-answer="she gave me some advice" placeholder="Corrected sentence">
+            <button class="check-btn" onclick="checkById('h4c')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>4. The cheetahs are faster than lions. ❌ (general fact)</p>
+            <input type="text" id="h4d" data-answer="cheetahs are faster than lions" placeholder="Corrected sentence">
+            <button class="check-btn" onclick="checkById('h4d')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>5. I come home from the work at 6. ❌</p>
+            <input type="text" id="h4e" data-answer="i come home from work at 6" placeholder="Corrected sentence">
+            <button class="check-btn" onclick="checkById('h4e')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>6. Can I have a water, please? ❌</p>
+            <input type="text" id="h4f" data-answer="can i have some water please" placeholder="Corrected sentence">
+            <button class="check-btn" onclick="checkById('h4f')">✓</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HW 5: Verb or Noun? -->
+    <div class="sec">
+      <button class="accordion">5. Verb (V) or Noun (N)? <span class="tr-badge">Fiil mi İsim mi?</span></button>
+      <div class="panel">
+        <div class="card" id="hw5">
+          <div class="instr">Look at the bold word and decide: V (verb) or N (noun)?</div>
+          <div class="exercise"><label>1. My mum <strong>works</strong> at a hospital. → <input type="text" id="h5a" data-answer="v" placeholder="?"></label></div>
+          <div class="exercise"><label>2. He is still at <strong>work</strong>. → <input type="text" id="h5b" data-answer="n" placeholder="?"></label></div>
+          <div class="exercise"><label>3. I <strong>watch</strong> films every Friday night. → <input type="text" id="h5c" data-answer="v" placeholder="?"></label></div>
+          <div class="exercise"><label>4. My dad has a nice <strong>watch</strong>. → <input type="text" id="h5d" data-answer="n" placeholder="?"></label></div>
+          <div class="exercise"><label>5. They <strong>play</strong> volleyball at school. → <input type="text" id="h5e" data-answer="v" placeholder="?"></label></div>
+          <div class="exercise"><label>6. I go for a morning <strong>run</strong>. → <input type="text" id="h5f" data-answer="n" placeholder="?"></label></div>
+          <button class="check-all-btn" onclick="checkAll('hw5')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- HW 6: Writing -->
+    <div class="sec">
+      <button class="accordion">6. Writing Task ✍️</button>
+      <div class="panel">
+        <div class="card">
+          <div class="writing-prompt">
+            <h4>✍️ My Favourite Sport or Game</h4>
+            <p>Write <strong>8 sentences</strong> about your favourite sport or video game. You MUST use each of these correctly at least once: <em>a</em>, <em>an</em>, <em>the</em>, and <em>–</em> (no article).</p>
+            <p style="font-size:0.85rem;margin-top:6px;color:var(--muted);">After each sentence that uses an article, write in brackets WHY you used it. Like this:<br>
+            <em>"I play football every day." – (no article: sport / general)</em></p>
+            <textarea rows="14" placeholder="I play... (no article: sport)&#10;Football is... (no article: general/uncountable)&#10;The best player is... (THE: superlative)&#10;I have a... (a: first mention, countable)&#10;The ... I use is... (THE: specific, we know which one)&#10;I love... (no article: general)&#10;...is the most... (THE: superlative)&#10;I need some... (some: uncountable)"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <nav class="page-nav">
+    <a href="L5B_Articles_Booster.html">← Back to Booster Lesson</a>
+    <a href="L6_Telling_Time_Frequency.html">Continue to L6 →</a>
+  </nav>
+
+</div>
+
+<script>
+  document.querySelectorAll('.accordion').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const panel = btn.nextElementSibling;
+      const isOpen = panel.classList.contains('open');
+      document.querySelectorAll('.panel.open').forEach(p => p.classList.remove('open'));
+      if (!isOpen) panel.classList.add('open');
+      updateProgress();
+    });
+  });
+
+  function normalise(s){ return s.trim().toLowerCase().replace(/['']/g,"'"); }
+
+  function checkById(id) {
+    const inp = document.getElementById(id);
+    if (!inp) return;
+    const correct = normalise(inp.getAttribute('data-answer') || '');
+    const val = normalise(inp.value);
+    inp.classList.remove('correct','incorrect');
+    const dashAlts = ['–','-','nothing','no article','x',''];
+    if (val === correct || (correct === '–' && dashAlts.includes(val))) {
+      inp.classList.add('correct');
+    } else {
+      inp.classList.add('incorrect');
+    }
+    updateScore();
+  }
+
+  function checkAll(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (!section) return;
+    section.querySelectorAll('input[data-answer]').forEach(inp => checkById(inp.id));
+  }
+
+  function updateScore() {
+    const all = document.querySelectorAll('input[data-answer]');
+    const correct = document.querySelectorAll('input.correct');
+    document.getElementById('scoreNum').textContent = correct.length;
+    document.getElementById('scoreDen').textContent = '/' + all.length;
+    const pct = all.length ? Math.round(correct.length/all.length*100) : 0;
+    document.getElementById('scoreStars').textContent = pct>=90?'⭐⭐⭐':pct>=70?'⭐⭐':pct>=50?'⭐':'';
+  }
+
+  function updateProgress() {
+    const steps = document.querySelectorAll('#lessonSteps .step');
+    const open = document.querySelectorAll('.panel.open').length;
+    const total = document.querySelectorAll('.accordion').length;
+    const done = Math.min(Math.round((open/total)*steps.length), steps.length);
+    steps.forEach((s,i) => {
+      s.classList.remove('done','active');
+      if (i < done-1) s.classList.add('done');
+      else if (i === done-1) s.classList.add('active');
+    });
+    document.getElementById('lessonPct').textContent = total ? Math.round(open/total*100)+'%' : '0%';
+  }
+</script>
+</body>
+</html>

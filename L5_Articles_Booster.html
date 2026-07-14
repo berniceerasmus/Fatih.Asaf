@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booster Lesson – The, Zero Article & Countable / Uncountable Nouns</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    /* ── Fatih colour identity: blue / green ── */
+    :root {
+      --cream:   #f0f7ff;
+      --c1:      #1d6fa4;
+      --c1d:     rgba(29,111,164,.10);
+      --c2:      #0ea47a;
+      --c2d:     rgba(14,164,122,.10);
+      --c3:      #f59e0b;
+      --c3d:     rgba(245,158,11,.13);
+      --c4:      #3b82f6;
+      --c4d:     rgba(59,130,246,.10);
+      --c5:      #10b981;
+      --c5d:     rgba(16,185,129,.12);
+      --c6:      #ef4444;
+      --c6d:     rgba(239,68,68,.10);
+      --c7:      #8b5cf6;
+      --c7d:     rgba(139,92,246,.10);
+      --text:    #1e293b;
+      --muted:   #64748b;
+      --border:  #bfdbfe;
+      --surf:    #f8fbff;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{
+      font-family:'Nunito',sans-serif;
+      background:var(--cream);
+      color:var(--text);
+      line-height:1.7;
+    }
+    body::before{
+      content:'';position:fixed;inset:0;
+      background-image:radial-gradient(circle,rgba(29,111,164,.05) 1px,transparent 1px);
+      background-size:44px 44px;pointer-events:none;z-index:0;
+    }
+
+    /* ── Layout ── */
+    .container{max-width:840px;margin:0 auto;padding:34px 16px 80px;position:relative;z-index:1;}
+
+    /* ── Page header ── */
+    .page-header{
+      background:linear-gradient(135deg,#1d6fa4,#0ea47a,#3b82f6);
+      border-radius:22px;padding:26px 28px 30px;margin-bottom:16px;
+      color:#fff;position:relative;overflow:hidden;
+    }
+    .lesson-badge-pill{
+      display:inline-block;
+      background:rgba(255,255,255,.25);border:2px solid rgba(255,255,255,.35);
+      border-radius:50px;padding:3px 13px;
+      font-size:11px;font-weight:900;color:#fff;
+      letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px;
+    }
+    .page-header h1{
+      font-family:'Fredoka One',cursive;
+      font-size:clamp(20px,5vw,36px);color:#fff;line-height:1.1;margin-bottom:7px;
+    }
+    .page-header .subtitle{font-size:13px;color:rgba(255,255,255,.88);font-weight:700;}
+
+    /* ── Progress ── */
+    .prog{
+      background:var(--surf);border:2px solid var(--border);border-radius:13px;
+      padding:11px 15px;display:flex;align-items:center;gap:12px;margin-bottom:16px;
+    }
+    .prog-lbl{font-size:10px;font-weight:900;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;white-space:nowrap;}
+    .steps{display:flex;gap:4px;flex:1;}
+    .step{flex:1;height:8px;border-radius:8px;background:var(--border);transition:background .3s;}
+    .step.done{background:var(--c1);}
+    .step.active{background:var(--c3);}
+    .pct{font-family:'Fredoka One',cursive;font-size:15px;color:var(--c1);}
+
+    /* ── Score ── */
+    .score-bar{
+      background:var(--surf);border:2px solid var(--border);border-radius:13px;
+      padding:10px 16px;display:flex;align-items:center;gap:12px;margin-bottom:16px;
+      font-size:13px;font-weight:700;
+    }
+    .score-lbl{font-size:10px;font-weight:900;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;}
+    .score-num{font-family:'Fredoka One',cursive;font-size:22px;color:var(--c1);line-height:1;}
+    .score-denom{font-size:13px;color:var(--muted);font-weight:900;}
+    .score-stars{font-size:16px;margin-left:auto;}
+
+    /* ── Sections ── */
+    .lesson-section{margin-bottom:6px;}
+    .lesson-section>h2{
+      font-family:'Fredoka One',cursive;font-size:17px;color:var(--text);
+      margin:18px 0 9px;
+    }
+
+    /* ── Accordion ── */
+    .sec{background:var(--surf);border:2px solid var(--border);border-radius:18px;margin-bottom:11px;overflow:hidden;}
+    .accordion{
+      display:flex;align-items:center;gap:11px;width:100%;padding:13px 18px;
+      border:none;border-bottom:2px dashed var(--border);background:transparent;
+      cursor:pointer;user-select:none;
+      font-family:'Nunito',sans-serif;font-weight:800;font-size:15px;
+      color:var(--text);text-align:left;transition:background .15s;
+    }
+    .accordion:hover{background:var(--c1d);}
+    .panel{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s;padding:0 18px;background:var(--surf);}
+    .panel.open{max-height:9000px;padding:16px 18px 22px;}
+
+    /* ── Grammar/info boxes ── */
+    .grammar-box{
+      border-radius:13px;padding:13px 15px;margin-bottom:13px;
+      border:2px solid var(--c2);background:var(--c2d);
+    }
+    .grammar-box h3{font-family:'Fredoka One',cursive;font-size:14px;margin-bottom:8px;color:var(--c2);}
+    .grammar-box table{
+      width:100%;border-collapse:collapse;font-size:13px;
+      border-radius:12px;overflow:hidden;border:2px solid var(--border);
+    }
+    .grammar-box thead tr{background:linear-gradient(90deg,var(--c1),var(--c4));}
+    .grammar-box th{
+      padding:8px 11px;font-weight:900;color:#fff;
+      text-align:left;font-size:10px;text-transform:uppercase;letter-spacing:.08em;
+    }
+    .grammar-box tbody tr:nth-child(even){background:var(--c1d);}
+    .grammar-box tbody tr:nth-child(odd){background:var(--surf);}
+    .grammar-box td{padding:7px 11px;vertical-align:top;font-size:13px;}
+
+    .warmup-box{
+      background:var(--c3d);border:2px solid var(--c3);
+      border-radius:11px;padding:13px 15px;margin-bottom:12px;
+      font-size:13px;font-weight:700;line-height:1.65;
+    }
+    .warmup-box h3{font-family:'Fredoka One',cursive;font-size:14px;color:#92400e;margin-bottom:7px;}
+
+    .example-box{
+      background:var(--c5d);border:2px solid var(--c5);
+      border-radius:11px;padding:10px 14px;
+      font-size:13px;font-weight:700;line-height:2;margin-bottom:12px;
+    }
+
+    .tip-box{
+      background:var(--c3d);border:2px solid var(--c3);
+      border-radius:11px;padding:12px 14px;
+      font-size:13px;font-weight:700;line-height:1.9;
+      margin-bottom:12px;display:block;
+    }
+
+    .danger-box{
+      background:var(--c6d);border:2px solid var(--c6);
+      border-radius:11px;padding:10px 14px;
+      font-size:13px;font-weight:700;line-height:1.9;margin-bottom:12px;
+    }
+    .danger-box h3{font-family:'Fredoka One',cursive;font-size:14px;color:var(--c6);margin-bottom:6px;}
+
+    /* Turkish translation badge */
+    .tr-badge{
+      display:inline-block;
+      background:rgba(139,92,246,.15);border:1.5px solid var(--c7);
+      border-radius:6px;padding:1px 7px;
+      font-size:11px;font-weight:900;color:var(--c7);
+      margin-left:6px;vertical-align:middle;
+      font-style:italic;
+    }
+
+    /* ── Big noun-list grid ── */
+    .noun-grid{
+      display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));
+      gap:9px;margin-top:10px;
+    }
+    .noun-card{
+      border-radius:11px;padding:10px 12px;
+      font-size:13px;font-weight:700;line-height:1.6;
+      border:2px solid var(--border);background:var(--surf);
+    }
+    .noun-card .en{font-size:14px;font-weight:900;color:var(--c1);}
+    .noun-card .tr{font-size:11px;color:var(--c7);font-style:italic;font-weight:800;}
+    .noun-card .why{font-size:11px;color:var(--muted);margin-top:3px;font-weight:700;}
+    .noun-card.cat-food{border-color:#f59e0b;background:rgba(245,158,11,.07);}
+    .noun-card.cat-liquid{border-color:#3b82f6;background:rgba(59,130,246,.08);}
+    .noun-card.cat-abstract{border-color:#8b5cf6;background:rgba(139,92,246,.08);}
+    .noun-card.cat-material{border-color:#10b981;background:rgba(16,185,129,.08);}
+    .noun-card.cat-subject{border-color:#ef4444;background:rgba(239,68,68,.07);}
+    .noun-card.cat-place{border-color:#1d6fa4;background:rgba(29,111,164,.08);}
+
+    /* Category legend */
+    .legend{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:12px;}
+    .leg-item{
+      display:flex;align-items:center;gap:5px;
+      font-size:11px;font-weight:900;
+      border-radius:50px;padding:3px 9px;border:2px solid;
+    }
+    .leg-dot{width:10px;height:10px;border-radius:50%;}
+
+    /* Verb/noun spotlight */
+    .spotlight{
+      background:linear-gradient(135deg,rgba(29,111,164,.08),rgba(14,164,122,.08));
+      border:2px solid var(--border);border-radius:13px;
+      padding:14px 16px;margin-bottom:12px;
+    }
+    .spotlight h4{font-family:'Fredoka One',cursive;font-size:14px;color:var(--c1);margin-bottom:9px;}
+    .spotlight-row{
+      display:flex;gap:10px;margin-bottom:8px;flex-wrap:wrap;
+    }
+    .spot-col{
+      flex:1;min-width:160px;
+      border-radius:9px;padding:9px 11px;font-size:13px;font-weight:700;
+    }
+    .spot-col.verb-col{background:var(--c6d);border:2px solid var(--c6);}
+    .spot-col.noun-col{background:var(--c5d);border:2px solid var(--c5);}
+    .spot-col h5{font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px;}
+    .spot-col.verb-col h5{color:var(--c6);}
+    .spot-col.noun-col h5{color:var(--c2);}
+
+    /* ── Exercises ── */
+    .instr{
+      background:var(--c3d);border:2px solid var(--c3);border-radius:9px;
+      padding:7px 11px;font-size:12.5px;font-weight:700;color:#78350f;
+      margin-bottom:10px;line-height:1.6;
+    }
+    .exercise{
+      display:flex;flex-wrap:wrap;align-items:center;gap:5px;
+      background:var(--cream);border:2px solid var(--border);
+      border-radius:11px;padding:9px 11px;margin-bottom:6px;
+      font-size:13px;font-weight:700;line-height:1.9;
+    }
+    input[type="text"]{
+      border:none;border-bottom:2.5px solid var(--border);background:transparent;
+      font-family:'Nunito',sans-serif;font-size:13px;font-weight:800;color:var(--text);
+      outline:none;min-width:90px;text-align:center;padding:2px 5px;
+      transition:border-color .2s;vertical-align:middle;
+    }
+    input[type="text"]:focus{border-bottom-color:var(--c1);}
+    input[type="text"].correct{border-bottom-color:var(--c5);color:var(--c5);background:rgba(16,185,129,.08);border-radius:4px;}
+    input[type="text"].incorrect{border-bottom-color:var(--c6);color:var(--c6);background:var(--c6d);border-radius:4px;}
+
+    .check-btn{
+      background:var(--c1);color:#fff;border:none;border-radius:50px;padding:3px 10px;
+      font-family:'Nunito',sans-serif;font-size:11px;font-weight:900;
+      cursor:pointer;transition:background .15s,transform .1s;vertical-align:middle;margin-left:4px;
+    }
+    .check-btn:hover{background:var(--c2);transform:translateY(-1px);}
+
+    .check-all-btn{
+      width:100%;color:#fff;border:none;border-radius:12px;padding:12px;
+      font-family:'Fredoka One',cursive;font-size:16px;cursor:pointer;margin-top:10px;
+      box-shadow:0 4px 14px rgba(29,111,164,.22);transition:transform .15s;
+      background:linear-gradient(135deg,var(--c1),var(--c4));
+    }
+    .check-all-btn:hover{transform:translateY(-1px);}
+
+    .order-sentence{
+      background:var(--cream);border:2px solid var(--border);
+      border-radius:11px;padding:10px 12px;margin-bottom:7px;
+    }
+    .order-sentence p{font-size:12px;font-weight:900;color:var(--muted);margin-bottom:6px;font-style:italic;}
+    .order-sentence input[type="text"]{width:calc(100% - 60px);min-width:unset;text-align:left;}
+
+    /* Choice buttons */
+    .choice-row{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:6px;align-items:center;}
+    .choice-row .stem{font-size:13px;font-weight:700;min-width:60px;}
+    .choice-btn{
+      background:var(--surf);border:2px solid var(--border);border-radius:8px;
+      padding:4px 11px;font-family:'Nunito',sans-serif;font-size:13px;font-weight:800;
+      cursor:pointer;transition:all .15s;color:var(--text);
+    }
+    .choice-btn:hover{border-color:var(--c1);background:var(--c1d);}
+    .choice-btn.selected-correct{border-color:var(--c5);background:var(--c5d);color:var(--c2);}
+    .choice-btn.selected-wrong{border-color:var(--c6);background:var(--c6d);color:var(--c6);}
+
+    /* Drag sort */
+    .sort-pool{
+      display:flex;flex-wrap:wrap;gap:7px;
+      background:var(--cream);border:2px dashed var(--border);
+      border-radius:11px;padding:10px;min-height:48px;margin-bottom:10px;
+    }
+    .sort-chip{
+      background:var(--surf);border:2px solid var(--c1);
+      border-radius:8px;padding:5px 12px;
+      font-size:13px;font-weight:800;color:var(--c1);
+      cursor:grab;user-select:none;transition:opacity .15s;
+    }
+    .sort-chip:active{opacity:.6;cursor:grabbing;}
+
+    .sort-target{
+      display:flex;flex-wrap:wrap;gap:7px;
+      border-radius:11px;padding:10px;min-height:52px;
+      border:2px solid var(--border);background:var(--surf);
+    }
+    .sort-target.hover{border-color:var(--c1);background:var(--c1d);}
+    .sort-label{font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px;}
+    .sort-label.c{color:var(--c2);}
+    .sort-label.u{color:var(--c7);}
+
+    /* ── Writing / Speaking ── */
+    .writing-prompt{
+      background:var(--c2d);border:2px solid rgba(14,164,122,.3);
+      border-radius:12px;padding:12px 14px;margin-bottom:0;
+      font-size:13px;font-weight:700;
+    }
+    .writing-prompt h4{font-family:'Fredoka One',cursive;font-size:14px;color:var(--c2);margin-bottom:5px;}
+    .speaking-prompt{
+      background:var(--c7d);border:2px solid rgba(139,92,246,.3);
+      border-radius:12px;padding:12px 14px;
+      font-size:13px;font-weight:700;
+    }
+    .speaking-prompt h4{font-family:'Fredoka One',cursive;font-size:14px;color:var(--c7);margin-bottom:5px;}
+    textarea{
+      width:100%;border:2px solid var(--border);border-radius:9px;
+      padding:10px 12px;font-family:'Nunito',sans-serif;font-size:13px;font-weight:700;
+      color:var(--text);background:var(--cream);resize:vertical;margin-top:8px;
+      transition:border-color .2s;line-height:1.7;outline:none;
+    }
+    textarea:focus{border-color:var(--c1);background:var(--surf);}
+
+    /* ── Nav ── */
+    .page-nav{
+      display:flex;justify-content:center;align-items:center;
+      margin-top:24px;gap:10px;flex-wrap:wrap;
+    }
+    .page-nav a{
+      display:inline-block;padding:10px 22px;border-radius:50px;
+      border:2.5px solid var(--border);background:var(--surf);
+      font-family:'Fredoka One',cursive;font-size:13px;
+      cursor:pointer;transition:all .18s;color:var(--muted);text-decoration:none;
+    }
+    .page-nav a:hover{transform:translateY(-2px);border-color:var(--c1);color:var(--c1);}
+    .page-nav a.hw-link{
+      color:#fff;border-color:transparent;
+      background:linear-gradient(135deg,var(--c1),var(--c4));
+      box-shadow:0 4px 12px rgba(29,111,164,.28);
+    }
+
+    @media(max-width:600px){
+      .page-header{padding:20px 16px 22px;}
+      .noun-grid{grid-template-columns:1fr 1fr;}
+      .spot-col{min-width:100%;}
+      .order-sentence input[type="text"]{width:100%;margin-bottom:6px;}
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- ═══════════════════════════════════════════════════ HEADER -->
+  <header class="page-header">
+    <div class="lesson-badge-pill">Phase 1 · Booster Lesson · L5B</div>
+    <h1>The, Zero Article & Countable vs Uncountable Nouns 📦</h1>
+    <p class="subtitle">Master the trickiest article rules — with Turkish help where you need it!</p>
+  </header>
+
+  <div class="prog">
+    <span class="prog-lbl">Progress</span>
+    <div class="steps" id="lessonSteps">
+      <div class="step"></div><div class="step"></div><div class="step"></div>
+      <div class="step"></div><div class="step"></div><div class="step"></div>
+    </div>
+    <span class="pct" id="lessonPct">0%</span>
+  </div>
+  <div class="score-bar">
+    <span class="score-lbl">Score</span>
+    <span class="score-num" id="scoreNum">0</span>
+    <span class="score-denom" id="scoreDen">/0</span>
+    <span class="score-stars" id="scoreStars"></span>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════ WARM-UP -->
+  <section class="lesson-section">
+    <h2>⚡ Warm-Up</h2>
+    <div class="warmup-box">
+      <h3>🔥 Quick Fire — Which feels right? (3 minutes)</h3>
+      <p>Read these sentences out loud. Which one sounds correct to you? Your teacher will help.</p>
+      <ul style="margin-top:10px;margin-left:20px;line-height:2.4;">
+        <li>a) I love <strong>the football</strong>. &nbsp; b) I love <strong>football</strong>.</li>
+        <li>a) I drink <strong>a water</strong>. &nbsp; b) I drink <strong>water</strong>.</li>
+        <li>a) <strong>The wolves</strong> are dangerous. &nbsp; b) <strong>Wolves</strong> are dangerous.</li>
+        <li>a) I come home from <strong>the work</strong>. &nbsp; b) I come home from <strong>work</strong>.</li>
+      </ul>
+      <p style="margin-top:10px;font-size:0.88rem;color:#78350f;">By the end of this lesson you'll know <em>exactly</em> why the (b) answers are correct every time!</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ SECTION 1 – COUNTABLE vs UNCOUNTABLE -->
+  <section class="lesson-section">
+    <h2>📌 Part 1 – What Are Countable & Uncountable Nouns?</h2>
+
+    <div class="grammar-box">
+      <h3>The Big Difference</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Can you count them?</th>
+            <th>Can it be plural?</th>
+            <th>Can you say "a / an"?</th>
+            <th>Turkish clue</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Countable</strong> (sayılabilen)</td>
+            <td>✅ Yes — 1 dog, 2 dogs</td>
+            <td>✅ Yes — dogs, cities</td>
+            <td>✅ Yes — a dog</td>
+            <td>Sayı ekleyebilirsin: 1 köpek, 2 köpek</td>
+          </tr>
+          <tr>
+            <td><strong>Uncountable</strong> (sayılamayan)</td>
+            <td>❌ No — we can't say "1 water, 2 waters"</td>
+            <td>❌ No — no plural form</td>
+            <td>❌ No — ~~a water~~</td>
+            <td>Sayı ekleyemezsin: ~~1 su, 2 su~~ ❌</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tip-box">
+      💡 <strong>The simplest test:</strong> Can I say <em>"one ___,  two ___s"</em>? If yes → countable. If that sounds strange → uncountable.<br>
+      <span style="font-size:0.85rem;color:var(--muted);">One dog, two dogs ✅ &nbsp;|&nbsp; ~~One water, two waters~~ ❌ &nbsp;|&nbsp; One idea, two ideas ✅ &nbsp;|&nbsp; ~~One music, two musics~~ ❌</span>
+    </div>
+
+    <div class="example-box">
+      🐕 I have <strong>a dog</strong>. I have <strong>three dogs</strong>. &nbsp;← countable<br>
+      💧 I drink <strong>water</strong>. I drink <strong>a lot of water</strong>. &nbsp;← uncountable (no "a", no "-s")<br>
+      🎵 I love <strong>music</strong>. I love <strong>a lot of music</strong>. &nbsp;← uncountable<br>
+      📚 I have <strong>a book</strong>. I have <strong>five books</strong>. &nbsp;← countable
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ SECTION 2 – UNCOUNTABLE NOUN MASTER LIST -->
+  <section class="lesson-section">
+    <h2>📋 Part 2 – The Master List of Uncountable Nouns</h2>
+
+    <p style="font-size:13px;font-weight:700;color:var(--muted);margin-bottom:12px;">
+      These words are <em>always</em> uncountable in English — they never take <em>a/an</em> and they never have a plural -s.
+      They are grouped by category so they're easier to remember. <span class="tr-badge">Türkçe çevirisi aşağıda</span>
+    </p>
+
+    <div class="legend">
+      <span class="leg-item" style="border-color:#f59e0b;color:#92400e;"><span class="leg-dot" style="background:#f59e0b;"></span>Food & Drink</span>
+      <span class="leg-item" style="border-color:#3b82f6;color:#1e40af;"><span class="leg-dot" style="background:#3b82f6;"></span>Liquids</span>
+      <span class="leg-item" style="border-color:#8b5cf6;color:#5b21b6;"><span class="leg-dot" style="background:#8b5cf6;"></span>Abstract Ideas</span>
+      <span class="leg-item" style="border-color:#10b981;color:#065f46;"><span class="leg-dot" style="background:#10b981;"></span>Materials</span>
+      <span class="leg-item" style="border-color:#ef4444;color:#991b1b;"><span class="leg-dot" style="background:#ef4444;"></span>Subjects / Activities</span>
+      <span class="leg-item" style="border-color:#1d6fa4;color:#1e3a5f;"><span class="leg-dot" style="background:#1d6fa4;"></span>Places / Concepts</span>
+    </div>
+
+    <div class="noun-grid">
+      <!-- FOOD & DRINK -->
+      <div class="noun-card cat-food">
+        <div class="en">water</div><div class="tr">su</div>
+        <div class="why">A liquid — you can't count "one water"</div>
+      </div>
+      <div class="noun-card cat-food">
+        <div class="en">milk</div><div class="tr">süt</div>
+        <div class="why">A liquid food</div>
+      </div>
+      <div class="noun-card cat-food">
+        <div class="en">juice</div><div class="tr">meyve suyu</div>
+        <div class="why">A liquid</div>
+      </div>
+      <div class="noun-card cat-food">
+        <div class="en">tea</div><div class="tr">çay</div>
+        <div class="why">A liquid</div>
+      </div>
+      <div class="noun-card cat-food">
+        <div class="en">coffee</div><div class="tr">kahve</div>
+        <div class="why">A liquid</div>
+      </div>
+      <div class="noun-card cat-food">
+        <div class="en">rice</div><div class="tr">pirinç / pilav</div>
+        <div class="why">Tiny grains — can't count one by one</div>
+      </div>
+      <div class="noun-card cat-food">
+        <div class="en">bread</div><div class="tr">ekmek</div>
+        <div class="why">A mass — you say "a piece of bread"</div>
+      </div>
+      <div class="noun-card cat-food">
+        <div class="en">cheese</div><div class="tr">peynir</div>
+        <div class="why">A mass — "a piece of cheese"</div>
+      </div>
+      <div class="noun-card cat-food">
+        <div class="en">meat</div><div class="tr">et</div>
+        <div class="why">A mass substance</div>
+      </div>
+      <div class="noun-card cat-food">
+        <div class="en">sugar</div><div class="tr">şeker</div>
+        <div class="why">Tiny grains</div>
+      </div>
+      <div class="noun-card cat-food">
+        <div class="en">salt</div><div class="tr">tuz</div>
+        <div class="why">Tiny grains</div>
+      </div>
+      <div class="noun-card cat-food">
+        <div class="en">butter</div><div class="tr">tereyağı</div>
+        <div class="why">A spreading substance</div>
+      </div>
+
+      <!-- ABSTRACT -->
+      <div class="noun-card cat-abstract">
+        <div class="en">music</div><div class="tr">müzik</div>
+        <div class="why">You can't count one music</div>
+      </div>
+      <div class="noun-card cat-abstract">
+        <div class="en">information</div><div class="tr">bilgi</div>
+        <div class="why">❗ NOT "an information" — use "a piece of information"</div>
+      </div>
+      <div class="noun-card cat-abstract">
+        <div class="en">advice</div><div class="tr">tavsiye</div>
+        <div class="why">❗ NOT "an advice" — "a piece of advice"</div>
+      </div>
+      <div class="noun-card cat-abstract">
+        <div class="en">knowledge</div><div class="tr">bilgi / bilgelik</div>
+        <div class="why">An idea — can't be counted</div>
+      </div>
+      <div class="noun-card cat-abstract">
+        <div class="en">love</div><div class="tr">aşk / sevgi</div>
+        <div class="why">A feeling</div>
+      </div>
+      <div class="noun-card cat-abstract">
+        <div class="en">happiness</div><div class="tr">mutluluk</div>
+        <div class="why">A feeling</div>
+      </div>
+      <div class="noun-card cat-abstract">
+        <div class="en">luck</div><div class="tr">şans</div>
+        <div class="why">An abstract concept</div>
+      </div>
+      <div class="noun-card cat-abstract">
+        <div class="en">fun</div><div class="tr">eğlence</div>
+        <div class="why">❗ NOT "a fun" — say "It's fun!" or "a lot of fun"</div>
+      </div>
+      <div class="noun-card cat-abstract">
+        <div class="en">time</div><div class="tr">zaman</div>
+        <div class="why">In general use: "I don't have time." (but "a time" in stories = an occasion)</div>
+      </div>
+      <div class="noun-card cat-abstract">
+        <div class="en">money</div><div class="tr">para</div>
+        <div class="why">❗ NOT "a money" — say "some money" / "a lot of money"</div>
+      </div>
+      <div class="noun-card cat-abstract">
+        <div class="en">news</div><div class="tr">haberler</div>
+        <div class="why">❗ Looks plural but is SINGULAR uncountable: "The news is..."</div>
+      </div>
+      <div class="noun-card cat-abstract">
+        <div class="en">weather</div><div class="tr">hava durumu</div>
+        <div class="why">❗ NOT "a weather"</div>
+      </div>
+      <div class="noun-card cat-abstract">
+        <div class="en">traffic</div><div class="tr">trafik</div>
+        <div class="why">❗ NOT "a traffic"</div>
+      </div>
+
+      <!-- MATERIALS -->
+      <div class="noun-card cat-material">
+        <div class="en">wood</div><div class="tr">ahşap / tahta</div>
+        <div class="why">A material</div>
+      </div>
+      <div class="noun-card cat-material">
+        <div class="en">glass</div><div class="tr">cam / bardak</div>
+        <div class="why">Material = uncountable / object = countable (a glass)</div>
+      </div>
+      <div class="noun-card cat-material">
+        <div class="en">paper</div><div class="tr">kağıt</div>
+        <div class="why">Material = uncountable / one sheet = "a piece of paper"</div>
+      </div>
+      <div class="noun-card cat-material">
+        <div class="en">iron</div><div class="tr">demir</div>
+        <div class="why">A metal material</div>
+      </div>
+      <div class="noun-card cat-material">
+        <div class="en">gold</div><div class="tr">altın</div>
+        <div class="why">A precious material</div>
+      </div>
+
+      <!-- SUBJECTS / ACTIVITIES -->
+      <div class="noun-card cat-subject">
+        <div class="en">football</div><div class="tr">futbol</div>
+        <div class="why">A sport / activity — say "I play football" NOT "a football"</div>
+      </div>
+      <div class="noun-card cat-subject">
+        <div class="en">homework</div><div class="tr">ödev</div>
+        <div class="why">❗ NOT "a homework" — say "some homework" / "do homework"</div>
+      </div>
+      <div class="noun-card cat-subject">
+      <div class="en">English</div><div class="tr">İngilizce</div>
+        <div class="why">A language / subject</div>
+      </div>
+      <div class="noun-card cat-subject">
+        <div class="en">maths</div><div class="tr">matematik</div>
+        <div class="why">A school subject</div>
+      </div>
+      <div class="noun-card cat-subject">
+        <div class="en">science</div><div class="tr">fen bilimleri</div>
+        <div class="why">A school subject</div>
+      </div>
+      <div class="noun-card cat-subject">
+        <div class="en">history</div><div class="tr">tarih</div>
+        <div class="why">A school subject</div>
+      </div>
+
+      <!-- PLACES / CONCEPTS used without article -->
+      <div class="noun-card cat-place">
+        <div class="en">work</div><div class="tr">iş / işyeri</div>
+        <div class="why">As a place: "at work", "from work" — no article</div>
+      </div>
+      <div class="noun-card cat-place">
+        <div class="en">school</div><div class="tr">okul</div>
+        <div class="why">"at school", "go to school" — no article (it's your school)</div>
+      </div>
+      <div class="noun-card cat-place">
+        <div class="en">home</div><div class="tr">ev</div>
+        <div class="why">"go home", "at home", "from home" — no article ever</div>
+      </div>
+      <div class="noun-card cat-place">
+        <div class="en">bed</div><div class="tr">yatak</div>
+        <div class="why">"go to bed", "in bed" — no article for the activity</div>
+      </div>
+      <div class="noun-card cat-place">
+        <div class="en">hospital</div><div class="tr">hastane</div>
+        <div class="why">"in hospital" (as patient) vs "in the hospital" (just visiting)</div>
+      </div>
+      <div class="noun-card cat-place">
+        <div class="en">nature</div><div class="tr">doğa</div>
+        <div class="why">General idea — "I love nature" not "the nature"</div>
+      </div>
+    </div>
+
+    <div style="margin-top:14px; background:var(--c3d); border:2px solid var(--c3); border-radius:11px; padding:13px 15px; font-size:13px; font-weight:700; line-height:1.9;">
+      💡 <strong>How to say "some" with uncountable nouns:</strong>
+      <table style="margin-top:8px; width:100%; border-collapse:collapse; font-size:13px;">
+        <thead>
+          <tr>
+            <th style="text-align:left; padding:5px 10px; background:rgba(245,158,11,.2); border-radius:6px 0 0 0; font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:#78350f;">❌ Don't say</th>
+            <th style="text-align:left; padding:5px 10px; background:rgba(245,158,11,.2); font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:#78350f;">✅ Say instead</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding:6px 10px; border-bottom:1px solid rgba(245,158,11,.25);"><s>a water</s></td>
+            <td style="padding:6px 10px; border-bottom:1px solid rgba(245,158,11,.25);"><em>some water</em> &nbsp;/&nbsp; <em>a glass of water</em></td>
+          </tr>
+          <tr>
+            <td style="padding:6px 10px; border-bottom:1px solid rgba(245,158,11,.25);"><s>an advice</s></td>
+            <td style="padding:6px 10px; border-bottom:1px solid rgba(245,158,11,.25);"><em>some advice</em> &nbsp;/&nbsp; <em>a piece of advice</em></td>
+          </tr>
+          <tr>
+            <td style="padding:6px 10px;"><s>a homework</s></td>
+            <td style="padding:6px 10px;"><em>some homework</em> &nbsp;/&nbsp; <em>a lot of homework</em></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ SECTION 3 – THE vs ZERO ARTICLE -->
+  <section class="lesson-section">
+    <h2>📌 Part 3 – When to Use THE and When to Use Nothing (Zero Article)</h2>
+
+    <div class="grammar-box">
+      <h3>The Rules — Side by Side</h3>
+      <table>
+        <thead>
+          <tr><th>Use THE (the)</th><th>Use NOTHING — Zero Article (–)</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>✅ When we BOTH know which one<br><em>"Pass me <strong>the</strong> ball." (the ball we're playing with)</em></td>
+            <td>✅ General meaning — ALL things of that type<br><em>"<strong>Wolves</strong> are wild." (wolves in general)</em></td>
+          </tr>
+          <tr>
+            <td>✅ When something was mentioned BEFORE<br><em>"I have a dog. <strong>The</strong> dog is big."</em></td>
+            <td>✅ Uncountable nouns in general<br><em>"I love <strong>music</strong>." / "I drink <strong>water</strong>."</em></td>
+          </tr>
+          <tr>
+            <td>✅ Unique things — there is only ONE<br><em><strong>the</strong> sun / <strong>the</strong> moon / <strong>the</strong> internet / <strong>the</strong> sky</em></td>
+            <td>✅ Sports & games<br><em>"I play <strong>football</strong>." / "He plays <strong>Minecraft</strong>."</em></td>
+          </tr>
+          <tr>
+            <td>✅ Rivers, seas, mountain ranges, deserts<br><em><strong>the</strong> Nile / <strong>the</strong> Sahara / <strong>the</strong> Alps</em></td>
+            <td>✅ School subjects, languages, meals<br><em>"I study <strong>English</strong>." / "I eat <strong>breakfast</strong>."</em></td>
+          </tr>
+          <tr>
+            <td>✅ Superlatives<br><em>He is <strong>the</strong> best player.</em></td>
+            <td>✅ Institutions (purpose): school, work, bed, hospital<br><em>"go to <strong>school</strong>" / "at <strong>work</strong>" / "in <strong>bed</strong>"</em></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="example-box">
+      ✅ I love <strong>football</strong>. (general — zero article)<br>
+      ✅ Did you watch <strong>the</strong> football match last night? (specific match we both know)<br>
+      ✅ <strong>Lions</strong> are powerful animals. (lions in general — zero article)<br>
+      ✅ <strong>The</strong> lion at the zoo is called Simba. (specific lion — THE)<br>
+      ✅ I go to <strong>school</strong> every day. (purpose/institution — zero article)<br>
+      ✅ <strong>The</strong> school near my house is very big. (specific building — THE)
+    </div>
+
+    <div class="danger-box">
+      <h3>⚠️ Common Mistakes — Don't Do These!</h3>
+      ❌ I love <u>the music</u>. → ✅ I love <strong>music</strong>. (general)<br>
+      ❌ I come home from <u>the work</u>. → ✅ I come home from <strong>work</strong>.<br>
+      ❌ She goes to <u>the school</u> every day. → ✅ She goes to <strong>school</strong> every day.<br>
+      ❌ <u>The</u> wolves are dangerous animals. → ✅ <strong>Wolves</strong> are dangerous animals.<br>
+      ❌ I drink <u>a water</u>. → ✅ I drink <strong>water</strong> / <strong>some water</strong>.<br>
+      ❌ He gave me <u>an advice</u>. → ✅ He gave me <strong>some advice</strong>.
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ SECTION 4 – VERB / NOUN HOMONYMS -->
+  <section class="lesson-section">
+    <h2>📌 Part 4 – Same Word: Verb OR Noun?</h2>
+
+    <p style="font-size:13px;font-weight:700;color:var(--muted);margin-bottom:12px;">
+      In English, many words can be a <strong style="color:var(--c6);">verb</strong> (eylem) OR a <strong style="color:var(--c2);">noun</strong> (isim) — the meaning depends on where they appear in the sentence.
+      <span class="tr-badge">Türkçe: Aynı kelime hem fiil hem isim olabilir</span>
+    </p>
+
+    <div class="spotlight">
+      <h4>🔦 WORK — İş (noun) / Çalışmak (verb)</h4>
+      <div class="spotlight-row">
+        <div class="spot-col verb-col">
+          <h5>🔴 VERB (Fiil)</h5>
+          I <strong>work</strong> every day.<br>
+          She <strong>works</strong> in Istanbul.<br>
+          They don't <strong>work</strong> on Sundays.
+        </div>
+        <div class="spot-col noun-col">
+          <h5>🟢 NOUN (İsim)</h5>
+          I come home from <strong>work</strong>.<br>
+          He is at <strong>work</strong> right now.<br>
+          <strong>Work</strong> starts at 9 o'clock.<br>
+          <span class="tr-badge">isim olunca article almaz!</span>
+        </div>
+      </div>
+      <div class="tip-box" style="margin-bottom:0;">
+        💡 <strong>How to tell:</strong> Is it doing something (verb) or naming a place/thing (noun)?<br>
+        "I <em>work</em> hard." → verb (doing) &nbsp;&nbsp; "I go to <em>work</em> at 8." → noun (place)
+      </div>
+    </div>
+
+    <div class="spotlight">
+      <h4>🔦 PLAY — Oynamak (verb) / Oyun (noun)</h4>
+      <div class="spotlight-row">
+        <div class="spot-col verb-col">
+          <h5>🔴 VERB</h5>
+          I <strong>play</strong> football.<br>
+          He <strong>plays</strong> Minecraft every night.<br>
+          Do you <strong>play</strong> basketball?
+        </div>
+        <div class="spot-col noun-col">
+          <h5>🟢 NOUN</h5>
+          We watched a <strong>play</strong> at the theatre.<br>
+          The children's <strong>play</strong> was funny.<br>
+          <span style="font-size:11px;color:var(--muted);">(a play = tiyatro oyunu — takes A/THE)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="spotlight">
+      <h4>🔦 WATCH — İzlemek (verb) / Saat (noun)</h4>
+      <div class="spotlight-row">
+        <div class="spot-col verb-col">
+          <h5>🔴 VERB</h5>
+          I <strong>watch</strong> football on TV.<br>
+          She <strong>watches</strong> documentaries.<br>
+          Don't <strong>watch</strong> TV so late!
+        </div>
+        <div class="spot-col noun-col">
+          <h5>🟢 NOUN</h5>
+          I have <strong>a watch</strong>. (kol saati)<br>
+          <strong>The watch</strong> is broken.<br>
+          He wears <strong>a black watch</strong>.<br>
+          <span style="font-size:11px;color:var(--muted);">(a watch = object — takes A/THE)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="spotlight">
+      <h4>🔦 RUN — Koşmak (verb) / Koşu (noun)</h4>
+      <div class="spotlight-row">
+        <div class="spot-col verb-col">
+          <h5>🔴 VERB</h5>
+          I <strong>run</strong> every morning.<br>
+          He <strong>runs</strong> really fast.<br>
+          They <strong>ran</strong> away from the dog.
+        </div>
+        <div class="spot-col noun-col">
+          <h5>🟢 NOUN</h5>
+          I go for <strong>a run</strong> at 7am.<br>
+          She had <strong>a good run</strong> today.<br>
+          <span style="font-size:11px;color:var(--muted);">(a run = koşu aktivitesi — takes A)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="spotlight">
+      <h4>🔦 LOVE — Sevmek (verb) / Aşk / Sevgi (noun)</h4>
+      <div class="spotlight-row">
+        <div class="spot-col verb-col">
+          <h5>🔴 VERB</h5>
+          I <strong>love</strong> football.<br>
+          She <strong>loves</strong> her cat.<br>
+          Do you <strong>love</strong> music?
+        </div>
+        <div class="spot-col noun-col">
+          <h5>🟢 NOUN</h5>
+          <strong>Love</strong> is a powerful feeling. (zero article — general)<br>
+          Their <strong>love</strong> of nature is beautiful.<br>
+          It was <strong>love</strong> at first sight.
+        </div>
+      </div>
+    </div>
+
+    <div style="background:var(--c3d); border:2px solid var(--c3); border-radius:11px; padding:13px 15px; font-size:13px; font-weight:700; line-height:1.9;">
+      💡 <strong>Quick identification trick:</strong>
+      <div style="margin-top:10px; display:flex; flex-direction:column; gap:8px;">
+        <div style="background:var(--c6d); border:2px solid var(--c6); border-radius:9px; padding:9px 12px; line-height:1.7;">
+          <span style="font-size:11px; font-weight:900; text-transform:uppercase; letter-spacing:.08em; color:var(--c6);">🔴 VERB (Fiil)</span><br>
+          If the word comes <em>after a subject</em> and <em>before an object</em> → probably a <strong style="color:var(--c6);">verb</strong>.<br>
+          <span style="font-size:12px; color:var(--muted);">Example: I <strong style="color:var(--c6);">work</strong> hard. &nbsp;(after subject "I" → verb)</span>
+        </div>
+        <div style="background:var(--c5d); border:2px solid var(--c5); border-radius:9px; padding:9px 12px; line-height:1.7;">
+          <span style="font-size:11px; font-weight:900; text-transform:uppercase; letter-spacing:.08em; color:var(--c2);">🟢 NOUN (İsim)</span><br>
+          If the word comes <em>after a preposition</em> (at, from, to, for, of) or <em>after a / an / the</em> → probably a <strong style="color:var(--c2);">noun</strong>.<br>
+          <span style="font-size:12px; color:var(--muted);">Example: I come from <strong style="color:var(--c2);">work</strong>. &nbsp;(after "from" → noun)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ PRACTICE -->
+  <section class="lesson-section">
+    <h2>✏️ Practice</h2>
+
+    <!-- Exercise 1: Countable or Uncountable? -->
+    <div class="sec">
+      <button class="accordion">1. Countable or Uncountable? — Sayılabilir mi?</button>
+      <div class="panel">
+        <div class="card" id="ex1">
+          <div class="instr">Write <strong>C</strong> (countable) or <strong>U</strong> (uncountable) for each noun.</div>
+          <div class="exercise"><label>1. dog → <input type="text" id="e1a" data-answer="c" placeholder="C or U"> &nbsp;&nbsp; 2. water → <input type="text" id="e1b" data-answer="u" placeholder="C or U"> &nbsp;&nbsp; 3. book → <input type="text" id="e1c" data-answer="c" placeholder="C or U"></label></div>
+          <div class="exercise"><label>4. music → <input type="text" id="e1d" data-answer="u" placeholder="C or U"> &nbsp;&nbsp; 5. city → <input type="text" id="e1e" data-answer="c" placeholder="C or U"> &nbsp;&nbsp; 6. homework → <input type="text" id="e1f" data-answer="u" placeholder="C or U"></label></div>
+          <div class="exercise"><label>7. bread → <input type="text" id="e1g" data-answer="u" placeholder="C or U"> &nbsp;&nbsp; 8. match → <input type="text" id="e1h" data-answer="c" placeholder="C or U"> &nbsp;&nbsp; 9. money → <input type="text" id="e1i" data-answer="u" placeholder="C or U"></label></div>
+          <div class="exercise"><label>10. advice → <input type="text" id="e1j" data-answer="u" placeholder="C or U"> &nbsp;&nbsp; 11. idea → <input type="text" id="e1k" data-answer="c" placeholder="C or U"> &nbsp;&nbsp; 12. traffic → <input type="text" id="e1l" data-answer="u" placeholder="C or U"></label></div>
+          <button class="check-all-btn" onclick="checkAll('ex1')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exercise 2: The or Zero Article -->
+    <div class="sec">
+      <button class="accordion">2. The or – (nothing)? Write the correct answer.</button>
+      <div class="panel">
+        <div class="card" id="ex2">
+          <div class="instr">Write <strong>the</strong> or <strong>–</strong> (a dash if no article is needed).</div>
+          <div class="exercise"><label>1. I love <input type="text" id="e2a" data-answer="–" placeholder="?"> football.</label></div>
+          <div class="exercise"><label>2. Did you see <input type="text" id="e2b" data-answer="the" placeholder="?"> football match on Saturday?</label></div>
+          <div class="exercise"><label>3. <input type="text" id="e2c" data-answer="–" placeholder="?"> wolves are dangerous wild animals.</label></div>
+          <div class="exercise"><label>4. Look at <input type="text" id="e2d" data-answer="the" placeholder="?"> wolf over there — it's huge!</label></div>
+          <div class="exercise"><label>5. She goes to <input type="text" id="e2e" data-answer="–" placeholder="?"> school every day.</label></div>
+          <div class="exercise"><label>6. <input type="text" id="e2f" data-answer="the" placeholder="?"> school near my house has a big playground.</label></div>
+          <div class="exercise"><label>7. I come home from <input type="text" id="e2g" data-answer="–" placeholder="?"> work at 6 o'clock.</label></div>
+          <div class="exercise"><label>8. <input type="text" id="e2h" data-answer="the" placeholder="?"> sun rises in the east.</label></div>
+          <div class="exercise"><label>9. I drink <input type="text" id="e2i" data-answer="–" placeholder="?"> water every morning.</label></div>
+          <div class="exercise"><label>10. He is <input type="text" id="e2j" data-answer="the" placeholder="?"> best player on the team.</label></div>
+          <div class="exercise"><label>11. I love <input type="text" id="e2k" data-answer="–" placeholder="?"> music — especially hip-hop.</label></div>
+          <div class="exercise"><label>12. Can you turn off <input type="text" id="e2l" data-answer="the" placeholder="?"> music? It's too loud.</label></div>
+          <button class="check-all-btn" onclick="checkAll('ex2')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exercise 3: Verb or Noun? -->
+    <div class="sec">
+      <button class="accordion">3. Verb or Noun? — Fiil mi, İsim mi?</button>
+      <div class="panel">
+        <div class="card" id="ex3">
+          <div class="instr">Look at the bold word. Write <strong>V</strong> (verb) or <strong>N</strong> (noun).</div>
+          <div class="exercise"><label>1. I <strong>work</strong> at a school. → <input type="text" id="e3a" data-answer="v" placeholder="V or N"></label></div>
+          <div class="exercise"><label>2. She comes home from <strong>work</strong> at 5. → <input type="text" id="e3b" data-answer="n" placeholder="V or N"></label></div>
+          <div class="exercise"><label>3. I <strong>watch</strong> football every weekend. → <input type="text" id="e3c" data-answer="v" placeholder="V or N"></label></div>
+          <div class="exercise"><label>4. I have a new <strong>watch</strong> on my wrist. → <input type="text" id="e3d" data-answer="n" placeholder="V or N"></label></div>
+          <div class="exercise"><label>5. We <strong>play</strong> football after school. → <input type="text" id="e3e" data-answer="v" placeholder="V or N"></label></div>
+          <div class="exercise"><label>6. I go for a <strong>run</strong> in the morning. → <input type="text" id="e3f" data-answer="n" placeholder="V or N"></label></div>
+          <div class="exercise"><label>7. I <strong>love</strong> animals. → <input type="text" id="e3g" data-answer="v" placeholder="V or N"></label></div>
+          <div class="exercise"><label>8. <strong>Love</strong> is a wonderful feeling. → <input type="text" id="e3h" data-answer="n" placeholder="V or N"></label></div>
+          <button class="check-all-btn" onclick="checkAll('ex3')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exercise 4: Correct the error -->
+    <div class="sec">
+      <button class="accordion">4. Error Correction — Find and Fix the Mistake</button>
+      <div class="panel">
+        <div class="card">
+          <div class="instr">Each sentence has ONE article mistake. Write the corrected sentence.</div>
+          <div class="order-sentence">
+            <p>1. I love the music. ❌</p>
+            <input type="text" id="e4a" data-answer="i love music" placeholder="Corrected sentence">
+            <button class="check-btn" onclick="checkById('e4a')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>2. Can I have an advice? ❌</p>
+            <input type="text" id="e4b" data-answer="can i have some advice" placeholder="Corrected sentence">
+            <button class="check-btn" onclick="checkById('e4b')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>3. The wolves are wild animals. ❌ (general statement)</p>
+            <input type="text" id="e4c" data-answer="wolves are wild animals" placeholder="Corrected sentence">
+            <button class="check-btn" onclick="checkById('e4c')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>4. She goes to the school every morning. ❌</p>
+            <input type="text" id="e4d" data-answer="she goes to school every morning" placeholder="Corrected sentence">
+            <button class="check-btn" onclick="checkById('e4d')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>5. I drink a water after training. ❌</p>
+            <input type="text" id="e4e" data-answer="i drink water after training" placeholder="Corrected sentence">
+            <button class="check-btn" onclick="checkById('e4e')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>6. He came home from the work late. ❌</p>
+            <input type="text" id="e4f" data-answer="he came home from work late" placeholder="Corrected sentence">
+            <button class="check-btn" onclick="checkById('e4f')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>7. I don't have a homework tonight. ❌</p>
+            <input type="text" id="e4g" data-answer="i don't have any homework tonight" placeholder="Corrected sentence">
+            <button class="check-btn" onclick="checkById('e4g')">✓</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exercise 5: Complete the sentences (mixed) -->
+    <div class="sec">
+      <button class="accordion">5. Complete the Sentence — a / an / the / –</button>
+      <div class="panel">
+        <div class="card" id="ex5">
+          <div class="instr">Write <strong>a</strong>, <strong>an</strong>, <strong>the</strong>, or <strong>–</strong> (nothing).</div>
+          <div class="exercise"><label>1. I have <input type="text" id="e5a" data-answer="a" placeholder="?"> dog. <input type="text" id="e5b" data-answer="the" placeholder="?"> dog is called Rex.</label></div>
+          <div class="exercise"><label>2. Do you play <input type="text" id="e5c" data-answer="–" placeholder="?"> basketball?</label></div>
+          <div class="exercise"><label>3. <input type="text" id="e5d" data-answer="–" placeholder="?"> Cheetahs are <input type="text" id="e5e" data-answer="the" placeholder="?"> fastest land animals.</label></div>
+          <div class="exercise"><label>4. She has <input type="text" id="e5f" data-answer="–" placeholder="?"> long hair and <input type="text" id="e5g" data-answer="–" placeholder="?"> blue eyes.</label></div>
+          <div class="exercise"><label>5. I study <input type="text" id="e5h" data-answer="–" placeholder="?"> English and <input type="text" id="e5i" data-answer="–" placeholder="?"> maths at school.</label></div>
+          <div class="exercise"><label>6. He is at <input type="text" id="e5j" data-answer="–" placeholder="?"> work right now.</label></div>
+          <div class="exercise"><label>7. Can you pass me <input type="text" id="e5k" data-answer="the" placeholder="?"> salt, please?</label></div>
+          <div class="exercise"><label>8. I go to <input type="text" id="e5l" data-answer="–" placeholder="?"> bed at ten o'clock.</label></div>
+          <div class="exercise"><label>9. <input type="text" id="e5m" data-answer="the" placeholder="?"> sky is really blue today.</label></div>
+          <div class="exercise"><label>10. Can I have <input type="text" id="e5n" data-answer="some" placeholder="?"> water, please?</label></div>
+          <button class="check-all-btn" onclick="checkAll('ex5')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exercise 6: Word order -->
+    <div class="sec">
+      <button class="accordion">6. Put the Words in Order</button>
+      <div class="panel">
+        <div class="card">
+          <div class="instr">Use all the words to make a correct sentence. Watch the articles!</div>
+          <div class="order-sentence">
+            <p>1. love / I / animals / – (general)</p>
+            <input type="text" id="e6a" data-answer="i love animals" placeholder="Write the sentence">
+            <button class="check-btn" onclick="checkById('e6a')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>2. goes / she / school / to / every / day</p>
+            <input type="text" id="e6b" data-answer="she goes to school every day" placeholder="Write the sentence">
+            <button class="check-btn" onclick="checkById('e6b')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>3. the / sun / the / in / east / rises</p>
+            <input type="text" id="e6c" data-answer="the sun rises in the east" placeholder="Write the sentence">
+            <button class="check-btn" onclick="checkById('e6c')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>4. is / my / best / he / the / player / team / on</p>
+            <input type="text" id="e6d" data-answer="he is the best player on my team" placeholder="Write the sentence">
+            <button class="check-btn" onclick="checkById('e6d')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>5. some / can / have / I / water</p>
+            <input type="text" id="e6e" data-answer="can i have some water" placeholder="Write the sentence">
+            <button class="check-btn" onclick="checkById('e6e')">✓</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exercise 7: Reading passage -->
+    <div class="sec">
+      <button class="accordion">7. Reading Passage — Find the Article</button>
+      <div class="panel">
+        <div class="card">
+          <div class="warmup-box" style="margin-bottom:12px;">
+            <h3>📖 Read Carefully</h3>
+            <p style="line-height:2;">
+              My name is Kerem. I am 13 years old and I go to <strong>school</strong> in Istanbul. Every morning I wake up at half past seven and have <strong>breakfast</strong>. I usually drink <strong>milk</strong> and eat <strong>bread</strong> with <strong>cheese</strong>. After school, I love playing <strong>football</strong> with my friends. My dad works long hours — he leaves for <strong>work</strong> at 8 and comes home from <strong>work</strong> at 7. On Saturdays, we watch <strong>the</strong> match together on TV. <strong>The</strong> team we support is Galatasaray — they are <strong>the</strong> best team in Turkey! I also love listening to <strong>music</strong> in my room. <strong>Music</strong> makes me happy.
+            </p>
+          </div>
+          <div class="instr">Answer these questions about the text above.</div>
+          <div class="exercise"><label>1. Why is there no article before "school"? Write your answer: <input type="text" id="e7a" data-answer="it's an institution used for its purpose" placeholder="?" style="min-width:220px;"></label></div>
+          <div class="exercise"><label>2. "He comes home from work" — is "work" here a verb or a noun? <input type="text" id="e7b" data-answer="noun" placeholder="?"></label></div>
+          <div class="exercise"><label>3. "Music makes me happy" — why no article? <input type="text" id="e7c" data-answer="general / uncountable" placeholder="?"></label></div>
+          <div class="exercise"><label>4. Why does "the match" have THE? <input type="text" id="e7d" data-answer="specific match they both know about" placeholder="?" style="min-width:220px;"></label></div>
+          <button class="check-all-btn" onclick="checkAll('ex7','e7a,e7b,e7c,e7d')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exercise 8: Writing task -->
+    <div class="sec">
+      <button class="accordion">8. Writing Task</button>
+      <div class="panel">
+        <div class="card">
+          <div class="writing-prompt">
+            <h4>✍️ My Day — Without Mistakes!</h4>
+            <p>Write <strong>8 sentences</strong> about your typical day. Be very careful about articles — use <em>the</em> when something is specific, and <em>–</em> (nothing) for general and uncountable nouns and institutions.</p>
+            <div class="instr">Try to include: school, work, football/Minecraft, water/food, music OR an animal in general.</div>
+            <textarea rows="11" placeholder="Every morning I wake up at...&#10;I have breakfast — I eat...and drink...&#10;I go to school at...&#10;After school I play...&#10;I love...&#10;My dad/mum comes home from work at...&#10;In the evening, the...&#10;I go to bed at..."></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Speaking task -->
+    <div class="sec">
+      <button class="accordion">9. Speaking Task 🗣️</button>
+      <div class="panel">
+        <div class="card">
+          <div class="speaking-prompt">
+            <h4>🗣️ Articles Hot Seat!</h4>
+            <p>Your teacher says a sentence. You decide: <strong>the</strong> or <strong>–</strong> (nothing)? Explain WHY. First one is done for you as an example.</p>
+            <ul style="margin-left:18px;margin-top:8px;line-height:2.4;">
+              <li>"I love ___ football." → <strong>–</strong> → "Because football is general, not a specific game."</li>
+              <li>"I play ___ guitar."</li>
+              <li>"___ dolphins are intelligent."</li>
+              <li>"Look at ___ dolphin in the pool!"</li>
+              <li>"She studies ___ English."</li>
+              <li>"He is ___ best goalkeeper I've ever seen."</li>
+              <li>"Can I drink ___ water?"</li>
+              <li>"Pass me ___ water bottle on the table."</li>
+            </ul>
+            <textarea rows="4" placeholder="Notes / things to remember from this task..."></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ QUICK REFERENCE CHEAT SHEET -->
+  <section class="lesson-section">
+    <h2>📎 Quick Reference — Keep This Handy!</h2>
+    <div class="grammar-box">
+      <h3>Your Article Decision Chart</h3>
+      <table>
+        <thead><tr><th>Question to ask yourself</th><th>Answer → Use</th></tr></thead>
+        <tbody>
+          <tr><td>Is it the first time I mention it AND it is one countable thing?</td><td><strong>a / an</strong></td></tr>
+          <tr><td>Does the listener already know which one? / Only one exists?</td><td><strong>the</strong></td></tr>
+          <tr><td>Am I talking about ALL things of that type (general)?</td><td><strong>– (nothing)</strong></td></tr>
+          <tr><td>Is the noun uncountable (liquid, material, abstract, activity)?</td><td><strong>– (nothing)</strong></td></tr>
+          <tr><td>Is it a sport, language, school subject, or meal?</td><td><strong>– (nothing)</strong></td></tr>
+          <tr><td>Is it a place used for its purpose (school, work, bed)?</td><td><strong>– (nothing)</strong></td></tr>
+          <tr><td>Is it a superlative (the best, the biggest)?</td><td><strong>the</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <nav class="page-nav">
+    <a href="L5_Articles_Nouns_Plurals.html">← Back to L5</a>
+    <a href="L5B_Articles_Booster_HW.html" class="hw-link">📝 Booster Homework</a>
+    <a href="L6_Telling_Time_Frequency.html">Continue to L6 →</a>
+  </nav>
+
+</div>
+
+<!-- ═══════════════════════════════════════════════════ JAVASCRIPT -->
+<script>
+  /* ── Accordion ── */
+  document.querySelectorAll('.accordion').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const panel = btn.nextElementSibling;
+      const isOpen = panel.classList.contains('open');
+      document.querySelectorAll('.panel.open').forEach(p => p.classList.remove('open'));
+      if (!isOpen) panel.classList.add('open');
+      updateProgress();
+    });
+  });
+
+  /* ── Check single input by id ── */
+  function normalise(s){ return s.trim().toLowerCase().replace(/['']/g,"'"); }
+
+  function checkById(id) {
+    const inp = document.getElementById(id);
+    if (!inp) return;
+    const correct = normalise(inp.getAttribute('data-answer') || '');
+    const val = normalise(inp.value);
+    inp.classList.remove('correct','incorrect');
+    if (val === correct || (correct === '–' && (val === '-' || val === '–' || val === '' || val === 'nothing' || val === 'no article'))) {
+      inp.classList.add('correct');
+    } else {
+      inp.classList.add('incorrect');
+    }
+    updateScore();
+  }
+
+  /* ── Check all in a section ── */
+  function checkAll(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (!section) return;
+    section.querySelectorAll('input[data-answer]').forEach(inp => {
+      checkById(inp.id);
+    });
+  }
+
+  /* ── Score ── */
+  function updateScore() {
+    const all = document.querySelectorAll('input[data-answer]');
+    const correct = document.querySelectorAll('input.correct');
+    const total = all.length;
+    const got = correct.length;
+    document.getElementById('scoreNum').textContent = got;
+    document.getElementById('scoreDen').textContent = '/' + total;
+    const pct = total ? Math.round(got/total*100) : 0;
+    const stars = pct >= 90 ? '⭐⭐⭐' : pct >= 70 ? '⭐⭐' : pct >= 50 ? '⭐' : '';
+    document.getElementById('scoreStars').textContent = stars;
+  }
+
+  /* ── Progress ── */
+  function updateProgress() {
+    const steps = document.querySelectorAll('#lessonSteps .step');
+    const open = document.querySelectorAll('.panel.open').length;
+    const total = document.querySelectorAll('.accordion').length;
+    const done = Math.min(Math.round((open/total)*steps.length), steps.length);
+    steps.forEach((s,i) => {
+      s.classList.remove('done','active');
+      if (i < done-1) s.classList.add('done');
+      else if (i === done-1) s.classList.add('active');
+    });
+    const pct = total ? Math.round(open/total*100) : 0;
+    document.getElementById('lessonPct').textContent = pct + '%';
+  }
+
+  /* zero-article alias */
+  document.querySelectorAll('input[data-answer="–"]').forEach(inp => {
+    inp.addEventListener('input', () => {
+      const v = inp.value.trim().toLowerCase();
+      if (v === '-' || v === '–' || v === 'nothing' || v === 'no article' || v === 'x' || v === '') {
+        inp.setAttribute('data-answer-alias','true');
+      }
+    });
+  });
+</script>
+</body>
+</html>
