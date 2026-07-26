@@ -11,14 +11,18 @@
 <div class="container">
 
   <header class="page-header">
-    <div class="lesson-badge-pill">Homework · Lesson 6</div>
+    <div class="lesson-badge-pill">Homework · Lesson 6 · 60 min</div>
     <h1>Homework 6: Time & Frequency 📝</h1>
-    <p class="subtitle">Complete all exercises after the lesson.</p>
+    <p class="subtitle">Complete all exercises carefully — aim for 60 minutes of focused work.</p>
   </header>
 
   <div class="prog">
     <span class="prog-lbl">Progress</span>
-    <div class="steps" id="lessonSteps"><div class="step"></div><div class="step"></div><div class="step"></div></div>
+    <div class="steps" id="lessonSteps">
+      <div class="step"></div><div class="step"></div><div class="step"></div>
+      <div class="step"></div><div class="step"></div><div class="step"></div>
+      <div class="step"></div>
+    </div>
     <span class="pct" id="lessonPct">0%</span>
   </div>
   <div class="score-bar">
@@ -28,28 +32,63 @@
     <span class="score-stars" id="scoreStars"></span>
   </div>
 
-  <section class="lesson-section">
-    <h2>Homework Practice</h2>
+  <div class="tip-box">
+    <p>📋 <strong>Quick reminder before you start:</strong></p>
+    <p>✅ Minutes 1–30 → use <strong>PAST</strong> and say the current hour</p>
+    <p>✅ Minutes 31–59 → use <strong>TO</strong> and say the NEXT hour</p>
+    <p>✅ Frequency adverbs → <strong>BEFORE</strong> the main verb</p>
+    <p>✅ Frequency adverbs → <strong>AFTER</strong> the verb to be</p>
+  </div>
 
+  <section class="lesson-section">
+    <h2>Homework Exercises</h2>
+
+    <!-- 1. Write the time -->
     <div class="sec">
-      <button class="accordion">1. Write the Time</button>
+      <button class="accordion">1. Write the Time in Words</button>
       <div class="panel">
         <div class="card" id="hw6-time">
-          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write the time in words.</p>
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write each time fully in English. Remember the past/to rule!</p>
           <div class="exercise"><label>1. 6:00 → It's <input type="text" id="hw6t1" data-answer="six o'clock" placeholder="?"></label></div>
           <div class="exercise"><label>2. 10:15 → It's <input type="text" id="hw6t2" data-answer="quarter past ten" placeholder="?"></label></div>
           <div class="exercise"><label>3. 1:30 → It's <input type="text" id="hw6t3" data-answer="half past one" placeholder="?"></label></div>
           <div class="exercise"><label>4. 9:45 → It's <input type="text" id="hw6t4" data-answer="quarter to ten" placeholder="?"></label></div>
           <div class="exercise"><label>5. 3:10 → It's <input type="text" id="hw6t5" data-answer="ten past three" placeholder="?"></label></div>
+          <div class="exercise"><label>6. 7:55 → It's <input type="text" id="hw6t6" data-answer="five to eight" placeholder="?"></label></div>
+          <div class="exercise"><label>7. 4:25 → It's <input type="text" id="hw6t7" data-answer="twenty-five past four" placeholder="?"></label></div>
+          <div class="exercise"><label>8. 11:40 → It's <input type="text" id="hw6t8" data-answer="twenty to twelve" placeholder="?"></label></div>
+          <div class="exercise"><label>9. 2:05 → It's <input type="text" id="hw6t9" data-answer="five past two" placeholder="?"></label></div>
+          <div class="exercise"><label>10. 8:35 → It's <input type="text" id="hw6t10" data-answer="twenty-five to nine" placeholder="?"></label></div>
           <button class="check-all-btn" onclick="checkAll('hw6-time')">✓ Check All</button>
         </div>
       </div>
     </div>
 
+    <!-- 2. Write the digital time -->
     <div class="sec">
-      <button class="accordion">2. Correct Word Order with Frequency</button>
+      <button class="accordion">2. Words to Digital Time</button>
+      <div class="panel">
+        <div class="card" id="hw6-dig">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Convert the words into a digital time (e.g. 3:15).</p>
+          <div class="exercise"><label>1. half past two → <input type="text" id="hw6d1" data-answer="2:30" placeholder="?:?"></label></div>
+          <div class="exercise"><label>2. quarter to six → <input type="text" id="hw6d2" data-answer="5:45" placeholder="?:?"></label></div>
+          <div class="exercise"><label>3. twenty past eleven → <input type="text" id="hw6d3" data-answer="11:20" placeholder="?:?"></label></div>
+          <div class="exercise"><label>4. five to nine → <input type="text" id="hw6d4" data-answer="8:55" placeholder="?:?"></label></div>
+          <div class="exercise"><label>5. quarter past four → <input type="text" id="hw6d5" data-answer="4:15" placeholder="?:?"></label></div>
+          <div class="exercise"><label>6. ten to seven → <input type="text" id="hw6d6" data-answer="6:50" placeholder="?:?"></label></div>
+          <div class="exercise"><label>7. twenty-five past eight → <input type="text" id="hw6d7" data-answer="8:25" placeholder="?:?"></label></div>
+          <div class="exercise"><label>8. five past midnight → <input type="text" id="hw6d8" data-answer="12:05" placeholder="?:?"></label></div>
+          <button class="check-all-btn" onclick="checkAll('hw6-dig')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Frequency word order -->
+    <div class="sec">
+      <button class="accordion">3. Frequency Adverb — Correct Word Order</button>
       <div class="panel">
         <div class="card">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Put the words in the correct order. Pay careful attention to where the adverb goes!</p>
           <div class="order-sentence">
             <p>1. I / play / always / football / after / school</p>
             <input type="text" id="hw6o1" data-answer="i always play football after school" placeholder="Write the full sentence">
@@ -65,18 +104,121 @@
             <input type="text" id="hw6o3" data-answer="we sometimes watch movies on saturday" placeholder="Write the full sentence">
             <button class="check-btn" onclick="checkById('hw6o3')">✓</button>
           </div>
+          <div class="order-sentence">
+            <p>4. usually / my dad / comes home / at / seven o'clock</p>
+            <input type="text" id="hw6o4" data-answer="my dad usually comes home at seven o'clock" placeholder="Write the full sentence">
+            <button class="check-btn" onclick="checkById('hw6o4')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>5. often / are / they / happy / in the morning</p>
+            <input type="text" id="hw6o5" data-answer="they are often happy in the morning" placeholder="Write the full sentence">
+            <button class="check-btn" onclick="checkById('hw6o5')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>6. eats / she / rarely / fast food / but / loves / pizza / she</p>
+            <input type="text" id="hw6o6" data-answer="she rarely eats fast food but she loves pizza" placeholder="Write the full sentence">
+            <button class="check-btn" onclick="checkById('hw6o6')">✓</button>
+          </div>
         </div>
       </div>
     </div>
 
+    <!-- 4. Fill in the blanks - mixed -->
     <div class="sec">
-      <button class="accordion">3. Writing Task</button>
+      <button class="accordion">4. Mixed Practice — Time & Frequency</button>
+      <div class="panel">
+        <div class="card" id="hw6-mix">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Complete each sentence with the correct time expression OR frequency adverb.</p>
+          <div class="exercise"><label>1. School starts at <input type="text" id="hw6m1" data-answer="half past eight" placeholder="time"> every morning.</label></div>
+          <div class="exercise"><label>2. I <input type="text" id="hw6m2" data-answer="always" placeholder="adverb"> do my homework before dinner. (100%)</label></div>
+          <div class="exercise"><label>3. The match is at <input type="text" id="hw6m3" data-answer="quarter to three" placeholder="time"> on Saturday. (2:45)</label></div>
+          <div class="exercise"><label>4. He is <input type="text" id="hw6m4" data-answer="never" placeholder="adverb"> rude to his teacher. (0%)</label></div>
+          <div class="exercise"><label>5. My mum wakes up at <input type="text" id="hw6m5" data-answer="twenty past six" placeholder="time"> every day. (6:20)</label></div>
+          <div class="exercise"><label>6. I <input type="text" id="hw6m6" data-answer="sometimes" placeholder="adverb"> play video games after dinner. (~40%)</label></div>
+          <div class="exercise"><label>7. Dinner is <input type="text" id="hw6m7" data-answer="usually" placeholder="adverb"> ready at seven. (~80%)</label></div>
+          <div class="exercise"><label>8. I go to bed at <input type="text" id="hw6m8" data-answer="quarter to eleven" placeholder="time">. (10:45)</label></div>
+          <button class="check-all-btn" onclick="checkAll('hw6-mix')">✓ Check All</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. Error correction -->
+    <div class="sec">
+      <button class="accordion">5. Find and Fix the Mistake</button>
+      <div class="panel">
+        <div class="card">
+          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Each sentence has exactly one mistake. Write the corrected sentence.</p>
+          <div class="order-sentence">
+            <p>1. It's half to five. ❌ (4:30)</p>
+            <input type="text" id="hw6e1" data-answer="it's half past four" placeholder="Correct sentence">
+            <button class="check-btn" onclick="checkById('hw6e1')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>2. He plays always football on Sundays. ❌</p>
+            <input type="text" id="hw6e2" data-answer="he always plays football on sundays" placeholder="Correct sentence">
+            <button class="check-btn" onclick="checkById('hw6e2')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>3. It's twenty past to three. ❌ (2:40)</p>
+            <input type="text" id="hw6e3" data-answer="it's twenty to three" placeholder="Correct sentence">
+            <button class="check-btn" onclick="checkById('hw6e3')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>4. My sister never is on time. ❌</p>
+            <input type="text" id="hw6e4" data-answer="my sister is never on time" placeholder="Correct sentence">
+            <button class="check-btn" onclick="checkById('hw6e4')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>5. It's five past to seven. ❌ (6:55)</p>
+            <input type="text" id="hw6e5" data-answer="it's five to seven" placeholder="Correct sentence">
+            <button class="check-btn" onclick="checkById('hw6e5')">✓</button>
+          </div>
+          <div class="order-sentence">
+            <p>6. I usually am hungry after training. ❌</p>
+            <input type="text" id="hw6e6" data-answer="i am usually hungry after training" placeholder="Correct sentence">
+            <button class="check-btn" onclick="checkById('hw6e6')">✓</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. Reading -->
+    <div class="sec">
+      <button class="accordion">6. Reading — Ali's Busy Week 📖</button>
+      <div class="panel">
+        <div class="card">
+          <div class="warmup-box" style="margin-bottom:14px;">
+            <h3>📖 Read carefully</h3>
+            <p style="line-height:2.2;">Ali is 13 years old and has a very busy week. He <strong>always</strong> wakes up at <strong>quarter past six</strong> from Monday to Friday. He <strong>usually</strong> has breakfast at <strong>half past six</strong> and leaves home at <strong>twenty past seven</strong>.</p>
+            <p style="line-height:2.2; margin-top:8px;">School starts at <strong>eight o'clock</strong> and finishes at <strong>quarter past three</strong>. After school, Ali <strong>often</strong> goes to football training — it starts at <strong>five o'clock</strong> and finishes at <strong>quarter to seven</strong>. He <strong>rarely</strong> misses it.</p>
+            <p style="line-height:2.2; margin-top:8px;">In the evenings, he <strong>usually</strong> does his homework between <strong>seven</strong> and <strong>half past eight</strong>. He <strong>sometimes</strong> plays video games after that — but only until <strong>ten o'clock</strong>. He <strong>never</strong> stays up past <strong>half past ten</strong>.</p>
+          </div>
+          <div class="card" id="hw6-read">
+            <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Answer these questions using information from the text.</p>
+            <div class="exercise"><label>1. What time does Ali wake up on school days? → At <input type="text" id="hw6r1" data-answer="quarter past six" placeholder="?"></label></div>
+            <div class="exercise"><label>2. What time does school finish? → At <input type="text" id="hw6r2" data-answer="quarter past three" placeholder="?"></label></div>
+            <div class="exercise"><label>3. How often does Ali go to football training? → <input type="text" id="hw6r3" data-answer="often" placeholder="adverb"></label></div>
+            <div class="exercise"><label>4. What time does training end? → At <input type="text" id="hw6r4" data-answer="quarter to seven" placeholder="?"></label></div>
+            <div class="exercise"><label>5. Does Ali ever miss training? → He <input type="text" id="hw6r5" data-answer="rarely" placeholder="adverb"> misses it.</label></div>
+            <div class="exercise"><label>6. What time does he finish his homework? → At <input type="text" id="hw6r6" data-answer="half past eight" placeholder="?"></label></div>
+            <div class="exercise"><label>7. What time does he NEVER stay up past? → <input type="text" id="hw6r7" data-answer="half past ten" placeholder="?"></label></div>
+            <button class="check-all-btn" onclick="checkAll('hw6-read')">✓ Check All</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. Writing task -->
+    <div class="sec">
+      <button class="accordion">7. Writing Task ✍️ — A Day in My Life</button>
       <div class="panel">
         <div class="card">
           <div class="writing-prompt">
-            <h4>✍️ My Daily Time Table</h4>
-            <p>Write your daily schedule. Include <strong>6 activities</strong> with the time you do them and a frequency adverb for each.</p>
-            <textarea rows="9" placeholder="I always wake up at...&#10;I usually have breakfast at...&#10;School starts at...&#10;I often...&#10;I sometimes...&#10;I never..."></textarea>
+            <h4>✍️ A Day in My Life</h4>
+            <p>Write your real daily schedule as a paragraph of <strong>12 sentences</strong>. Use exact times for every activity AND a frequency adverb in every sentence.</p>
+            <p style="font-size:0.85rem; margin-top:7px; color:var(--muted);">⭐ <strong>Challenge:</strong> Use <em>always, usually, often, sometimes, rarely,</em> and <em>never</em> — one each!<br>
+            ⭐ <strong>Bonus:</strong> Add at least two sentences about what time a family member does something.</p>
+            <textarea rows="16" placeholder="On a typical school day, I always wake up at quarter to seven...&#10;I usually have breakfast at seven o'clock. I always eat...&#10;School starts at half past eight. I usually arrive at...&#10;At quarter past twelve, I often...&#10;After school, at about twenty past three, I sometimes...&#10;I rarely... but on Fridays I usually...&#10;In the evening, my mum usually cooks dinner at...&#10;I always do my homework before... It usually takes...&#10;I sometimes play... until about quarter to nine.&#10;I never go to bed before... but I always sleep by...&#10;My dad usually gets home from work at...&#10;My favourite time of day is... because I always..."></textarea>
           </div>
         </div>
       </div>

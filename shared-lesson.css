@@ -211,13 +211,25 @@ body::before{
   font-size:13px;font-weight:700;line-height:1.9;margin-bottom:11px;
 }
 
-/* ── Tip box ─────────────────────────────────────────────── */
+/* ── Tip box — FIXED: display:block prevents flex word-splitting ── */
 .tip-box{
-  background:var(--c3d);border:2px solid var(--c3);
-  border-radius:11px;padding:9px 13px;
-  font-size:13px;font-weight:700;line-height:1.65;
-  margin-bottom:11px;display:flex;gap:8px;
+  background:var(--c3d);
+  border:2px solid var(--c3);
+  border-radius:11px;
+  padding:12px 15px;
+  font-size:13px;font-weight:700;
+  line-height:1.85;
+  margin-bottom:11px;
+  display:block;
+  width:100%;
+  box-sizing:border-box;
 }
+.tip-box p{
+  display:block;
+  width:100%;
+  margin:0 0 4px 0;
+}
+.tip-box p:last-child{ margin-bottom:0; }
 
 /* ── Instruction banner ──────────────────────────────────── */
 .instr{
@@ -225,6 +237,7 @@ body::before{
   border-radius:9px;padding:7px 11px;
   font-size:12.5px;font-weight:700;color:#78350f;
   margin-bottom:10px;line-height:1.6;
+  display:block;width:100%;box-sizing:border-box;
 }
 
 /* ── Exercise fill-in row ────────────────────────────────── */
