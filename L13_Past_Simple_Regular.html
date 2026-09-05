@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 13 – Past Simple: Regular Verbs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared-lesson-p2.css" />
+</head>
+<body>
+<div class="container">
+
+  <header class="page-header">
+    <div class="lesson-badge-pill">Phase 2 · Lesson 13</div>
+    <h1>Past Simple: Regular Verbs 🕹️</h1>
+    <p class="subtitle">Add -ed to talk about actions that finished in the past.</p>
+    <div class="header-meta">
+      <span class="meta-pill">⏱ 45 minutes</span>
+      <span class="meta-pill">📈 Level: A2</span>
+    </div>
+  </header>
+
+  <div class="prog">
+    <span class="prog-lbl">Progress</span>
+    <div class="steps" id="lessonSteps"><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div></div>
+    <span class="pct" id="lessonPct">0%</span>
+  </div>
+  <div class="score-bar">
+    <span class="score-lbl">Score</span>
+    <span class="score-num" id="scoreNum">0</span>
+    <span class="score-denom" id="scoreDen">/0</span>
+    <span class="score-stars" id="scoreStars"></span>
+  </div>
+
+  <section class="lesson-section">
+    <h2>Warm-Up</h2>
+    <div class="warmup-box">
+      <h3>🔥 What Did You Do Yesterday? (3 minutes)</h3>
+      <p>Try to answer using -ed verbs: What did you watch? What did you play? Who did you talk to?</p>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>Presentation</h2>
+
+    <div class="grammar-box">
+      <h3>📌 Regular Past Simple – Spelling Rules</h3>
+      <table>
+        <thead><tr><th>Rule</th><th>Verb</th><th>Past Form</th></tr></thead>
+        <tbody>
+          <tr><td>Most verbs: add <strong>-ed</strong></td><td>play, watch, wash</td><td>played, watched, washed</td></tr>
+          <tr><td>Ends in -e: add <strong>-d</strong></td><td>like, dance, close</td><td>liked, danced, closed</td></tr>
+          <tr><td>Consonant + y → <strong>-ied</strong></td><td>study, cry, try</td><td>studied, cried, tried</td></tr>
+          <tr><td>Short vowel + consonant: double + <strong>-ed</strong></td><td>stop, plan, chat</td><td>stopped, planned, chatted</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grammar-box">
+      <h3>📌 Negative & Questions (all past simple verbs)</h3>
+      <table>
+        <thead><tr><th>Type</th><th>Structure</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td>Negative</td><td>Subject + <strong>didn't</strong> + base verb</td><td>I didn't play yesterday.</td></tr>
+          <tr><td>Question</td><td><strong>Did</strong> + subject + base verb?</td><td>Did you watch the film?</td></tr>
+          <tr><td>Short answer</td><td>Yes, I did. / No, I didn't.</td><td>Did she study? — Yes, she did.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="example-box">
+      ✅ I <strong>played</strong> football yesterday.<br>
+      ✅ She <strong>studied</strong> for her test last night.<br>
+      ✅ We <strong>didn't watch</strong> the match — it started too late.<br>
+      ✅ <strong>Did</strong> you <strong>talk</strong> to your teacher? — Yes, I did.
+    </div>
+
+    <div class="tip-box">
+      💡 <strong>Important:</strong> In negatives and questions, the main verb goes back to its base form — no -ed!<br>
+      ❌ I didn't <u>played</u>. &nbsp;&nbsp; ✅ I didn't <u>play</u>.
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>Practice</h2>
+
+    <div class="sec" id="l13-fill">
+      <button class="accordion">1. Fill in the Blanks</button>
+      <div class="panel">
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write the correct past simple form.</p>
+        <div class="exercise"><label>1. I <input type="text" data-answer="played" placeholder="?"> (play) football yesterday.</label></div>
+        <div class="exercise"><label>2. She <input type="text" data-answer="watched" placeholder="?"> (watch) a film last night.</label></div>
+        <div class="exercise"><label>3. We <input type="text" data-answer="studied" placeholder="?"> (study) for the test.</label></div>
+        <div class="exercise"><label>4. He <input type="text" data-answer="stopped" placeholder="?"> (stop) the car quickly.</label></div>
+        <div class="exercise"><label>5. They <input type="text" data-answer="cleaned" placeholder="?"> (clean) their rooms on Saturday.</label></div>
+        <div class="exercise"><label>6. I <input type="text" data-answer="didn't like" placeholder="?"> (not like) the film.</label></div>
+        <div class="exercise"><label>7. <input type="text" data-answer="did you visit" placeholder="?"> (you / visit) your grandma last week?</label></div>
+        <div class="exercise"><label>8. My cat <input type="text" data-answer="chased" placeholder="?"> (chase) a butterfly in the garden.</label></div>
+        <div class="exercise"><label>9. She <input type="text" data-answer="cried" placeholder="?"> (cry) when her team lost.</label></div>
+        <div class="exercise"><label>10. We <input type="text" data-answer="didn't finish" placeholder="?"> (not finish) our homework.</label></div>
+        <button class="check-all-btn" onclick="checkAll('l13-fill')">✓ Check All</button>
+      </div>
+    </div>
+
+    <div class="sec" id="l13-mc">
+      <button class="accordion">2. Multiple Choice</button>
+      <div class="panel">
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Choose the correct sentence.</p>
+        <div class="exercise"><label>1. a) I didn't played. b) I didn't play. → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <div class="exercise"><label>2. a) Did you watched? b) Did you watch? → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <div class="exercise"><label>3. a) She studyed hard. b) She studied hard. → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <div class="exercise"><label>4. a) They stoped the game. b) They stopped the game. → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <div class="exercise"><label>5. a) He cleaned his room. b) He cleand his room. → <input type="text" data-answer="a" placeholder="?"></label></div>
+        <div class="exercise"><label>6. a) We didn't visit them. b) We not visited them. → <input type="text" data-answer="a" placeholder="?"></label></div>
+        <div class="exercise"><label>7. a) Did she cries? b) Did she cry? → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <div class="exercise"><label>8. a) My dad wash the car. b) My dad washed the car. → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <div class="exercise"><label>9. a) They chatted online. b) They chated online. → <input type="text" data-answer="a" placeholder="?"></label></div>
+        <div class="exercise"><label>10. a) I liked the pizza. b) I likeed the pizza. → <input type="text" data-answer="a" placeholder="?"></label></div>
+        <button class="check-all-btn" onclick="checkAll('l13-mc')">✓ Check All</button>
+      </div>
+    </div>
+
+    <div class="sec" id="l13-order">
+      <button class="accordion">3. Put the Words in Order</button>
+      <div class="panel">
+        <div class="order-sentence"><p>1. yesterday / football / I / played</p><input type="text" data-answer="i played football yesterday" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>2. night / watched / film / a / we / last</p><input type="text" data-answer="we watched a film last night" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>3. studied / hard / she / test / the / for</p><input type="text" data-answer="she studied hard for the test" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>4. didn't / homework / I / my / finish</p><input type="text" data-answer="i didn't finish my homework" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>5. you / visit / did / grandma / your?</p><input type="text" data-answer="did you visit your grandma" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>6. cleaned / room / he / his</p><input type="text" data-answer="he cleaned his room" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>7. cried / lost / she / team / her / when</p><input type="text" data-answer="she cried when her team lost" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>8. car / washed / dad / the / my</p><input type="text" data-answer="my dad washed the car" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>9. online / they / chatted</p><input type="text" data-answer="they chatted online" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>10. didn't / like / the / I / pizza</p><input type="text" data-answer="i didn't like the pizza" placeholder="Write the full sentence"></div>
+      <button class="check-all-btn" onclick="checkAll('l13-order')">✓ Check All</button>
+      </div>
+    </div>
+
+    <div class="sec" id="l13-err">
+      <button class="accordion">4. Error Correction</button>
+      <div class="panel">
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Find the mistake and write the correct sentence.</p>
+        <div class="exercise"><label>1. I not played yesterday. → <input type="text" data-answer="i didn't play yesterday" placeholder="?"></label></div>
+        <div class="exercise"><label>2. She didn't studied. → <input type="text" data-answer="she didn't study" placeholder="?"></label></div>
+        <div class="exercise"><label>3. Did you watched the match? → <input type="text" data-answer="did you watch the match" placeholder="?"></label></div>
+        <div class="exercise"><label>4. He stoped suddenly. → <input type="text" data-answer="he stopped suddenly" placeholder="?"></label></div>
+        <div class="exercise"><label>5. We cryed at the film. → <input type="text" data-answer="we cried at the film" placeholder="?"></label></div>
+        <div class="exercise"><label>6. They didn't cleaned the house. → <input type="text" data-answer="they didn't clean the house" placeholder="?"></label></div>
+        <div class="exercise"><label>7. My mum likeed the gift. → <input type="text" data-answer="my mum liked the gift" placeholder="?"></label></div>
+        <div class="exercise"><label>8. Did he visited his uncle? → <input type="text" data-answer="did he visit his uncle" placeholder="?"></label></div>
+        <div class="exercise"><label>9. She washd her hands. → <input type="text" data-answer="she washed her hands" placeholder="?"></label></div>
+        <div class="exercise"><label>10. We planed a trip. → <input type="text" data-answer="we planned a trip" placeholder="?"></label></div>
+        <button class="check-all-btn" onclick="checkAll('l13-err')">✓ Check All</button>
+      </div>
+    </div>
+
+    <div class="sec" id="l13-match">
+      <button class="accordion">5. Match the Verb to Its Past Form</button>
+      <div class="panel">
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write the past simple form.</p>
+        <div class="exercise"><label>1. play → <input type="text" data-answer="played" placeholder="?"></label></div>
+        <div class="exercise"><label>2. study → <input type="text" data-answer="studied" placeholder="?"></label></div>
+        <div class="exercise"><label>3. stop → <input type="text" data-answer="stopped" placeholder="?"></label></div>
+        <div class="exercise"><label>4. dance → <input type="text" data-answer="danced" placeholder="?"></label></div>
+        <div class="exercise"><label>5. carry → <input type="text" data-answer="carried" placeholder="?"></label></div>
+        <div class="exercise"><label>6. plan → <input type="text" data-answer="planned" placeholder="?"></label></div>
+        <div class="exercise"><label>7. clean → <input type="text" data-answer="cleaned" placeholder="?"></label></div>
+        <div class="exercise"><label>8. try → <input type="text" data-answer="tried" placeholder="?"></label></div>
+        <div class="exercise"><label>9. chat → <input type="text" data-answer="chatted" placeholder="?"></label></div>
+        <div class="exercise"><label>10. like → <input type="text" data-answer="liked" placeholder="?"></label></div>
+        <button class="check-all-btn" onclick="checkAll('l13-match')">✓ Check All</button>
+      </div>
+    </div>
+
+    <div class="sec" id="l13-read">
+      <button class="accordion">6. Reading Comprehension</button>
+      <div class="panel">
+        <div class="reading-box">
+          <h4>📖 A Rainy Saturday</h4>
+          <p>Last Saturday, it rained all day, so Fatih and his family stayed inside. In the morning, Fatih studied for his English test and finished all his homework. Then he played video games with his cousin online for an hour. His mum baked a chocolate cake in the afternoon, and everyone helped clean the kitchen afterwards. Fatih's dad fixed the broken shelf in the living room, and his sister painted a picture of their dog. They didn't watch TV in the evening — instead, they played a board game together and laughed a lot. Fatih didn't mind the rain at all; it was actually a really nice day at home.</p>
+        </div>
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write <strong>True</strong>, <strong>False</strong>, or <strong>Not Given</strong>.</p>
+        <div class="exercise"><label>1. It rained all day last Saturday. → <input type="text" data-answer="true" placeholder="?"></label></div>
+        <div class="exercise"><label>2. Fatih studied for a maths test. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <div class="exercise"><label>3. Fatih finished all his homework. → <input type="text" data-answer="true" placeholder="?"></label></div>
+        <div class="exercise"><label>4. He played video games with his brother. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <div class="exercise"><label>5. His mum baked a chocolate cake. → <input type="text" data-answer="true" placeholder="?"></label></div>
+        <div class="exercise"><label>6. Everyone helped clean the kitchen. → <input type="text" data-answer="true" placeholder="?"></label></div>
+        <div class="exercise"><label>7. His dad fixed a broken window. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <div class="exercise"><label>8. His sister painted a picture. → <input type="text" data-answer="true" placeholder="?"></label></div>
+        <div class="exercise"><label>9. They watched TV in the evening. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <div class="exercise"><label>10. Fatih didn't enjoy the rainy day. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <button class="check-all-btn" onclick="checkAll('l13-read')">✓ Check All</button>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">7. Writing Task – Yesterday</button>
+      <div class="panel">
+        <div class="writing-prompt">
+          <h4>✍️ Your Turn!</h4>
+          <p>Write <strong>6 sentences</strong> about what you did yesterday, using regular past simple verbs. Include at least one negative sentence.</p>
+          <textarea rows="8" placeholder="Yesterday, I...&#10;I played...&#10;I studied...&#10;I didn't...&#10;My family...&#10;In the evening, I..."></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">8. Speaking Task</button>
+      <div class="panel">
+        <div class="speaking-prompt">
+          <h4>🗣️ Yesterday, Did You...?</h4>
+          <p>Ask your teacher <strong>5 questions</strong> starting with <em>Did you...?</em> about yesterday. Answer with short answers, then a full sentence.</p>
+          <textarea rows="4" placeholder="Notes for speaking..."></textarea>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <nav class="page-nav">
+    <a href="L12_Past_Simple_Was_Were.html">← Lesson 12</a>
+    <a href="L13_Past_Simple_Regular_HW.html" class="hw-link">📝 Homework</a>
+    <a href="L14_Past_Simple_Irregular.html">Next Lesson →</a>
+  </nav>
+
+</div>
+<script src="shared-lesson.js"></script>
+</body>
+</html>

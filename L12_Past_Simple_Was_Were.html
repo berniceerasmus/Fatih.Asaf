@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 12 – Past Simple: Was / Were</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared-lesson-p2.css" />
+</head>
+<body>
+<div class="container">
+
+  <header class="page-header">
+    <div class="lesson-badge-pill">Phase 2 · Lesson 12</div>
+    <h1>Past Simple: Was / Were ⏳</h1>
+    <p class="subtitle">Talk about yesterday, last week, and the past.</p>
+    <div class="header-meta">
+      <span class="meta-pill">⏱ 45 minutes</span>
+      <span class="meta-pill">📈 Level: A2 (step up!)</span>
+    </div>
+  </header>
+
+  <div class="prog">
+    <span class="prog-lbl">Progress</span>
+    <div class="steps" id="lessonSteps"><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div></div>
+    <span class="pct" id="lessonPct">0%</span>
+  </div>
+  <div class="score-bar">
+    <span class="score-lbl">Score</span>
+    <span class="score-num" id="scoreNum">0</span>
+    <span class="score-denom" id="scoreDen">/0</span>
+    <span class="score-stars" id="scoreStars"></span>
+  </div>
+
+  <section class="lesson-section">
+    <h2>Warm-Up</h2>
+    <div class="warmup-box">
+      <h3>🔥 New Topic Alert! (3 minutes)</h3>
+      <p>Today we start the <strong>past tense</strong> — a step up from what we've learned so far! Answer: Where were you yesterday at 8pm? Was the weather nice yesterday? Were you tired this morning?</p>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>Presentation</h2>
+
+    <div class="grammar-box">
+      <h3>📌 Was / Were – Positive & Negative</h3>
+      <table>
+        <thead><tr><th>Subject</th><th>Positive</th><th>Negative</th></tr></thead>
+        <tbody>
+          <tr><td>I / He / She / It</td><td><strong>was</strong></td><td><strong>wasn't</strong></td></tr>
+          <tr><td>You / We / They</td><td><strong>were</strong></td><td><strong>weren't</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grammar-box">
+      <h3>📌 Questions & Short Answers</h3>
+      <table>
+        <thead><tr><th>Question</th><th>Short Answer</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Was</strong> he at school yesterday?</td><td>Yes, he was. / No, he wasn't.</td></tr>
+          <tr><td><strong>Were</strong> you happy?</td><td>Yes, I was. / No, I wasn't.</td></tr>
+          <tr><td><strong>There was / were</strong></td><td>There was a party. There were lots of people.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="example-box">
+      ✅ I <strong>was</strong> at my grandma's house last weekend.<br>
+      ✅ We <strong>weren't</strong> late for school this morning.<br>
+      ✅ <strong>Were</strong> you at the match on Saturday? — Yes, I was!<br>
+      ✅ There <strong>were</strong> a lot of people at the stadium.<br>
+      ✅ It <strong>wasn't</strong> sunny yesterday — it was cloudy.
+    </div>
+
+    <div class="tip-box">
+      💡 <strong>Time words for the past:</strong> yesterday, last night, last week, last year, two days ago, in 2020.
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>Practice</h2>
+
+    <div class="sec" id="l12-fill">
+      <button class="accordion">1. Fill in the Blanks</button>
+      <div class="panel">
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write <strong>was</strong>, <strong>were</strong>, <strong>wasn't</strong>, or <strong>weren't</strong>.</p>
+        <div class="exercise"><label>1. I <input type="text" data-answer="was" placeholder="?"> at school yesterday.</label></div>
+        <div class="exercise"><label>2. They <input type="text" data-answer="were" placeholder="?"> at the park last Sunday.</label></div>
+        <div class="exercise"><label>3. She <input type="text" data-answer="wasn't" placeholder="?"> happy about the test.</label></div>
+        <div class="exercise"><label>4. We <input type="text" data-answer="weren't" placeholder="?"> late for the bus this morning.</label></div>
+        <div class="exercise"><label>5. The weather <input type="text" data-answer="was" placeholder="?"> terrible last week.</label></div>
+        <div class="exercise"><label>6. <input type="text" data-answer="were" placeholder="?"> you at home yesterday evening?</label></div>
+        <div class="exercise"><label>7. My grandparents <input type="text" data-answer="were" placeholder="?"> young in the 1970s.</label></div>
+        <div class="exercise"><label>8. He <input type="text" data-answer="wasn't" placeholder="?"> at training on Tuesday — he was sick.</label></div>
+        <div class="exercise"><label>9. There <input type="text" data-answer="was" placeholder="?"> a big storm last night.</label></div>
+        <div class="exercise"><label>10. <input type="text" data-answer="was" placeholder="?"> the film good?</label></div>
+        <button class="check-all-btn" onclick="checkAll('l12-fill')">✓ Check All</button>
+      </div>
+    </div>
+
+    <div class="sec" id="l12-mc">
+      <button class="accordion">2. Multiple Choice</button>
+      <div class="panel">
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Choose the correct word.</p>
+        <div class="exercise"><label>1. I ___ tired last night. a) was b) were → <input type="text" data-answer="a" placeholder="?"></label></div>
+        <div class="exercise"><label>2. They ___ at the beach yesterday. a) was b) were → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <div class="exercise"><label>3. She ___ born in Ankara. a) was b) were → <input type="text" data-answer="a" placeholder="?"></label></div>
+        <div class="exercise"><label>4. We ___ hungry after the match. a) was b) were → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <div class="exercise"><label>5. ___ he at school yesterday? a) Was b) Were → <input type="text" data-answer="a" placeholder="?"></label></div>
+        <div class="exercise"><label>6. There ___ many people at the party. a) was b) were → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <div class="exercise"><label>7. It ___ cold this morning. a) was b) were → <input type="text" data-answer="a" placeholder="?"></label></div>
+        <div class="exercise"><label>8. ___ you and your brother at home? a) Was b) Were → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <div class="exercise"><label>9. My dog ___ scared of thunder. a) was b) were → <input type="text" data-answer="a" placeholder="?"></label></div>
+        <div class="exercise"><label>10. The children ___ excited about the trip. a) was b) were → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <button class="check-all-btn" onclick="checkAll('l12-mc')">✓ Check All</button>
+      </div>
+    </div>
+
+    <div class="sec" id="l12-order">
+      <button class="accordion">3. Put the Words in Order</button>
+      <div class="panel">
+        <div class="order-sentence"><p>1. school / I / at / was / yesterday</p><input type="text" data-answer="i was at school yesterday" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>2. were / park / they / the / at</p><input type="text" data-answer="they were at the park" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>3. weren't / late / we / school / for</p><input type="text" data-answer="we weren't late for school" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>4. was / how / the / match?</p><input type="text" data-answer="how was the match" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>5. tired / very / was / I / last night</p><input type="text" data-answer="i was very tired last night" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>6. weather / bad / was / the / yesterday</p><input type="text" data-answer="the weather was bad yesterday" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>7. you / were / home / at?</p><input type="text" data-answer="were you at home" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>8. wasn't / happy / she</p><input type="text" data-answer="she wasn't happy" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>9. storm / there / a / was / big</p><input type="text" data-answer="there was a big storm" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>10. people / lot / were / a / of / there</p><input type="text" data-answer="there were a lot of people" placeholder="Write the full sentence"></div>
+      <button class="check-all-btn" onclick="checkAll('l12-order')">✓ Check All</button>
+      </div>
+    </div>
+
+    <div class="sec" id="l12-err">
+      <button class="accordion">4. Error Correction</button>
+      <div class="panel">
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Find the mistake and write the correct sentence.</p>
+        <div class="exercise"><label>1. I were at home. → <input type="text" data-answer="i was at home" placeholder="?"></label></div>
+        <div class="exercise"><label>2. They was at the match. → <input type="text" data-answer="they were at the match" placeholder="?"></label></div>
+        <div class="exercise"><label>3. She were tired. → <input type="text" data-answer="she was tired" placeholder="?"></label></div>
+        <div class="exercise"><label>4. Was you at school? → <input type="text" data-answer="were you at school" placeholder="?"></label></div>
+        <div class="exercise"><label>5. There was many people. → <input type="text" data-answer="there were many people" placeholder="?"></label></div>
+        <div class="exercise"><label>6. We wasn't ready. → <input type="text" data-answer="we weren't ready" placeholder="?"></label></div>
+        <div class="exercise"><label>7. He weren't at training. → <input type="text" data-answer="he wasn't at training" placeholder="?"></label></div>
+        <div class="exercise"><label>8. Were the film good? → <input type="text" data-answer="was the film good" placeholder="?"></label></div>
+        <div class="exercise"><label>9. It were cold yesterday. → <input type="text" data-answer="it was cold yesterday" placeholder="?"></label></div>
+        <div class="exercise"><label>10. My parents was young in 1995. → <input type="text" data-answer="my parents were young in 1995" placeholder="?"></label></div>
+        <button class="check-all-btn" onclick="checkAll('l12-err')">✓ Check All</button>
+      </div>
+    </div>
+
+    <div class="sec" id="l12-match">
+      <button class="accordion">5. Match the Time Word to Past or Present</button>
+      <div class="panel">
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write <strong>PAST</strong> or <strong>NOW</strong>.</p>
+        <div class="exercise"><label>1. yesterday → <input type="text" data-answer="past" placeholder="?"></label></div>
+        <div class="exercise"><label>2. right now → <input type="text" data-answer="now" placeholder="?"></label></div>
+        <div class="exercise"><label>3. last week → <input type="text" data-answer="past" placeholder="?"></label></div>
+        <div class="exercise"><label>4. every day → <input type="text" data-answer="now" placeholder="?"></label></div>
+        <div class="exercise"><label>5. two days ago → <input type="text" data-answer="past" placeholder="?"></label></div>
+        <div class="exercise"><label>6. today → <input type="text" data-answer="now" placeholder="?"></label></div>
+        <div class="exercise"><label>7. last night → <input type="text" data-answer="past" placeholder="?"></label></div>
+        <div class="exercise"><label>8. in 2019 → <input type="text" data-answer="past" placeholder="?"></label></div>
+        <div class="exercise"><label>9. at the moment → <input type="text" data-answer="now" placeholder="?"></label></div>
+        <div class="exercise"><label>10. last summer → <input type="text" data-answer="past" placeholder="?"></label></div>
+        <button class="check-all-btn" onclick="checkAll('l12-match')">✓ Check All</button>
+      </div>
+    </div>
+
+    <div class="sec" id="l12-read">
+      <button class="accordion">6. Reading Comprehension</button>
+      <div class="panel">
+        <div class="reading-box">
+          <h4>📖 Last Weekend</h4>
+          <p>Last weekend was very busy for Fatih and his family. On Saturday morning, they were at his grandma's house for breakfast. The food was delicious, but Fatih wasn't very hungry because he was excited about the football match later that day. In the afternoon, he was at the stadium with his dad — the match was amazing, and their team won! On Sunday, the weather was rainy, so they weren't outside much. Instead, Fatih and his sister were in the living room, playing board games. It wasn't a boring weekend at all — it was one of the best weekends of the year!</p>
+        </div>
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write <strong>True</strong>, <strong>False</strong>, or <strong>Not Given</strong>.</p>
+        <div class="exercise"><label>1. Last weekend was busy. → <input type="text" data-answer="true" placeholder="?"></label></div>
+        <div class="exercise"><label>2. They were at grandma's house on Sunday morning. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <div class="exercise"><label>3. Fatih was very hungry at breakfast. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <div class="exercise"><label>4. Fatih was excited about the football match. → <input type="text" data-answer="true" placeholder="?"></label></div>
+        <div class="exercise"><label>5. The match was boring. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <div class="exercise"><label>6. Their team won the match. → <input type="text" data-answer="true" placeholder="?"></label></div>
+        <div class="exercise"><label>7. The weather was sunny on Sunday. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <div class="exercise"><label>8. They were outside a lot on Sunday. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <div class="exercise"><label>9. Fatih's sister was playing board games with him. → <input type="text" data-answer="true" placeholder="?"></label></div>
+        <div class="exercise"><label>10. The weekend was one of the worst of the year. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <button class="check-all-btn" onclick="checkAll('l12-read')">✓ Check All</button>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">7. Writing Task – My Last Weekend</button>
+      <div class="panel">
+        <div class="writing-prompt">
+          <h4>✍️ Your Turn!</h4>
+          <p>Write <strong>6 sentences</strong> about last weekend using <em>was / were / wasn't / weren't</em>.</p>
+          <textarea rows="8" placeholder="Last weekend, I was...&#10;On Saturday, I was...&#10;The weather was...&#10;There was/were...&#10;I wasn't...&#10;It was/wasn't a good weekend because..."></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">8. Speaking Task</button>
+      <div class="panel">
+        <div class="speaking-prompt">
+          <h4>🗣️ Yesterday Interview</h4>
+          <p>Ask your teacher <strong>5 questions</strong> about yesterday using <em>Was...? / Were...?</em> Then answer the same questions about yourself.</p>
+          <textarea rows="4" placeholder="Notes for speaking..."></textarea>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <nav class="page-nav">
+    <a href="L11_Can_Cant.html">← Lesson 11</a>
+    <a href="L12_Past_Simple_Was_Were_HW.html" class="hw-link">📝 Homework</a>
+    <a href="L13_Past_Simple_Regular.html">Next Lesson →</a>
+  </nav>
+
+</div>
+<script src="shared-lesson.js"></script>
+</body>
+</html>

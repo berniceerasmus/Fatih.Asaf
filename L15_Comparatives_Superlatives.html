@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 15 – Comparatives & Superlatives</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared-lesson-p2.css" />
+</head>
+<body>
+<div class="container">
+
+  <header class="page-header">
+    <div class="lesson-badge-pill">Phase 2 · Lesson 15</div>
+    <h1>Comparatives & Superlatives 🏆</h1>
+    <p class="subtitle">Compare things — and say which one is the best!</p>
+    <div class="header-meta">
+      <span class="meta-pill">⏱ 45 minutes</span>
+      <span class="meta-pill">📈 Level: A2+ (step up!)</span>
+    </div>
+  </header>
+
+  <div class="prog">
+    <span class="prog-lbl">Progress</span>
+    <div class="steps" id="lessonSteps"><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div></div>
+    <span class="pct" id="lessonPct">0%</span>
+  </div>
+  <div class="score-bar">
+    <span class="score-lbl">Score</span>
+    <span class="score-num" id="scoreNum">0</span>
+    <span class="score-denom" id="scoreDen">/0</span>
+    <span class="score-stars" id="scoreStars"></span>
+  </div>
+
+  <section class="lesson-section">
+    <h2>Warm-Up</h2>
+    <div class="warmup-box">
+      <h3>🔥 New Challenge! (3 minutes)</h3>
+      <p>Compare these: A cheetah and a turtle. A football and a tennis ball. Your city and the capital city. Which is bigger? Which is faster?</p>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>Presentation</h2>
+
+    <div class="grammar-box">
+      <h3>📌 Comparatives (comparing two things)</h3>
+      <table>
+        <thead><tr><th>Adjective type</th><th>Rule</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td>Short (1 syllable)</td><td>+ <strong>-er</strong> + than</td><td>fast → faster than</td></tr>
+          <tr><td>Ends in -e</td><td>+ <strong>-r</strong> + than</td><td>large → larger than</td></tr>
+          <tr><td>Short vowel + consonant</td><td>double + <strong>-er</strong></td><td>big → bigger than</td></tr>
+          <tr><td>Ends in consonant + y</td><td><strong>-y → -ier</strong></td><td>happy → happier than</td></tr>
+          <tr><td>Long (2+ syllables)</td><td><strong>more</strong> + adjective + than</td><td>expensive → more expensive than</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grammar-box">
+      <h3>📌 Superlatives (comparing three or more)</h3>
+      <table>
+        <thead><tr><th>Adjective type</th><th>Rule</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td>Short</td><td><strong>the</strong> + adjective + <strong>-est</strong></td><td>fast → the fastest</td></tr>
+          <tr><td>Long</td><td><strong>the most</strong> + adjective</td><td>expensive → the most expensive</td></tr>
+          <tr><td>Irregular</td><td>good → better → the best</td><td>bad → worse → the worst</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="example-box">
+      ✅ A cheetah is <strong>faster than</strong> a lion.<br>
+      ✅ This game is <strong>more exciting than</strong> the last one.<br>
+      ✅ Everest is <strong>the highest</strong> mountain in the world.<br>
+      ✅ My little sister is <strong>funnier than</strong> me!<br>
+      ✅ This is <strong>the best</strong> day of my summer holidays.
+    </div>
+
+    <div class="tip-box">
+      💡 <strong>Irregular forms:</strong> good → better → the best. bad → worse → the worst. far → farther/further → the farthest/furthest.
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>Practice</h2>
+
+    <div class="sec" id="l15-fill">
+      <button class="accordion">1. Fill in the Blanks</button>
+      <div class="panel">
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write the comparative or superlative form.</p>
+        <div class="exercise"><label>1. A cheetah is <input type="text" data-answer="faster" placeholder="?"> (fast) than a lion.</label></div>
+        <div class="exercise"><label>2. Everest is <input type="text" data-answer="the highest" placeholder="?"> (high) mountain in the world.</label></div>
+        <div class="exercise"><label>3. This film is <input type="text" data-answer="more interesting" placeholder="?"> (interesting) than the last one.</label></div>
+        <div class="exercise"><label>4. My brother is <input type="text" data-answer="taller" placeholder="?"> (tall) than me.</label></div>
+        <div class="exercise"><label>5. This is <input type="text" data-answer="the best" placeholder="?"> (good) pizza I've ever had!</label></div>
+        <div class="exercise"><label>6. Today is <input type="text" data-answer="hotter" placeholder="?"> (hot) than yesterday.</label></div>
+        <div class="exercise"><label>7. She is <input type="text" data-answer="happier" placeholder="?"> (happy) than before.</label></div>
+        <div class="exercise"><label>8. This is <input type="text" data-answer="the most expensive" placeholder="?"> (expensive) shirt in the shop.</label></div>
+        <div class="exercise"><label>9. My cat is <input type="text" data-answer="lazier" placeholder="?"> (lazy) than my dog.</label></div>
+        <div class="exercise"><label>10. That was <input type="text" data-answer="the worst" placeholder="?"> (bad) match of the season.</label></div>
+        <button class="check-all-btn" onclick="checkAll('l15-fill')">✓ Check All</button>
+      </div>
+    </div>
+
+    <div class="sec" id="l15-mc">
+      <button class="accordion">2. Multiple Choice</button>
+      <div class="panel">
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Choose the correct form.</p>
+        <div class="exercise"><label>1. big → a) bigger b) biger → <input type="text" data-answer="a" placeholder="?"></label></div>
+        <div class="exercise"><label>2. happy → a) happyer b) happier → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <div class="exercise"><label>3. good → a) gooder b) better → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <div class="exercise"><label>4. expensive → a) expensiver b) more expensive → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <div class="exercise"><label>5. the fastest → a) most fast b) fastest → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <div class="exercise"><label>6. bad → a) badder b) worse → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <div class="exercise"><label>7. large → a) larger b) largeer → <input type="text" data-answer="a" placeholder="?"></label></div>
+        <div class="exercise"><label>8. beautiful → a) beautifuler b) more beautiful → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <div class="exercise"><label>9. the most difficult → a) most difficultest b) most difficult → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <div class="exercise"><label>10. hot → a) hoter b) hotter → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <button class="check-all-btn" onclick="checkAll('l15-mc')">✓ Check All</button>
+      </div>
+    </div>
+
+    <div class="sec" id="l15-order">
+      <button class="accordion">3. Put the Words in Order</button>
+      <div class="panel">
+        <div class="order-sentence"><p>1. cheetah / a / faster / lion / a / than / is</p><input type="text" data-answer="a cheetah is faster than a lion" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>2. world / highest / Everest / the / in / mountain / the / is</p><input type="text" data-answer="everest is the highest mountain in the world" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>3. than / this / film / more / that / interesting / is</p><input type="text" data-answer="this film is more interesting than that" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>4. than / brother / taller / my / me / is</p><input type="text" data-answer="my brother is taller than me" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>5. pizza / ever / this / best / had / the / I've / is</p><input type="text" data-answer="this is the best pizza i've ever had" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>6. hotter / today / yesterday / is / than</p><input type="text" data-answer="today is hotter than yesterday" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>7. shop / expensive / this / in / most / is / the / shirt</p><input type="text" data-answer="this is the most expensive shirt in the shop" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>8. my / lazier / cat / dog / my / than / is</p><input type="text" data-answer="my cat is lazier than my dog" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>9. season / worst / was / match / that / of / the</p><input type="text" data-answer="that was the worst match of the season" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>10. team / better / their / ours / is / than</p><input type="text" data-answer="their team is better than ours" placeholder="Write the full sentence"></div>
+      <button class="check-all-btn" onclick="checkAll('l15-order')">✓ Check All</button>
+      </div>
+    </div>
+
+    <div class="sec" id="l15-err">
+      <button class="accordion">4. Error Correction</button>
+      <div class="panel">
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Find the mistake and write the correct sentence.</p>
+        <div class="exercise"><label>1. This is more big than that. → <input type="text" data-answer="this is bigger than that" placeholder="?"></label></div>
+        <div class="exercise"><label>2. She is the gooder player. → <input type="text" data-answer="she is the best player" placeholder="?"></label></div>
+        <div class="exercise"><label>3. This film is interestinger. → <input type="text" data-answer="this film is more interesting" placeholder="?"></label></div>
+        <div class="exercise"><label>4. He is more tall than me. → <input type="text" data-answer="he is taller than me" placeholder="?"></label></div>
+        <div class="exercise"><label>5. This is the most fast car. → <input type="text" data-answer="this is the fastest car" placeholder="?"></label></div>
+        <div class="exercise"><label>6. Today is more hot than yesterday. → <input type="text" data-answer="today is hotter than yesterday" placeholder="?"></label></div>
+        <div class="exercise"><label>7. That was the more difficult test. → <input type="text" data-answer="that was the most difficult test" placeholder="?"></label></div>
+        <div class="exercise"><label>8. She is happyer than before. → <input type="text" data-answer="she is happier than before" placeholder="?"></label></div>
+        <div class="exercise"><label>9. This is the baddest day ever. → <input type="text" data-answer="this is the worst day ever" placeholder="?"></label></div>
+        <div class="exercise"><label>10. My dog is more lazy than my cat. → <input type="text" data-answer="my dog is lazier than my cat" placeholder="?"></label></div>
+        <button class="check-all-btn" onclick="checkAll('l15-err')">✓ Check All</button>
+      </div>
+    </div>
+
+    <div class="sec" id="l15-match">
+      <button class="accordion">5. Match: Comparative or Superlative?</button>
+      <div class="panel">
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write <strong>C</strong> (comparative) or <strong>S</strong> (superlative).</p>
+        <div class="exercise"><label>1. bigger than → <input type="text" data-answer="c" placeholder="?"></label></div>
+        <div class="exercise"><label>2. the biggest → <input type="text" data-answer="s" placeholder="?"></label></div>
+        <div class="exercise"><label>3. more expensive → <input type="text" data-answer="c" placeholder="?"></label></div>
+        <div class="exercise"><label>4. the most expensive → <input type="text" data-answer="s" placeholder="?"></label></div>
+        <div class="exercise"><label>5. the best → <input type="text" data-answer="s" placeholder="?"></label></div>
+        <div class="exercise"><label>6. better than → <input type="text" data-answer="c" placeholder="?"></label></div>
+        <div class="exercise"><label>7. the fastest → <input type="text" data-answer="s" placeholder="?"></label></div>
+        <div class="exercise"><label>8. faster than → <input type="text" data-answer="c" placeholder="?"></label></div>
+        <div class="exercise"><label>9. the most beautiful → <input type="text" data-answer="s" placeholder="?"></label></div>
+        <div class="exercise"><label>10. more beautiful than → <input type="text" data-answer="c" placeholder="?"></label></div>
+        <button class="check-all-btn" onclick="checkAll('l15-match')">✓ Check All</button>
+      </div>
+    </div>
+
+    <div class="sec" id="l15-read">
+      <button class="accordion">6. Reading Comprehension</button>
+      <div class="panel">
+        <div class="reading-box">
+          <h4>📖 Amazing World Records</h4>
+          <p>The world is full of incredible records. The blue whale is the biggest animal that has ever lived — it's even bigger than the biggest dinosaurs! The cheetah is the fastest land animal, but the peregrine falcon is faster than the cheetah when it dives from the sky. Mount Everest is the highest mountain above sea level, but the Mariana Trench is deeper than any ocean on Earth. The Sahara is one of the hottest and driest places, but Antarctica is colder and windier than almost anywhere else. Learning about these records is more exciting than reading normal facts, because everything is the biggest, the fastest, or the most extreme!</p>
+        </div>
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write <strong>True</strong>, <strong>False</strong>, or <strong>Not Given</strong>.</p>
+        <div class="exercise"><label>1. The blue whale is the biggest animal ever. → <input type="text" data-answer="true" placeholder="?"></label></div>
+        <div class="exercise"><label>2. The blue whale is smaller than the biggest dinosaurs. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <div class="exercise"><label>3. The cheetah is the fastest animal in the world. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <div class="exercise"><label>4. The peregrine falcon is faster than the cheetah when diving. → <input type="text" data-answer="true" placeholder="?"></label></div>
+        <div class="exercise"><label>5. Mount Everest is the deepest place on Earth. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <div class="exercise"><label>6. The Mariana Trench is deeper than any ocean. → <input type="text" data-answer="true" placeholder="?"></label></div>
+        <div class="exercise"><label>7. The Sahara is one of the coldest places. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <div class="exercise"><label>8. Antarctica is colder than almost anywhere else. → <input type="text" data-answer="true" placeholder="?"></label></div>
+        <div class="exercise"><label>9. The passage says learning these facts is boring. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <div class="exercise"><label>10. The blue whale lives in Antarctica. → <input type="text" data-answer="not given" placeholder="?"></label></div>
+        <button class="check-all-btn" onclick="checkAll('l15-read')">✓ Check All</button>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">7. Writing Task – Comparing Two Things</button>
+      <div class="panel">
+        <div class="writing-prompt">
+          <h4>✍️ Your Turn!</h4>
+          <p>Choose two animals, two games, or two football teams you know. Write <strong>6 sentences</strong> comparing them. Use at least 2 superlatives too.</p>
+          <textarea rows="8" placeholder="A ... is faster/bigger/better than a ...&#10;A ... is more ... than a ...&#10;A ... is the fastest/best...&#10;I think ... is the most..."></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">8. Speaking Task</button>
+      <div class="panel">
+        <div class="speaking-prompt">
+          <h4>🗣️ Who Wins?</h4>
+          <p>Compare yourself with a friend or family member. Use <strong>5 comparatives</strong> (taller, faster, funnier...) and <strong>2 superlatives</strong> about your family or friend group.</p>
+          <textarea rows="4" placeholder="Notes for speaking..."></textarea>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <nav class="page-nav">
+    <a href="L14_Past_Simple_Irregular.html">← Lesson 14</a>
+    <a href="L15_Comparatives_Superlatives_HW.html" class="hw-link">📝 Homework</a>
+    <a href="L16_Phase2_Review.html">Next Lesson →</a>
+  </nav>
+
+</div>
+<script src="shared-lesson.js"></script>
+</body>
+</html>
