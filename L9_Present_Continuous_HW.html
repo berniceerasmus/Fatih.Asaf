@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homework 9 – Present Continuous vs Present Simple</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared-lesson-p2.css" />
+</head>
+<body>
+<div class="container">
+
+  <header class="page-header">
+    <div class="lesson-badge-pill">Phase 2 · Homework 9</div>
+    <h1>Homework: Present Continuous vs Present Simple 📝</h1>
+    <p class="subtitle">Practise on your own — no answer key, do your best!</p>
+    <div class="header-meta">
+      <span class="meta-pill">⏱ 60 minutes</span>
+      <span class="meta-pill">📈 Level: A1+</span>
+    </div>
+  </header>
+
+  <div class="prog">
+    <span class="prog-lbl">Progress</span>
+    <div class="steps" id="lessonSteps"><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div></div>
+    <span class="pct" id="lessonPct">0%</span>
+  </div>
+  <div class="score-bar">
+    <span class="score-lbl">Score</span>
+    <span class="score-num" id="scoreNum">0</span>
+    <span class="score-denom" id="scoreDen">/0</span>
+    <span class="score-stars" id="scoreStars"></span>
+  </div>
+
+  <section class="lesson-section">
+
+    <!-- 1 -->
+    <div class="sec" id="hw9-fill">
+      <button class="accordion">1. Fill in the Blanks</button>
+      <div class="panel">
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write the correct present simple or present continuous form.</p>
+        <div class="exercise"><label>1. My sister <input type="text" data-answer="is doing" placeholder="?"> (do) her homework now.</label></div>
+        <div class="exercise"><label>2. I <input type="text" data-answer="brush" placeholder="?"> (brush) my teeth every morning.</label></div>
+        <div class="exercise"><label>3. Listen! Someone <input type="text" data-answer="is knocking" placeholder="?"> (knock) at the door.</label></div>
+        <div class="exercise"><label>4. We <input type="text" data-answer="play" placeholder="?"> (play) basketball every Tuesday.</label></div>
+        <div class="exercise"><label>5. Right now, my dad <input type="text" data-answer="is driving" placeholder="?"> (drive) to work.</label></div>
+        <div class="exercise"><label>6. My grandma <input type="text" data-answer="doesn't use" placeholder="?"> (not use) a computer.</label></div>
+        <div class="exercise"><label>7. At the moment, the children <input type="text" data-answer="are singing" placeholder="?"> (sing) a song.</label></div>
+        <div class="exercise"><label>8. He <input type="text" data-answer="reads" placeholder="?"> (read) comic books every weekend.</label></div>
+        <div class="exercise"><label>9. <input type="text" data-answer="is it snowing" placeholder="?"> (it / snow) outside now?</label></div>
+        <div class="exercise"><label>10. My friends <input type="text" data-answer="are waiting" placeholder="?"> (wait) for me at the park now.</label></div>
+        <button class="check-btn" onclick="checkAll('hw9-fill')">Check answers</button>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="sec" id="hw9-mc">
+      <button class="accordion">2. Multiple Choice</button>
+      <div class="panel">
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Type <strong>a</strong> or <strong>b</strong>.</p>
+        <div class="exercise"><label>1. She ___ football right now. a) plays b) is playing → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <div class="exercise"><label>2. I ___ chess every Friday. a) play b) am playing → <input type="text" data-answer="a" placeholder="?"></label></div>
+        <div class="exercise"><label>3. My cat ___ milk every morning. a) drinks b) is drinking → <input type="text" data-answer="a" placeholder="?"></label></div>
+        <div class="exercise"><label>4. Look! The plane ___! a) lands b) is landing → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <div class="exercise"><label>5. We ___ TV at the moment. a) watch b) are watching → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <div class="exercise"><label>6. He never ___ vegetables. a) eats b) is eating → <input type="text" data-answer="a" placeholder="?"></label></div>
+        <div class="exercise"><label>7. Right now, they ___ for the bus. a) wait b) are waiting → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <div class="exercise"><label>8. I usually ___ up at 7. a) get b) am getting → <input type="text" data-answer="a" placeholder="?"></label></div>
+        <div class="exercise"><label>9. Today, she ___ a red dress. a) wears b) is wearing → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <div class="exercise"><label>10. My parents ___ to work every weekday. a) drive b) are driving → <input type="text" data-answer="a" placeholder="?"></label></div>
+        <button class="check-btn" onclick="checkAll('hw9-mc')">Check answers</button>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="sec" id="hw9-trans">
+      <button class="accordion">3. Sentence Transformation</button>
+      <div class="panel">
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Rewrite each sentence in the present continuous.</p>
+        <div class="exercise"><label>1. He plays football. (now) → <input type="text" data-answer="he is playing football now" placeholder="?"></label></div>
+        <div class="exercise"><label>2. I do my homework. (at the moment) → <input type="text" data-answer="i am doing my homework at the moment" placeholder="?"></label></div>
+        <div class="exercise"><label>3. She cooks dinner. (right now) → <input type="text" data-answer="she is cooking dinner right now" placeholder="?"></label></div>
+        <div class="exercise"><label>4. They watch a film. (tonight) → <input type="text" data-answer="they are watching a film tonight" placeholder="?"></label></div>
+        <div class="exercise"><label>5. We study English. (today) → <input type="text" data-answer="we are studying english today" placeholder="?"></label></div>
+        <div class="exercise"><label>6. It rains. (now) → <input type="text" data-answer="it is raining now" placeholder="?"></label></div>
+        <div class="exercise"><label>7. He runs to school. (right now) → <input type="text" data-answer="he is running to school right now" placeholder="?"></label></div>
+        <div class="exercise"><label>8. I don't sleep. (at the moment) → <input type="text" data-answer="i am not sleeping at the moment" placeholder="?"></label></div>
+        <div class="exercise"><label>9. She doesn't listen. (right now) → <input type="text" data-answer="she is not listening right now" placeholder="?"></label></div>
+        <div class="exercise"><label>10. Do you work? (now) → <input type="text" data-answer="are you working now" placeholder="?"></label></div>
+        <button class="check-btn" onclick="checkAll('hw9-trans')">Check answers</button>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="sec" id="hw9-err">
+      <button class="accordion">4. Error Correction</button>
+      <div class="panel">
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Find the mistake and write the correct sentence.</p>
+        <div class="exercise"><label>1. She play tennis now. → <input type="text" data-answer="she is playing tennis now" placeholder="?"></label></div>
+        <div class="exercise"><label>2. I am eat breakfast right now. → <input type="text" data-answer="i am eating breakfast right now" placeholder="?"></label></div>
+        <div class="exercise"><label>3. He watch TV every night. → <input type="text" data-answer="he watches tv every night" placeholder="?"></label></div>
+        <div class="exercise"><label>4. They is doing homework. → <input type="text" data-answer="they are doing homework" placeholder="?"></label></div>
+        <div class="exercise"><label>5. We usually is playing games. → <input type="text" data-answer="we usually play games" placeholder="?"></label></div>
+        <div class="exercise"><label>6. Look! The dog runing! → <input type="text" data-answer="look! the dog is running" placeholder="?"></label></div>
+        <div class="exercise"><label>7. My mum cook dinner now. → <input type="text" data-answer="my mum is cooking dinner now" placeholder="?"></label></div>
+        <div class="exercise"><label>8. Does she doing her homework now? → <input type="text" data-answer="is she doing her homework now" placeholder="?"></label></div>
+        <div class="exercise"><label>9. I am not sleep at the moment. → <input type="text" data-answer="i am not sleeping at the moment" placeholder="?"></label></div>
+        <div class="exercise"><label>10. He always is late for school. → <input type="text" data-answer="he is always late for school" placeholder="?"></label></div>
+        <button class="check-btn" onclick="checkAll('hw9-err')">Check answers</button>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="sec" id="hw9-match">
+      <button class="accordion">5. Choose the Right Time Word</button>
+      <div class="panel">
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Fill the gap with a suitable time word from the box: <em>now / usually / at the moment / every day / right now / always / today / never / Look! / this week</em></p>
+        <div class="exercise"><label>1. I <input type="text" data-answer="always" placeholder="?"> brush my teeth before bed.</label></div>
+        <div class="exercise"><label>2. She is doing her homework <input type="text" data-answer="now" placeholder="?">.</label></div>
+        <div class="exercise"><label>3. <input type="text" data-answer="look!" placeholder="?"> He is scoring a goal!</label></div>
+        <div class="exercise"><label>4. We are staying with our cousins <input type="text" data-answer="this week" placeholder="?">.</label></div>
+        <div class="exercise"><label>5. My dad <input type="text" data-answer="never" placeholder="?"> eats fast food.</label></div>
+        <div class="exercise"><label>6. I go to school <input type="text" data-answer="every day" placeholder="?">.</label></div>
+        <div class="exercise"><label>7. <input type="text" data-answer="today" placeholder="?">, I am wearing my new trainers.</label></div>
+        <div class="exercise"><label>8. He is sleeping <input type="text" data-answer="at the moment" placeholder="?">.</label></div>
+        <div class="exercise"><label>9. My mum <input type="text" data-answer="usually" placeholder="?"> cooks pasta on Fridays.</label></div>
+        <div class="exercise"><label>10. Wait, I am coming <input type="text" data-answer="right now" placeholder="?">!</label></div>
+        <button class="check-btn" onclick="checkAll('hw9-match')">Check answers</button>
+      </div>
+    </div>
+
+    <!-- 6 Reading -->
+    <div class="sec" id="hw9-read">
+      <button class="accordion">6. Reading Comprehension</button>
+      <div class="panel">
+        <div class="reading-box">
+          <h4>📖 Fatih's Football Team</h4>
+          <p>Fatih trains with his football team every Tuesday and Thursday. Today is Thursday, so right now he is standing on the pitch, waiting for training to start. His coach usually arrives at five o'clock, but today the coach is running late because of traffic. Fatih's best friend, Ege, is stretching near the goal. Ege always warms up before training — he says it stops injuries. Two other boys are kicking a ball to each other while they wait. Fatih doesn't like waiting; he prefers to be active. Next week, the team is playing a match against another school, so training this week is extra important.</p>
+        </div>
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write <strong>True</strong>, <strong>False</strong>, or <strong>Not Given</strong>.</p>
+        <div class="exercise"><label>1. Fatih trains every Tuesday and Thursday. → <input type="text" data-answer="true" placeholder="?"></label></div>
+        <div class="exercise"><label>2. Today is Tuesday. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <div class="exercise"><label>3. The coach is already on the pitch. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <div class="exercise"><label>4. The coach usually arrives at five o'clock. → <input type="text" data-answer="true" placeholder="?"></label></div>
+        <div class="exercise"><label>5. Ege is Fatih's cousin. → <input type="text" data-answer="not given" placeholder="?"></label></div>
+        <div class="exercise"><label>6. Ege always warms up before training. → <input type="text" data-answer="true" placeholder="?"></label></div>
+        <div class="exercise"><label>7. Fatih likes waiting around. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <div class="exercise"><label>8. Two boys are kicking a ball right now. → <input type="text" data-answer="true" placeholder="?"></label></div>
+        <div class="exercise"><label>9. The team is playing a match next week. → <input type="text" data-answer="true" placeholder="?"></label></div>
+        <div class="exercise"><label>10. The match is against Fatih's cousin's school. → <input type="text" data-answer="not given" placeholder="?"></label></div>
+        <button class="check-btn" onclick="checkAll('hw9-read')">Check answers</button>
+      </div>
+    </div>
+
+    <!-- 7 Writing -->
+    <div class="sec">
+      <button class="accordion">7. Free Writing</button>
+      <div class="panel">
+        <p>Write <strong>8 sentences</strong> about a typical day and one special thing happening today. Use both present simple (routines) and present continuous (today / right now).</p>
+        <textarea rows="10" placeholder="Every day, I...&#10;I usually...&#10;My family always...&#10;But today...&#10;Right now, I am...&#10;At the moment, my ... is...&#10;Later today, I am going to...&#10;This week..."></textarea>
+      </div>
+    </div>
+
+    <!-- 8 Extra Challenge -->
+    <div class="sec">
+      <button class="accordion">8. Extra Challenge</button>
+      <div class="panel">
+        <p>Look out of your window (or imagine a busy street). Write <strong>5 sentences</strong> describing what people or animals are doing right now. Then write <strong>2 sentences</strong> about what usually happens on that street.</p>
+        <textarea rows="8" placeholder="Right now, a...&#10;A ... is...&#10;Someone is...&#10;Usually, people...&#10;Every day..."></textarea>
+      </div>
+    </div>
+
+  </section>
+
+  <nav class="page-nav">
+    <a href="L9_Present_Continuous.html">← Back to lesson</a>
+    <a href="L10_Countable_Uncountable.html">Next lesson →</a>
+  </nav>
+
+</div>
+<script src="shared-lesson.js"></script>
+</body>
+</html>

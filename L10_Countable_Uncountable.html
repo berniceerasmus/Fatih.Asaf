@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 10 – Countable & Uncountable Nouns, Some / Any</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared-lesson-p2.css" />
+</head>
+<body>
+<div class="container">
+
+  <header class="page-header">
+    <div class="lesson-badge-pill">Phase 2 · Lesson 10</div>
+    <h1>Countable & Uncountable Nouns 🍎</h1>
+    <p class="subtitle">Learn to count things — and talk about things you can't count.</p>
+    <div class="header-meta">
+      <span class="meta-pill">⏱ 45 minutes</span>
+      <span class="meta-pill">📈 Level: A1+</span>
+    </div>
+  </header>
+
+  <div class="prog">
+    <span class="prog-lbl">Progress</span>
+    <div class="steps" id="lessonSteps"><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div></div>
+    <span class="pct" id="lessonPct">0%</span>
+  </div>
+  <div class="score-bar">
+    <span class="score-lbl">Score</span>
+    <span class="score-num" id="scoreNum">0</span>
+    <span class="score-denom" id="scoreDen">/0</span>
+    <span class="score-stars" id="scoreStars"></span>
+  </div>
+
+  <section class="lesson-section">
+    <h2>Warm-Up</h2>
+    <div class="warmup-box">
+      <h3>🔥 Can You Count It? (3 minutes)</h3>
+      <p>Say if you can count these things: apples, water, books, rice, footballs, milk, dogs, sugar.</p>
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>Presentation</h2>
+
+    <div class="grammar-box">
+      <h3>📌 Countable vs Uncountable</h3>
+      <table>
+        <thead><tr><th>Countable (has plural)</th><th>Uncountable (no plural)</th></tr></thead>
+        <tbody>
+          <tr><td>an apple → apples</td><td>water, rice, milk, sugar</td></tr>
+          <tr><td>a book → books</td><td>bread, cheese, money</td></tr>
+          <tr><td>a dog → dogs</td><td>homework, information, music</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grammar-box">
+      <h3>📌 Some / Any / How much / How many</h3>
+      <table>
+        <thead><tr><th>Use</th><th>Rule</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td>Positive sentences</td><td><strong>some</strong> (countable & uncountable)</td><td>I have some apples. I have some water.</td></tr>
+          <tr><td>Negatives & questions</td><td><strong>any</strong></td><td>I don't have any apples. Do you have any water?</td></tr>
+          <tr><td>Questions – countable</td><td><strong>How many</strong> + plural noun</td><td>How many apples do you have?</td></tr>
+          <tr><td>Questions – uncountable</td><td><strong>How much</strong> + noun</td><td>How much water do you have?</td></tr>
+          <tr><td>Large quantity (both)</td><td><strong>a lot of / lots of</strong></td><td>I have a lot of homework.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="example-box">
+      ✅ I have <strong>some</strong> bananas in my bag.<br>
+      ✅ There isn't <strong>any</strong> milk in the fridge.<br>
+      ✅ <strong>How many</strong> books do you have? — I have five.<br>
+      ✅ <strong>How much</strong> water do you drink every day?<br>
+      ✅ We have <strong>a lot of</strong> homework tonight!
+    </div>
+
+    <div class="tip-box">
+      💡 <strong>Trick:</strong> If you can put a number in front of it (two apples, three dogs), it's countable. If not (two waters ❌), it's uncountable.
+    </div>
+  </section>
+
+  <section class="lesson-section">
+    <h2>Practice</h2>
+
+    <div class="sec" id="l10-fill">
+      <button class="accordion">1. Fill in the Blanks – Some / Any</button>
+      <div class="panel">
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write <strong>some</strong> or <strong>any</strong>.</p>
+        <div class="exercise"><label>1. I have <input type="text" data-answer="some" placeholder="?"> apples.</label></div>
+        <div class="exercise"><label>2. Do you have <input type="text" data-answer="any" placeholder="?"> money?</label></div>
+        <div class="exercise"><label>3. There isn't <input type="text" data-answer="any" placeholder="?"> bread left.</label></div>
+        <div class="exercise"><label>4. We need <input type="text" data-answer="some" placeholder="?"> milk from the shop.</label></div>
+        <div class="exercise"><label>5. She doesn't have <input type="text" data-answer="any" placeholder="?"> pencils.</label></div>
+        <div class="exercise"><label>6. Is there <input type="text" data-answer="any" placeholder="?"> juice in the fridge?</label></div>
+        <div class="exercise"><label>7. I want <input type="text" data-answer="some" placeholder="?"> water, please.</label></div>
+        <div class="exercise"><label>8. They don't have <input type="text" data-answer="any" placeholder="?"> homework tonight.</label></div>
+        <div class="exercise"><label>9. There are <input type="text" data-answer="some" placeholder="?"> eggs in the basket.</label></div>
+        <div class="exercise"><label>10. Can I have <input type="text" data-answer="some" placeholder="?"> cheese, please?</label></div>
+        <button class="check-all-btn" onclick="checkAll('l10-fill')">✓ Check All</button>
+      </div>
+    </div>
+
+    <div class="sec" id="l10-mc">
+      <button class="accordion">2. Multiple Choice – Much or Many?</button>
+      <div class="panel">
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Type <strong>a</strong> (much) or <strong>b</strong> (many).</p>
+        <div class="exercise"><label>1. How ___ books do you have? a) much b) many → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <div class="exercise"><label>2. How ___ water is there? a) much b) many → <input type="text" data-answer="a" placeholder="?"></label></div>
+        <div class="exercise"><label>3. How ___ friends do you have? a) much b) many → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <div class="exercise"><label>4. How ___ sugar do you want? a) much b) many → <input type="text" data-answer="a" placeholder="?"></label></div>
+        <div class="exercise"><label>5. How ___ pets do you have? a) much b) many → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <div class="exercise"><label>6. How ___ homework do you have? a) much b) many → <input type="text" data-answer="a" placeholder="?"></label></div>
+        <div class="exercise"><label>7. How ___ apples are there? a) much b) many → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <div class="exercise"><label>8. How ___ money do you have? a) much b) many → <input type="text" data-answer="a" placeholder="?"></label></div>
+        <div class="exercise"><label>9. How ___ eggs do we need? a) much b) many → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <div class="exercise"><label>10. How ___ milk is left? a) much b) many → <input type="text" data-answer="a" placeholder="?"></label></div>
+        <button class="check-all-btn" onclick="checkAll('l10-mc')">✓ Check All</button>
+      </div>
+    </div>
+
+    <div class="sec" id="l10-order">
+      <button class="accordion">3. Put the Words in Order</button>
+      <div class="panel">
+        <div class="order-sentence"><p>1. some / have / I / apples</p><input type="text" data-answer="i have some apples" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>2. any / there / milk / isn't</p><input type="text" data-answer="there isn't any milk" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>3. books / how / do / you / have / many</p><input type="text" data-answer="how many books do you have" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>4. water / much / how / there / is</p><input type="text" data-answer="how much water is there" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>5. homework / a / of / we / lot / have</p><input type="text" data-answer="we have a lot of homework" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>6. any / have / you / do / money</p><input type="text" data-answer="do you have any money" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>7. some / please / cheese / can / have / I</p><input type="text" data-answer="can i have some cheese please" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>8. eggs / basket / the / are / some / in</p><input type="text" data-answer="some eggs are in the basket" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>9. any / don't / pencils / I / have</p><input type="text" data-answer="i don't have any pencils" placeholder="Write the full sentence"></div>
+        <div class="order-sentence"><p>10. rice / much / need / how / we / do</p><input type="text" data-answer="how much rice do we need" placeholder="Write the full sentence"></div>
+      </div>
+    </div>
+
+    <div class="sec" id="l10-err">
+      <button class="accordion">4. Error Correction</button>
+      <div class="panel">
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Find the mistake and write the correct sentence.</p>
+        <div class="exercise"><label>1. I have any apples. → <input type="text" data-answer="i have some apples" placeholder="?"></label></div>
+        <div class="exercise"><label>2. There isn't some milk. → <input type="text" data-answer="there isn't any milk" placeholder="?"></label></div>
+        <div class="exercise"><label>3. How much books do you have? → <input type="text" data-answer="how many books do you have" placeholder="?"></label></div>
+        <div class="exercise"><label>4. How many water is there? → <input type="text" data-answer="how much water is there" placeholder="?"></label></div>
+        <div class="exercise"><label>5. I want two waters. → <input type="text" data-answer="i want some water" placeholder="?"></label></div>
+        <div class="exercise"><label>6. We have a lot of book. → <input type="text" data-answer="we have a lot of books" placeholder="?"></label></div>
+        <div class="exercise"><label>7. She don't have some pencils. → <input type="text" data-answer="she doesn't have any pencils" placeholder="?"></label></div>
+        <div class="exercise"><label>8. Is there some juice? → <input type="text" data-answer="is there any juice" placeholder="?"></label></div>
+        <div class="exercise"><label>9. How many money do you have? → <input type="text" data-answer="how much money do you have" placeholder="?"></label></div>
+        <div class="exercise"><label>10. I have three rices. → <input type="text" data-answer="i have some rice" placeholder="?"></label></div>
+        <button class="check-all-btn" onclick="checkAll('l10-err')">✓ Check All</button>
+      </div>
+    </div>
+
+    <div class="sec" id="l10-match">
+      <button class="accordion">5. Countable or Uncountable?</button>
+      <div class="panel">
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write <strong>C</strong> (countable) or <strong>U</strong> (uncountable).</p>
+        <div class="exercise"><label>1. water → <input type="text" data-answer="u" placeholder="?"></label></div>
+        <div class="exercise"><label>2. apple → <input type="text" data-answer="c" placeholder="?"></label></div>
+        <div class="exercise"><label>3. rice → <input type="text" data-answer="u" placeholder="?"></label></div>
+        <div class="exercise"><label>4. dog → <input type="text" data-answer="c" placeholder="?"></label></div>
+        <div class="exercise"><label>5. homework → <input type="text" data-answer="u" placeholder="?"></label></div>
+        <div class="exercise"><label>6. book → <input type="text" data-answer="c" placeholder="?"></label></div>
+        <div class="exercise"><label>7. money → <input type="text" data-answer="u" placeholder="?"></label></div>
+        <div class="exercise"><label>8. egg → <input type="text" data-answer="c" placeholder="?"></label></div>
+        <div class="exercise"><label>9. milk → <input type="text" data-answer="u" placeholder="?"></label></div>
+        <div class="exercise"><label>10. banana → <input type="text" data-answer="c" placeholder="?"></label></div>
+        <button class="check-all-btn" onclick="checkAll('l10-match')">✓ Check All</button>
+      </div>
+    </div>
+
+    <div class="sec" id="l10-read">
+      <button class="accordion">6. Reading Comprehension</button>
+      <div class="panel">
+        <div class="reading-box">
+          <h4>📖 Shopping List</h4>
+          <p>Fatih's mum is writing a shopping list. She needs some apples, some bread, and a little cheese. She doesn't have any milk left, so she needs to buy some. There are some eggs in the fridge already, so she doesn't need more. She wants to buy two footballs for Fatih's birthday, but she isn't sure how much money she has. She also needs some rice for dinner, but she doesn't need any sugar because there is a lot of sugar in the cupboard. Fatih asks if he can have some chocolate, but his mum says there isn't any space left in the shopping bag!</p>
+        </div>
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write <strong>True</strong>, <strong>False</strong>, or <strong>Not Given</strong>.</p>
+        <div class="exercise"><label>1. She needs some apples. → <input type="text" data-answer="true" placeholder="?"></label></div>
+        <div class="exercise"><label>2. She has a lot of milk at home. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <div class="exercise"><label>3. There are no eggs at home. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <div class="exercise"><label>4. She wants to buy footballs for Fatih's birthday. → <input type="text" data-answer="true" placeholder="?"></label></div>
+        <div class="exercise"><label>5. She knows exactly how much money she has. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <div class="exercise"><label>6. She needs rice for dinner. → <input type="text" data-answer="true" placeholder="?"></label></div>
+        <div class="exercise"><label>7. There isn't any sugar in the cupboard. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <div class="exercise"><label>8. Fatih asks for chocolate. → <input type="text" data-answer="true" placeholder="?"></label></div>
+        <div class="exercise"><label>9. His mum buys the chocolate. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <div class="exercise"><label>10. Fatih's birthday is next week. → <input type="text" data-answer="not given" placeholder="?"></label></div>
+        <button class="check-all-btn" onclick="checkAll('l10-read')">✓ Check All</button>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">7. Writing Task – My Fridge</button>
+      <div class="panel">
+        <div class="writing-prompt">
+          <h4>✍️ What's in Your Fridge?</h4>
+          <p>Write <strong>6 sentences</strong> about what is (and isn't) in your fridge or kitchen. Use <em>some</em>, <em>any</em>, <em>how much</em> and <em>how many</em>.</p>
+          <textarea rows="8" placeholder="There is some...&#10;There isn't any...&#10;There are some...&#10;We don't have any...&#10;How much... do we have?&#10;How many... are there?"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">8. Speaking Task</button>
+      <div class="panel">
+        <div class="speaking-prompt">
+          <h4>🗣️ Shopping Role Play</h4>
+          <p>Imagine you are shopping with your teacher. Ask <strong>5 questions</strong> using <em>How much...?</em> or <em>How many...?</em> and answer using <em>some</em> or <em>any</em>.</p>
+          <textarea rows="4" placeholder="Notes for speaking..."></textarea>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <nav class="page-nav">
+    <a href="L9_Present_Continuous.html">← Lesson 9</a>
+    <a href="L10_Countable_Uncountable_HW.html" class="hw-link">📝 Homework</a>
+    <a href="L11_Can_Cant.html">Next Lesson →</a>
+  </nav>
+
+</div>
+<script src="shared-lesson.js"></script>
+</body>
+</html>
