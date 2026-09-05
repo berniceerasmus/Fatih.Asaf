@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homework 11 – Can / Can't</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared-lesson-p2.css" />
+</head>
+<body>
+<div class="container">
+
+  <header class="page-header">
+    <div class="lesson-badge-pill">Phase 2 · Homework 11</div>
+    <h1>Homework: Can / Can't 📝</h1>
+    <p class="subtitle">Practise on your own — no answer key, do your best!</p>
+    <div class="header-meta">
+      <span class="meta-pill">⏱ 60 minutes</span>
+      <span class="meta-pill">📈 Level: A1+</span>
+    </div>
+  </header>
+
+  <div class="prog">
+    <span class="prog-lbl">Progress</span>
+    <div class="steps" id="lessonSteps"><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div></div>
+    <span class="pct" id="lessonPct">0%</span>
+  </div>
+  <div class="score-bar">
+    <span class="score-lbl">Score</span>
+    <span class="score-num" id="scoreNum">0</span>
+    <span class="score-denom" id="scoreDen">/0</span>
+    <span class="score-stars" id="scoreStars"></span>
+  </div>
+
+  <section class="lesson-section">
+
+    <div class="sec" id="hw11-fill">
+      <button class="accordion">1. Fill in the Blanks</button>
+      <div class="panel">
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write <strong>can</strong> or <strong>can't</strong>.</p>
+        <div class="exercise"><label>1. Birds <input type="text" data-answer="can" placeholder="?"> fly.</label></div>
+        <div class="exercise"><label>2. I <input type="text" data-answer="can't" placeholder="?"> touch my toes without bending my knees.</label></div>
+        <div class="exercise"><label>3. My grandpa <input type="text" data-answer="can" placeholder="?"> tell great stories.</label></div>
+        <div class="exercise"><label>4. Snakes <input type="text" data-answer="can't" placeholder="?"> hear like we do.</label></div>
+        <div class="exercise"><label>5. <input type="text" data-answer="can" placeholder="?"> your dog do any tricks?</label></div>
+        <div class="exercise"><label>6. I <input type="text" data-answer="can" placeholder="?"> read really quickly.</label></div>
+        <div class="exercise"><label>7. We <input type="text" data-answer="can't" placeholder="?"> go to the cinema tonight.</label></div>
+        <div class="exercise"><label>8. Babies <input type="text" data-answer="can't" placeholder="?"> walk when they are born.</label></div>
+        <div class="exercise"><label>9. <input type="text" data-answer="can" placeholder="?"> I sit next to you, please?</label></div>
+        <div class="exercise"><label>10. Dolphins <input type="text" data-answer="can" placeholder="?"> jump very high out of the water.</label></div>
+        <button class="check-btn" onclick="checkAll('hw11-fill')">Check answers</button>
+      </div>
+    </div>
+
+    <div class="sec" id="hw11-mc">
+      <button class="accordion">2. Multiple Choice</button>
+      <div class="panel">
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Choose the correct sentence.</p>
+        <div class="exercise"><label>1. a) He can plays chess. b) He can play chess. → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <div class="exercise"><label>2. a) Can she drive? b) Does she can drive? → <input type="text" data-answer="a" placeholder="?"></label></div>
+        <div class="exercise"><label>3. a) I can't to swim. b) I can't swim. → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <div class="exercise"><label>4. a) Can you help me, please? b) Can help me, please? → <input type="text" data-answer="a" placeholder="?"></label></div>
+        <div class="exercise"><label>5. a) We cans cook pasta. b) We can cook pasta. → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <div class="exercise"><label>6. a) Can I go home? b) Can I to go home? → <input type="text" data-answer="a" placeholder="?"></label></div>
+        <div class="exercise"><label>7. a) She can't sings. b) She can't sing. → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <div class="exercise"><label>8. a) They can jump high. b) They can jumps high. → <input type="text" data-answer="a" placeholder="?"></label></div>
+        <div class="exercise"><label>9. a) Do you can skate? b) Can you skate? → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <div class="exercise"><label>10. a) My uncle can fixes bikes. b) My uncle can fix bikes. → <input type="text" data-answer="b" placeholder="?"></label></div>
+        <button class="check-btn" onclick="checkAll('hw11-mc')">Check answers</button>
+      </div>
+    </div>
+
+    <div class="sec" id="hw11-trans">
+      <button class="accordion">3. Sentence Transformation</button>
+      <div class="panel">
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Rewrite each sentence as shown.</p>
+        <div class="exercise"><label>1. I can swim. (negative) → <input type="text" data-answer="i can't swim" placeholder="?"></label></div>
+        <div class="exercise"><label>2. She can drive. (question) → <input type="text" data-answer="can she drive" placeholder="?"></label></div>
+        <div class="exercise"><label>3. They can dance. (negative) → <input type="text" data-answer="they can't dance" placeholder="?"></label></div>
+        <div class="exercise"><label>4. He can cook. (question) → <input type="text" data-answer="can he cook" placeholder="?"></label></div>
+        <div class="exercise"><label>5. We can play tennis. (negative) → <input type="text" data-answer="we can't play tennis" placeholder="?"></label></div>
+        <div class="exercise"><label>6. You can help me. (request, question form) → <input type="text" data-answer="can you help me" placeholder="?"></label></div>
+        <div class="exercise"><label>7. I can leave early. (permission, question form) → <input type="text" data-answer="can i leave early" placeholder="?"></label></div>
+        <div class="exercise"><label>8. My sister can ride a horse. (negative) → <input type="text" data-answer="my sister can't ride a horse" placeholder="?"></label></div>
+        <div class="exercise"><label>9. The dog can jump the fence. (question) → <input type="text" data-answer="can the dog jump the fence" placeholder="?"></label></div>
+        <div class="exercise"><label>10. I can speak German. (negative) → <input type="text" data-answer="i can't speak german" placeholder="?"></label></div>
+        <button class="check-btn" onclick="checkAll('hw11-trans')">Check answers</button>
+      </div>
+    </div>
+
+    <div class="sec" id="hw11-err">
+      <button class="accordion">4. Error Correction</button>
+      <div class="panel">
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Find the mistake and write the correct sentence.</p>
+        <div class="exercise"><label>1. She can plays the violin. → <input type="text" data-answer="she can play the violin" placeholder="?"></label></div>
+        <div class="exercise"><label>2. Do you can cook? → <input type="text" data-answer="can you cook" placeholder="?"></label></div>
+        <div class="exercise"><label>3. He cans run fast. → <input type="text" data-answer="he can run fast" placeholder="?"></label></div>
+        <div class="exercise"><label>4. I can not to draw well. → <input type="text" data-answer="i can't draw well" placeholder="?"></label></div>
+        <div class="exercise"><label>5. Can I to borrow a pencil? → <input type="text" data-answer="can i borrow a pencil" placeholder="?"></label></div>
+        <div class="exercise"><label>6. My cousin can't rides a skateboard. → <input type="text" data-answer="my cousin can't ride a skateboard" placeholder="?"></label></div>
+        <div class="exercise"><label>7. Turtles can walking slowly. → <input type="text" data-answer="turtles can walk slowly" placeholder="?"></label></div>
+        <div class="exercise"><label>8. We can plays the drums. → <input type="text" data-answer="we can play the drums" placeholder="?"></label></div>
+        <div class="exercise"><label>9. Can you to open the door? → <input type="text" data-answer="can you open the door" placeholder="?"></label></div>
+        <div class="exercise"><label>10. They can't danced very well. → <input type="text" data-answer="they can't dance very well" placeholder="?"></label></div>
+        <button class="check-btn" onclick="checkAll('hw11-err')">Check answers</button>
+      </div>
+    </div>
+
+    <div class="sec" id="hw11-match">
+      <button class="accordion">5. Match the Use</button>
+      <div class="panel">
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write <strong>A</strong> (ability), <strong>P</strong> (permission), or <strong>R</strong> (polite request).</p>
+        <div class="exercise"><label>1. Can you pass me the ball, please? → <input type="text" data-answer="r" placeholder="?"></label></div>
+        <div class="exercise"><label>2. My mum can speak four languages. → <input type="text" data-answer="a" placeholder="?"></label></div>
+        <div class="exercise"><label>3. Can I stay up late tonight? → <input type="text" data-answer="p" placeholder="?"></label></div>
+        <div class="exercise"><label>4. I can solve this maths problem. → <input type="text" data-answer="a" placeholder="?"></label></div>
+        <div class="exercise"><label>5. Can you close the window, please? → <input type="text" data-answer="r" placeholder="?"></label></div>
+        <div class="exercise"><label>6. Can we watch a film tonight? → <input type="text" data-answer="p" placeholder="?"></label></div>
+        <div class="exercise"><label>7. He can juggle five balls. → <input type="text" data-answer="a" placeholder="?"></label></div>
+        <div class="exercise"><label>8. Can you speak more slowly, please? → <input type="text" data-answer="r" placeholder="?"></label></div>
+        <div class="exercise"><label>9. Can I have another slice of pizza? → <input type="text" data-answer="p" placeholder="?"></label></div>
+        <div class="exercise"><label>10. My friend can fix computers. → <input type="text" data-answer="a" placeholder="?"></label></div>
+        <button class="check-btn" onclick="checkAll('hw11-match')">Check answers</button>
+      </div>
+    </div>
+
+    <div class="sec" id="hw11-read">
+      <button class="accordion">6. Reading Comprehension</button>
+      <div class="panel">
+        <div class="reading-box">
+          <h4>📖 Talent Show</h4>
+          <p>Next Friday, Fatih's school is having a talent show. Fatih can play the recorder, so he wants to perform a song. His friend Ege can't sing very well, but he can do amazing skateboard tricks, so he's going to do that instead. Fatih's little sister can't join the show because she is too young — only students over eight can perform. The teacher says students can bring their own music, but they can't use very loud instruments in the small hall. Fatih is a little nervous because he can't remember all the notes yet, but his mum says he can practise every evening this week.</p>
+        </div>
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write <strong>True</strong>, <strong>False</strong>, or <strong>Not Given</strong>.</p>
+        <div class="exercise"><label>1. The talent show is next Friday. → <input type="text" data-answer="true" placeholder="?"></label></div>
+        <div class="exercise"><label>2. Fatih can play the guitar. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <div class="exercise"><label>3. Ege can sing very well. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <div class="exercise"><label>4. Ege can do skateboard tricks. → <input type="text" data-answer="true" placeholder="?"></label></div>
+        <div class="exercise"><label>5. Fatih's sister can join the show. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <div class="exercise"><label>6. Only students over eight can perform. → <input type="text" data-answer="true" placeholder="?"></label></div>
+        <div class="exercise"><label>7. Students can use very loud instruments. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <div class="exercise"><label>8. Fatih can remember all the notes already. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <div class="exercise"><label>9. Fatih can practise every evening this week. → <input type="text" data-answer="true" placeholder="?"></label></div>
+        <div class="exercise"><label>10. The show is in the school garden. → <input type="text" data-answer="not given" placeholder="?"></label></div>
+        <button class="check-btn" onclick="checkAll('hw11-read')">Check answers</button>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">7. Free Writing</button>
+      <div class="panel">
+        <p>Write <strong>8 sentences</strong> about a talent show you would join. What can you do? What can't you do yet? Include a polite request and a permission question.</p>
+        <textarea rows="10" placeholder="I can...&#10;I can't...yet&#10;For the talent show, I can...&#10;My friend can...&#10;Can I...? (permission)&#10;Can you...? (request)&#10;My family can help me by..."></textarea>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">8. Extra Challenge</button>
+      <div class="panel">
+        <p>Think of your three favourite animals. Write <strong>2 sentences</strong> about each one, saying what it <strong>can</strong> and <strong>can't</strong> do.</p>
+        <textarea rows="8" placeholder="A ... can...&#10;A ... can't...&#10;A ... can...&#10;A ... can't...&#10;A ... can...&#10;A ... can't..."></textarea>
+      </div>
+    </div>
+
+  </section>
+
+  <nav class="page-nav">
+    <a href="L11_Can_Cant.html">← Back to lesson</a>
+    <a href="L12_Past_Simple_Was_Were.html">Next lesson →</a>
+  </nav>
+
+</div>
+<script src="shared-lesson.js"></script>
+</body>
+</html>
