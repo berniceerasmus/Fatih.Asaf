@@ -12,13 +12,13 @@
 
   <header class="page-header">
     <div class="lesson-badge-pill">Homework · Lesson 8 · Final</div>
-    <h1>Homework 8: Phase 1 Final Review 📝</h1>
+    <h1>Homework 8: Phase 1 Final Review 📋</h1>
     <p class="subtitle">Your final Phase 1 homework — show everything you've learned!</p>
   </header>
 
   <div class="prog">
     <span class="prog-lbl">Progress</span>
-    <div class="steps" id="lessonSteps"><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div></div>
+    <div class="steps" id="lessonSteps"><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div></div>
     <span class="pct" id="lessonPct">0%</span>
   </div>
   <div class="score-bar">
@@ -31,96 +31,180 @@
   <section class="lesson-section">
     <h2>Final Homework</h2>
 
-    <!-- Mixed grammar -->
-    <div class="sec">
-      <button class="accordion">1. Mixed Grammar – Fill in the Blanks</button>
+    <!-- 1 -->
+    <div class="sec" id="hw8-p1">
+      <button class="accordion">1. Verb To Be – Am / Is / Are</button>
       <div class="panel">
-        <div class="card" id="hw8-mix">
-          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Complete each sentence with the correct word or form.</p>
-          <div class="exercise"><label>1. She <input type="text" id="hw8m1" data-answer="doesn't have" placeholder="?"> a brother.</label></div>
-          <div class="exercise"><label>2. I <input type="text" id="hw8m2" data-answer="am" placeholder="?"> not scared of spiders.</label></div>
-          <div class="exercise"><label>3. <input type="text" id="hw8m3" data-answer="does" placeholder="?"> your dad cook at home?</label></div>
-          <div class="exercise"><label>4. We <input type="text" id="hw8m4" data-answer="often" placeholder="?"> go to the park on Sundays.</label></div>
-          <div class="exercise"><label>5. He <input type="text" id="hw8m5" data-answer="plays" placeholder="?"> basketball after school.</label></div>
-          <div class="exercise"><label>6. It's <input type="text" id="hw8m6" data-answer="quarter past" placeholder="?"> three. (3:15)</label></div>
-          <div class="exercise"><label>7. I have <input type="text" id="hw8m7" data-answer="an" placeholder="?"> old photo of my dog.</label></div>
-          <div class="exercise"><label>8. The opposite of brave is <input type="text" id="hw8m8" data-answer="cowardly" placeholder="?">.</label></div>
-          <button class="check-all-btn" onclick="checkAll('hw8-mix')">✓ Check All</button>
-        </div>
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Fill in <strong>am</strong>, <strong>is</strong>, or <strong>are</strong> (or the negative/short form where shown).</p>
+        <div class="exercise"><label>1. I <input type="text" data-answer="am" placeholder="?"> from Eskişehir.</label></div>
+        <div class="exercise"><label>2. My friends <input type="text" data-answer="are" placeholder="?"> very funny.</label></div>
+        <div class="exercise"><label>3. The wolf <input type="text" data-answer="is" placeholder="?"> a wild animal.</label></div>
+        <div class="exercise"><label>4. We <input type="text" data-answer="aren't" placeholder="?"> late — don't worry!</label></div>
+        <div class="exercise"><label>5. <input type="text" data-answer="is" placeholder="?"> your teacher from Turkey?</label></div>
+        <div class="exercise"><label>6. He <input type="text" data-answer="isn't" placeholder="?"> a doctor — he's a footballer.</label></div>
+        <div class="exercise"><label>7. They <input type="text" data-answer="are" placeholder="?"> my cousins.</label></div>
+        <div class="exercise"><label>8. <input type="text" data-answer="am" placeholder="?"> I late for training?</label></div>
+        <div class="exercise"><label>9. The match <input type="text" data-answer="is" placeholder="?"> at five o'clock.</label></div>
+        <div class="exercise"><label>10. You <input type="text" data-answer="are" placeholder="?"> a great player!</label></div>
+        <button class="check-all-btn" onclick="checkAll('hw8-p1')">✓ Check Part 1</button>
       </div>
     </div>
 
-    <!-- Error correction -->
-    <div class="sec">
-      <button class="accordion">2. Fix the Mistakes</button>
+    <!-- 2 -->
+    <div class="sec" id="hw8-p2">
+      <button class="accordion">2. Subject Pronouns & Have / Has</button>
       <div class="panel">
-        <div class="card">
-          <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Each sentence has one mistake. Write the correct sentence.</p>
-          <div class="order-sentence">
-            <p>1. He don't play football on Mondays. ❌</p>
-            <input type="text" id="hw8e1" data-answer="he doesn't play football on mondays" placeholder="Correct sentence">
-            <button class="check-btn" onclick="checkById('hw8e1')">✓</button>
-          </div>
-          <div class="order-sentence">
-            <p>2. Does she has a dog? ❌</p>
-            <input type="text" id="hw8e2" data-answer="does she have a dog" placeholder="Correct sentence">
-            <button class="check-btn" onclick="checkById('hw8e2')">✓</button>
-          </div>
-          <div class="order-sentence">
-            <p>3. I am never late, isn't it? ❌</p>
-            <input type="text" id="hw8e3" data-answer="i am never late, am i" placeholder="Correct sentence">
-            <button class="check-btn" onclick="checkById('hw8e3')">✓</button>
-          </div>
-          <div class="order-sentence">
-            <p>4. She have two cat. ❌</p>
-            <input type="text" id="hw8e4" data-answer="she has two cats" placeholder="Correct sentence">
-            <button class="check-btn" onclick="checkById('hw8e4')">✓</button>
-          </div>
-        </div>
+        <div class="exercise"><label>1. Fatih is a student. → <input type="text" data-answer="he" placeholder="?"> is a student.</label></div>
+        <div class="exercise"><label>2. My mum is kind. → <input type="text" data-answer="she" placeholder="?"> is kind.</label></div>
+        <div class="exercise"><label>3. The ball is round. → <input type="text" data-answer="it" placeholder="?"> is round.</label></div>
+        <div class="exercise"><label>4. My friends and I are happy. → <input type="text" data-answer="we" placeholder="?"> are happy.</label></div>
+        <div class="exercise"><label>5. She <input type="text" data-answer="has" placeholder="?"> a pet turtle.</label></div>
+        <div class="exercise"><label>6. I <input type="text" data-answer="have" placeholder="?"> two brothers.</label></div>
+        <div class="exercise"><label>7. My dog <input type="text" data-answer="has" placeholder="?"> big eyes.</label></div>
+        <div class="exercise"><label>8. They <input type="text" data-answer="have" placeholder="?"> a new game.</label></div>
+        <div class="exercise"><label>9. He <input type="text" data-answer="doesn't have" placeholder="?"> a sister.</label></div>
+        <div class="exercise"><label>10. You <input type="text" data-answer="don't have" placeholder="?"> a car yet!</label></div>
+        <button class="check-all-btn" onclick="checkAll('hw8-p2')">✓ Check Part 2</button>
       </div>
     </div>
 
-    <!-- Final paragraph writing -->
-    <div class="sec">
-      <button class="accordion">3. Final Writing – My Best Friend</button>
+    <!-- 3 -->
+    <div class="sec" id="hw8-p3">
+      <button class="accordion">3. Present Simple & Do/Does Questions</button>
       <div class="panel">
-        <div class="card">
-          <div class="writing-prompt">
-            <h4>✍️ Write About Your Best Friend</h4>
-            <p>Write a paragraph of <strong>8–10 sentences</strong> about your best friend. Use grammar from ALL of Phase 1.</p>
-            <div class="instr">
-              ✅ Include: their name &amp; age · what they have · what they do every day · their routine · what time they do things · how often · describe them with adjectives
-            </div>
-            <textarea rows="13" placeholder="My best friend's name is...&#10;He/She is...&#10;He/She has...&#10;Every day, he/she...&#10;He/She always...&#10;He/She never...&#10;He/She is a... person.&#10;His/Her favourite...&#10;He/She usually wakes up at...&#10;I think he/she is..."></textarea>
-          </div>
-        </div>
+        <div class="exercise"><label>1. He <input type="text" data-answer="plays" placeholder="?"> (play) football every evening.</label></div>
+        <div class="exercise"><label>2. They <input type="text" data-answer="don't go" placeholder="?"> (not go) to school on Sundays.</label></div>
+        <div class="exercise"><label>3. My mum <input type="text" data-answer="watches" placeholder="?"> (watch) the news every night.</label></div>
+        <div class="exercise"><label>4. My cat <input type="text" data-answer="doesn't eat" placeholder="?"> (not eat) vegetables.</label></div>
+        <div class="exercise"><label>5. <input type="text" data-answer="do you like" placeholder="?"> (you / like) action films?</label></div>
+        <div class="exercise"><label>6. <input type="text" data-answer="does your sister play" placeholder="?"> (your sister / play) guitar?</label></div>
+        <div class="exercise"><label>7. <input type="text" data-answer="what do you do" placeholder="?"> (what / you / do) after school?</label></div>
+        <div class="exercise"><label>8. <input type="text" data-answer="how often does he train" placeholder="?"> (how often / he / train)?</label></div>
+        <div class="exercise"><label>9. Do you play football? (✓) → <input type="text" data-answer="yes, i do" placeholder="?"></label></div>
+        <div class="exercise"><label>10. Does she like music? (✗) → <input type="text" data-answer="no, she doesn't" placeholder="?"></label></div>
+        <button class="check-all-btn" onclick="checkAll('hw8-p3')">✓ Check Part 3</button>
       </div>
     </div>
 
-    <!-- Phase 1 self-evaluation -->
-    <div class="sec">
-      <button class="accordion">4. Phase 1 Self-Evaluation ⭐</button>
+    <!-- 4 -->
+    <div class="sec" id="hw8-p4">
+      <button class="accordion">4. Articles & Plurals</button>
       <div class="panel">
-        <div class="card">
-          <div class="writing-prompt">
-            <h4>🤔 How do you feel about each topic?</h4>
-            <p>Rate yourself 1–5 (1 = need more practice, 5 = very confident!) and write any questions you still have.</p>
-            <textarea rows="12" placeholder="Verb To Be: .../5&#10;Have / Has: .../5&#10;Present Simple: .../5&#10;Do / Does Questions: .../5&#10;Articles & Plurals: .../5&#10;Telling the Time: .../5&#10;Frequency Adverbs: .../5&#10;Adjectives: .../5&#10;&#10;Questions I still have:&#10;"></textarea>
-          </div>
+        <div class="exercise"><label>1. I want <input type="text" data-answer="an" placeholder="?"> apple.</label></div>
+        <div class="exercise"><label>2. He has <input type="text" data-answer="a" placeholder="?"> dog.</label></div>
+        <div class="exercise"><label>3. <input type="text" data-answer="the" placeholder="?"> dog is huge.</label></div>
+        <div class="exercise"><label>4. I love <input type="text" data-answer="–" placeholder="?"> animals.</label></div>
+        <div class="exercise"><label>5. city → <input type="text" data-answer="cities" placeholder="?"></label></div>
+        <div class="exercise"><label>6. wolf → <input type="text" data-answer="wolves" placeholder="?"></label></div>
+        <div class="exercise"><label>7. child → <input type="text" data-answer="children" placeholder="?"></label></div>
+        <div class="exercise"><label>8. fox → <input type="text" data-answer="foxes" placeholder="?"></label></div>
+        <div class="exercise"><label>9. mouse → <input type="text" data-answer="mice" placeholder="?"></label></div>
+        <div class="exercise"><label>10. match → <input type="text" data-answer="matches" placeholder="?"></label></div>
+        <button class="check-all-btn" onclick="checkAll('hw8-p4')">✓ Check Part 4</button>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="sec" id="hw8-p5">
+      <button class="accordion">5. Time & Frequency</button>
+      <div class="panel">
+        <div class="exercise"><label>1. 7:30 → It's <input type="text" data-answer="half past seven" placeholder="?"></label></div>
+        <div class="exercise"><label>2. 3:45 → It's <input type="text" data-answer="quarter to four" placeholder="?"></label></div>
+        <div class="exercise"><label>3. 5:15 → It's <input type="text" data-answer="quarter past five" placeholder="?"></label></div>
+        <div class="exercise"><label>4. 9:00 → It's <input type="text" data-answer="nine o'clock" placeholder="?"></label></div>
+        <div class="exercise"><label>5. I <input type="text" data-answer="always" placeholder="?"> brush my teeth before bed. (100%)</label></div>
+        <div class="exercise"><label>6. He is <input type="text" data-answer="never" placeholder="?"> rude to his teacher. (0%)</label></div>
+        <div class="exercise"><label>7. We <input type="text" data-answer="usually" placeholder="?"> play football on Saturdays. (~80%)</label></div>
+        <div class="exercise"><label>8. She <input type="text" data-answer="sometimes" placeholder="?"> watches films. (~40%)</label></div>
+        <div class="exercise"><label>9. I <input type="text" data-answer="rarely" placeholder="?"> eat fast food. (~20%)</label></div>
+        <div class="exercise"><label>10. We <input type="text" data-answer="often" placeholder="?"> play video games. (~60%)</label></div>
+        <button class="check-all-btn" onclick="checkAll('hw8-p5')">✓ Check Part 5</button>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="sec" id="hw8-p6">
+      <button class="accordion">6. Adjectives</button>
+      <div class="panel">
+        <div class="exercise"><label>1. strong → <input type="text" data-answer="weak" placeholder="?"> (opposite)</label></div>
+        <div class="exercise"><label>2. beautiful → <input type="text" data-answer="ugly" placeholder="?"> (opposite)</label></div>
+        <div class="exercise"><label>3. clever → <input type="text" data-answer="stupid" placeholder="?"> (opposite)</label></div>
+        <div class="exercise"><label>4. tiny → <input type="text" data-answer="huge" placeholder="?"> (opposite)</label></div>
+        <div class="exercise"><label>5. fast → <input type="text" data-answer="slow" placeholder="?"> (opposite)</label></div>
+        <div class="exercise"><label>6. She is a player. (talented) → She is a <input type="text" data-answer="talented player" placeholder="?">.</label></div>
+        <div class="exercise"><label>7. It was a film. (boring) → It was a <input type="text" data-answer="boring film" placeholder="?">.</label></div>
+        <div class="exercise"><label>8. He scored a goal. (amazing) → He scored an <input type="text" data-answer="amazing goal" placeholder="?">.</label></div>
+        <div class="exercise"><label>9. I have a dog. (small) → I have a <input type="text" data-answer="small dog" placeholder="?">.</label></div>
+        <div class="exercise"><label>10. The elephant is an animal. (powerful) → The elephant is a <input type="text" data-answer="powerful animal" placeholder="?">.</label></div>
+        <button class="check-all-btn" onclick="checkAll('hw8-p6')">✓ Check Part 6</button>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="sec" id="hw8-p7">
+      <button class="accordion">7. Error Correction (Mixed)</button>
+      <div class="panel">
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Each sentence has one mistake. Write the correct sentence.</p>
+        <div class="exercise"><label>1. He don't play football on Mondays. → <input type="text" data-answer="he doesn't play football on mondays" placeholder="?"></label></div>
+        <div class="exercise"><label>2. Does she has a dog? → <input type="text" data-answer="does she have a dog" placeholder="?"></label></div>
+        <div class="exercise"><label>3. I am never late, isn't it? → <input type="text" data-answer="i am never late, am i" placeholder="?"></label></div>
+        <div class="exercise"><label>4. She have two cat. → <input type="text" data-answer="she has two cats" placeholder="?"></label></div>
+        <div class="exercise"><label>5. I is a student. → <input type="text" data-answer="i am a student" placeholder="?"></label></div>
+        <div class="exercise"><label>6. We has a big garden. → <input type="text" data-answer="we have a big garden" placeholder="?"></label></div>
+        <div class="exercise"><label>7. He watch TV every night. → <input type="text" data-answer="he watches tv every night" placeholder="?"></label></div>
+        <div class="exercise"><label>8. She don't like animals. → <input type="text" data-answer="she doesn't like animals" placeholder="?"></label></div>
+        <div class="exercise"><label>9. I have a apple. → <input type="text" data-answer="i have an apple" placeholder="?"></label></div>
+        <div class="exercise"><label>10. There is many people. → <input type="text" data-answer="there are many people" placeholder="?"></label></div>
+        <button class="check-all-btn" onclick="checkAll('hw8-p7')">✓ Check Part 7</button>
+      </div>
+    </div>
+
+    <!-- 8 Reading -->
+    <div class="sec" id="hw8-read">
+      <button class="accordion">8. Reading Comprehension</button>
+      <div class="panel">
+        <div class="reading-box">
+          <h4>📖 Fatih's Typical Day</h4>
+          <p>Fatih is 12 years old and he is from Eskişehir. He has a small dog called Rex and a big collection of football cards. Every morning, Fatih wakes up at half past seven and eats breakfast with his family. He always brushes his teeth before school, but he sometimes forgets to make his bed! After school, he usually plays football with his friends, and he often plays video games in the evening. Fatih doesn't like vegetables very much, but he loves pizza and pasta. His favourite team is a huge, powerful team that rarely loses. He is a friendly, clever boy who is never rude to his teachers.</p>
         </div>
+        <p style="margin-bottom:14px; font-size:0.9rem; color:var(--muted);">Write <strong>True</strong>, <strong>False</strong>, or <strong>Not Given</strong>.</p>
+        <div class="exercise"><label>1. Fatih is 12 years old. → <input type="text" data-answer="true" placeholder="?"></label></div>
+        <div class="exercise"><label>2. Fatih is from Ankara. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <div class="exercise"><label>3. Rex is a cat. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <div class="exercise"><label>4. Fatih wakes up at half past seven. → <input type="text" data-answer="true" placeholder="?"></label></div>
+        <div class="exercise"><label>5. Fatih never brushes his teeth. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <div class="exercise"><label>6. Fatih always makes his bed. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <div class="exercise"><label>7. Fatih usually plays football after school. → <input type="text" data-answer="true" placeholder="?"></label></div>
+        <div class="exercise"><label>8. Fatih loves vegetables. → <input type="text" data-answer="false" placeholder="?"></label></div>
+        <div class="exercise"><label>9. Fatih's favourite team rarely loses. → <input type="text" data-answer="true" placeholder="?"></label></div>
+        <div class="exercise"><label>10. Fatih has a sister. → <input type="text" data-answer="not given" placeholder="?"></label></div>
+        <button class="check-all-btn" onclick="checkAll('hw8-read')">✓ Check Part 8</button>
       </div>
     </div>
 
   </section>
 
-  <div style="background:linear-gradient(135deg,#1d6fa4,#0ea47a); border-radius:16px; padding:20px 22px; text-align:center; color:#fff; margin:16px 0;">
-    <div style="font-size:32px; margin-bottom:6px;">🎓</div>
-    <div style="font-family:'Fredoka One',cursive; font-size:20px;">Phase 1 Homework Complete!</div>
-    <div style="font-size:12px; opacity:0.88; margin-top:5px;">Fantastic effort, Fatih. Phase 2 is going to be even better! 🚀</div>
-  </div>
+  <section class="lesson-section">
+    <div class="sec">
+      <button class="accordion">Final Writing – About Me</button>
+      <div class="panel">
+        <p>Write a paragraph of <strong>10+ sentences</strong> about yourself. Use grammar from ALL 7 Phase 1 lessons: verb to be, have/has, present simple, do/does questions, articles, plurals, time, frequency adverbs, and adjectives.</p>
+        <textarea rows="14" placeholder="My name is...&#10;I am... years old.&#10;I have...&#10;Every day, I...&#10;I always...&#10;I never...&#10;I am a... person.&#10;My best friend is...&#10;We usually...&#10;Do you know what? I..."></textarea>
+      </div>
+    </div>
+
+    <div class="sec">
+      <button class="accordion">Extra Challenge</button>
+      <div class="panel">
+        <p>Write <strong>5 sentences</strong> describing your favourite animal or football player, using at least 2 adjectives and one frequency adverb.</p>
+        <textarea rows="8" placeholder="My favourite ... is...&#10;He/She/It is...&#10;He/She/It always/usually/never..."></textarea>
+      </div>
+    </div>
+  </section>
 
   <nav class="page-nav">
-    <a href="L8_Phase1_Review.html">← Back to Lesson</a>
+    <a href="L8_Phase1_Review.html">← Back to lesson</a>
+    <a href="L9_Present_Continuous.html">Next: Phase 2 →</a>
   </nav>
 
 </div>
